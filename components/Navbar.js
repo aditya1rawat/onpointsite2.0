@@ -20,13 +20,7 @@ export default function Navbar() {
 
 	return (
 		<div>
-			<chakra.header
-				bg={bg}
-				w='full'
-				px={{ base: 2, sm: 4 }}
-				py={4}
-				shadow='md'
-			>
+			<chakra.header bg={bg} w='full' px={{ base: 2, sm: 4 }} py={4}>
 				<Flex>
 					<Flex>
 						<chakra.a
@@ -36,7 +30,7 @@ export default function Navbar() {
 							alignItems='center'
 						>
 							<Image src={Logo} width='50px' height='50px' />
-							<chakra.h1 fontSize='xl' fontWeight='medium' ml='5'>
+							<chakra.h1 fontSize='35px' fontWeight='700' ml='5'>
 								OnPoint
 							</chakra.h1>
 							<VisuallyHidden>Choc</VisuallyHidden>
@@ -54,6 +48,7 @@ export default function Navbar() {
 							spacing={10}
 							color='brand.500'
 							display={{ base: 'none', md: 'inline-flex' }}
+							fontWeight='600'
 						>
 							<Button variant='ghost'>About</Button>
 							<Button variant='ghost'>Blog</Button>
@@ -92,22 +87,41 @@ export default function Navbar() {
 								/>
 
 								<Button w='full' variant='ghost'>
-									Features
-								</Button>
-								<Button w='full' variant='ghost'>
-									Pricing
+									About
 								</Button>
 								<Button w='full' variant='ghost'>
 									Blog
 								</Button>
 								<Button w='full' variant='ghost'>
-									Company
+									Support
 								</Button>
 								<Button w='full' variant='ghost'>
-									Sign in
+									Log In / Sign Up
 								</Button>
 							</VStack>
 						</Box>
+					</HStack>
+					<HStack display='flex' alignItems='center' spacing={1}>
+						<HStack
+							spacing={10}
+							color='brand.500'
+							display={{ base: 'none', md: 'inline-flex' }}
+							fontWeight='600'
+							background='linear-gradient(to right, #09E85E, #5465FF)'
+							borderRadius='10px'
+							padding='5px'
+						>
+							<Button
+								transition='background 0.5s'
+								_hover={{
+									background:
+										'linear-gradient(to right, #09E85E, #5465FF)',
+									transition: '0.5s'
+								}}
+							>
+								Log In / Sign Up
+							</Button>
+						</HStack>
 					</HStack>
 				</Flex>
 			</chakra.header>
