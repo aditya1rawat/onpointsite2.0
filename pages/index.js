@@ -1,8 +1,7 @@
 import Head from 'next/head';
 
-import Image from 'next/image';
+import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
-import Logo from '../public/Logo.svg';
 
 export default function Home() {
 	return (
@@ -15,7 +14,14 @@ export default function Home() {
 				/>
 				<link rel='icon' href='/Logo.svg' />
 			</Head>
-			<Navbar />
+			<main
+				style={{
+					backgroundColor: 'black'
+				}}
+			>
+				<Navbar />
+				<Hero />
+			</main>
 		</div>
 	);
 }

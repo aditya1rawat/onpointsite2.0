@@ -2,8 +2,6 @@ import {
 	chakra,
 	Box,
 	Flex,
-	useColorModeValue,
-	VisuallyHidden,
 	HStack,
 	Button,
 	useDisclosure,
@@ -13,27 +11,31 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Logo from '../public/Logo.png';
+import { BsTextRight } from 'react-icons/bs';
 
 export default function Navbar() {
-	const bg = useColorModeValue('white', 'gray.800');
 	const mobileNav = useDisclosure();
 
 	return (
 		<div>
-			<chakra.header bg={bg} w='full' px={{ base: 2, sm: 4 }} py={4}>
+			<chakra.header bg='black' w='full' px={{ base: 2, sm: 4 }} py={4}>
 				<Flex>
 					<Flex>
 						<chakra.a
 							href='/'
-							title='Choc Home Page'
+							title='Home'
 							display='flex'
 							alignItems='center'
 						>
 							<Image src={Logo} width='50px' height='50px' />
-							<chakra.h1 fontSize='35px' fontWeight='700' ml='5'>
+							<chakra.h1
+								fontSize='35px'
+								fontWeight='700'
+								ml='5'
+								color='white'
+							>
 								OnPoint
 							</chakra.h1>
-							<VisuallyHidden>Choc</VisuallyHidden>
 						</chakra.a>
 					</Flex>
 					<HStack
@@ -45,27 +47,57 @@ export default function Navbar() {
 						justifyContent='center'
 					>
 						<HStack
-							spacing={10}
+							spacing={{ md: '3', lg: '10' }}
 							color='brand.500'
 							display={{ base: 'none', md: 'inline-flex' }}
 							fontWeight='600'
 						>
-							<Button variant='ghost'>About</Button>
-							<Button variant='ghost'>Blog</Button>
-							<Button variant='ghost'>Support</Button>
+							<Button
+								color='white'
+								colorScheme='black'
+								_hover={{
+									color: 'rgba(255, 255, 255, 0.75)'
+								}}
+							>
+								About
+							</Button>
+							<Button
+								color='white'
+								colorScheme='black'
+								_hover={{
+									color: 'rgba(255, 255, 255, 0.75)'
+								}}
+							>
+								Blog
+							</Button>
+							<Button
+								color='white'
+								colorScheme='black'
+								_hover={{
+									color: 'rgba(255, 255, 255, 0.75)'
+								}}
+							>
+								Support
+							</Button>
 						</HStack>
 
-						<Box display={{ base: 'inline-flex', md: 'none' }}>
+						<Box
+							display={{ base: 'inline-flex', md: 'none' }}
+							alignItems='right'
+							width='full'
+						>
 							<IconButton
-								display={{ base: 'flex', md: 'none' }}
+								position='absolute'
+								right='0'
+								top='6'
 								aria-label='Open menu'
-								fontSize='20px'
-								color={useColorModeValue('gray.800', 'inherit')}
+								fontSize='30px'
+								color='white'
+								colorScheme='black'
 								variant='ghost'
-								// icon={<AiOutlineMenu />}
+								icon={<BsTextRight />}
 								onClick={mobileNav.onOpen}
 							/>
-
 							<VStack
 								pos='absolute'
 								top={0}
@@ -76,26 +108,48 @@ export default function Navbar() {
 								p={2}
 								pb={4}
 								m={2}
-								bg={bg}
+								bg='black'
 								spacing={3}
 								rounded='sm'
 								shadow='sm'
 							>
 								<CloseButton
+									color='white'
+									colorScheme='black'
+									fontSize='15px'
 									aria-label='Close menu'
 									onClick={mobileNav.onClose}
 								/>
-
-								<Button w='full' variant='ghost'>
+								<Button
+									w='full'
+									variant='ghost'
+									color='white'
+									colorScheme='black'
+								>
 									About
 								</Button>
-								<Button w='full' variant='ghost'>
+								<Button
+									w='full'
+									variant='ghost'
+									color='white'
+									colorScheme='black'
+								>
 									Blog
 								</Button>
-								<Button w='full' variant='ghost'>
+								<Button
+									w='full'
+									variant='ghost'
+									color='white'
+									colorScheme='black'
+								>
 									Support
 								</Button>
-								<Button w='full' variant='ghost'>
+								<Button
+									w='full'
+									variant='ghost'
+									color='white'
+									colorScheme='black'
+								>
 									Log In / Sign Up
 								</Button>
 							</VStack>
@@ -104,7 +158,6 @@ export default function Navbar() {
 					<HStack display='flex' alignItems='center' spacing={1}>
 						<HStack
 							spacing={10}
-							color='brand.500'
 							display={{ base: 'none', md: 'inline-flex' }}
 							fontWeight='600'
 							background='linear-gradient(to right, #09E85E, #5465FF)'
@@ -112,6 +165,9 @@ export default function Navbar() {
 							padding='5px'
 						>
 							<Button
+								color='white'
+								colorScheme='black'
+								backgroundColor='black'
 								transition='background 0.5s'
 								_hover={{
 									background:
