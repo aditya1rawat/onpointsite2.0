@@ -51,7 +51,7 @@ export default function SignUp() {
 			>
 				<Stack spacing={{ base: 10, md: 20 }}>
 					<Heading
-						lineHeight={1.1}
+						lineHeight={1.25}
 						fontSize={{
 							base: '3xl',
 							sm: '4xl',
@@ -69,7 +69,7 @@ export default function SignUp() {
 						</Text>{' '}
 						Earn Hours
 					</Heading>
-					<Stack
+					{/* <Stack
 						direction={'row'}
 						spacing={{ base: 4, md: 1 }}
 						align={'center'}
@@ -143,7 +143,7 @@ export default function SignUp() {
 						>
 							YOU
 						</Flex>
-					</Stack>
+					</Stack> */}
 				</Stack>
 				<Stack
 					bg={'gray.50'}
