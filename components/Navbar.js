@@ -10,6 +10,7 @@ import {
 	CloseButton
 } from '@chakra-ui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Logo from '../public/Logo.png';
 import { BsTextRight } from 'react-icons/bs';
 
@@ -18,7 +19,16 @@ export default function Navbar() {
 
 	return (
 		<div>
-			<chakra.header bg='black' w='full' px={{ base: 2, sm: 4 }} py={4}>
+			<chakra.header
+				bg='rgba(0,0,0,0.8)'
+				backdropFilter='saturate(175%) blur(5px)'
+				zIndex='1'
+				top='0'
+				position='fixed'
+				w='full'
+				px={{ base: 2, sm: 4 }}
+				py={4}
+			>
 				<Flex>
 					<Flex>
 						<chakra.a
@@ -164,19 +174,21 @@ export default function Navbar() {
 							borderRadius='10px'
 							padding='5px'
 						>
-							<Button
-								color='white'
-								colorScheme='black'
-								backgroundColor='black'
-								transition='background 0.5s'
-								_hover={{
-									background:
-										'linear-gradient(to right, #09E85E, #5465FF)',
-									transition: '0.5s'
-								}}
-							>
-								Log In / Sign Up
-							</Button>
+							<Link href='/signup'>
+								<Button
+									color='white'
+									colorScheme='black'
+									backgroundColor='black'
+									transition='background 0.5s'
+									_hover={{
+										background:
+											'linear-gradient(to right, #09E85E, #5465FF)',
+										transition: '0.5s'
+									}}
+								>
+									Log In / Sign Up
+								</Button>
+							</Link>
 						</HStack>
 					</HStack>
 				</Flex>

@@ -11,9 +11,9 @@ import {
 	Avatar,
 	AvatarGroup,
 	useBreakpointValue,
-	IconProps,
 	Icon
 } from '@chakra-ui/react';
+import Navbar from '../components/Navbar';
 
 const avatars = [
 	{
@@ -41,12 +41,13 @@ const avatars = [
 export default function SignUp() {
 	return (
 		<Box position={'relative'}>
+			<Navbar />
 			<Container
 				as={SimpleGrid}
 				maxW={'7xl'}
 				columns={{ base: 1, md: 2 }}
 				spacing={{ base: 10, lg: 32 }}
-				py={{ base: 10, sm: 20, lg: 32 }}
+				pt={{ base: 32, sm: 32, lg: 52 }}
 			>
 				<Stack spacing={{ base: 10, md: 20 }}>
 					<Heading
@@ -55,10 +56,10 @@ export default function SignUp() {
 							base: '3xl',
 							sm: '4xl',
 							md: '5xl',
-							lg: '6xl'
+							lg: '95px'
 						}}
 					>
-						Senior web designers{' '}
+						Write Articles{' '}
 						<Text
 							as={'span'}
 							bgGradient='linear(to-r, red.400,pink.400)'
@@ -66,9 +67,13 @@ export default function SignUp() {
 						>
 							&
 						</Text>{' '}
-						Full-Stack Developers
+						Earn Hours
 					</Heading>
-					<Stack direction={'row'} spacing={4} align={'center'}>
+					<Stack
+						direction={'row'}
+						spacing={{ base: 4, md: 1 }}
+						align={'center'}
+					>
 						<AvatarGroup>
 							{avatars.map(avatar => (
 								<Avatar
@@ -81,14 +86,14 @@ export default function SignUp() {
 									})}
 									position={'relative'}
 									zIndex={2}
+									borderWidth='5px'
+									borderColor='#5465FF'
 									_before={{
 										content: '""',
 										width: 'full',
 										height: 'full',
 										rounded: 'full',
 										transform: 'scale(1.125)',
-										bgGradient:
-											'linear(to-bl, red.400,pink.400)',
 										position: 'absolute',
 										zIndex: -1,
 										top: 0,
@@ -108,26 +113,28 @@ export default function SignUp() {
 							justify={'center'}
 							fontFamily={'heading'}
 							fontSize={{ base: 'sm', md: 'lg' }}
-							bg={'gray.800'}
+							bg={'black'}
 							color={'white'}
 							rounded={'full'}
 							width={useBreakpointValue({
 								base: '44px',
-								md: '60px'
+								md: '30px',
+								lg: '60px'
 							})}
 							height={useBreakpointValue({
 								base: '44px',
-								md: '60px'
+								md: '30px',
+								lg: '60px'
 							})}
 							position={'relative'}
+							borderWidth='5px'
+							borderColor='#09E85E'
 							_before={{
 								content: '""',
 								width: 'full',
 								height: 'full',
 								rounded: 'full',
 								transform: 'scale(1.125)',
-								bgGradient:
-									'linear(to-bl, orange.400,yellow.400)',
 								position: 'absolute',
 								zIndex: -1,
 								top: 0,
@@ -151,7 +158,7 @@ export default function SignUp() {
 							lineHeight={1.1}
 							fontSize={{ base: '2xl', sm: '3xl', md: '4xl' }}
 						>
-							Join our team
+							Get Started At Onpoint
 							<Text
 								as={'span'}
 								bgGradient='linear(to-r, red.400,pink.400)'
@@ -164,51 +171,44 @@ export default function SignUp() {
 							color={'gray.500'}
 							fontSize={{ base: 'sm', sm: 'md' }}
 						>
-							We’re looking for amazing engineers just like you!
-							Become a part of our rockstar engineering team and
-							skyrocket your career!
+							We’re looking for amazing writers just like you!
+							Write about the things you want to write about and
+							earn volunteer hours on the side!
 						</Text>
 					</Stack>
 					<Box as={'form'} mt={10}>
 						<Stack spacing={4}>
 							<Input
-								placeholder='Firstname'
+								placeholder='Full Name'
 								bg={'gray.100'}
 								border={0}
-								color={'gray.500'}
+								color={'black'}
 								_placeholder={{
 									color: 'gray.500'
 								}}
 							/>
 							<Input
-								placeholder='firstname@lastname.io'
+								placeholder='Email (ie. johndoe@gmail.com)'
 								bg={'gray.100'}
 								border={0}
-								color={'gray.500'}
+								color={'black'}
 								_placeholder={{
 									color: 'gray.500'
 								}}
 							/>
 							<Input
-								placeholder='+1 (___) __-___-___'
+								placeholder='Password'
 								bg={'gray.100'}
 								border={0}
-								color={'gray.500'}
+								color={'black'}
 								_placeholder={{
 									color: 'gray.500'
 								}}
 							/>
-							<Button
-								fontFamily={'heading'}
-								bg={'gray.200'}
-								color={'gray.800'}
-							>
-								Upload CV
-							</Button>
 						</Stack>
 						<Button
 							fontFamily={'heading'}
-							mt={8}
+							mt='14'
 							w={'full'}
 							bgGradient='linear(to-r, red.400,pink.400)'
 							color={'white'}
@@ -225,9 +225,10 @@ export default function SignUp() {
 			</Container>
 			<Blur
 				position={'absolute'}
-				top={-10}
-				left={-10}
+				top={0}
+				left={0}
 				style={{ filter: 'blur(70px)' }}
+				zIndex='-1'
 			/>
 		</Box>
 	);

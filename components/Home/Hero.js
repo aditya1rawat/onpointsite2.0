@@ -6,7 +6,7 @@ const Hero = () => {
 		<Box
 			px={8}
 			overflow='hidden'
-			pt='36'
+			pt='60'
 			pb='60'
 			mx='auto'
 			sx={{ height: '100%' }}
