@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import Hero from '../components/Hero';
+import Hero from '../components/Home/Hero';
 import Navbar from '../components/Navbar';
 
 export default function Home() {
@@ -14,11 +14,7 @@ export default function Home() {
 				/>
 				<link rel='icon' href='/Logo.svg' />
 			</Head>
-			<main
-				style={{
-					backgroundColor: 'black'
-				}}
-			>
+			<main>
 				<Navbar />
 				<Hero />
 			</main>

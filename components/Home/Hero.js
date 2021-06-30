@@ -11,7 +11,7 @@ const Hero = () => {
 			mx='auto'
 			sx={{ height: '100%' }}
 		>
-			<Box w='full' mx='auto' textAlign={{ base: 'left', md: 'center' }}>
+			<Box w='full' mx='auto' textAlign='center'>
 				<chakra.h1
 					fontSize='275px'
 					fontStyle='normal'
