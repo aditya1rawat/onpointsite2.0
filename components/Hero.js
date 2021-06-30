@@ -1,5 +1,5 @@
 import React from 'react';
-import { chakra, Box } from '@chakra-ui/react';
+import { chakra, Box, Text } from '@chakra-ui/react';
 
 const Hero = () => {
 	return (
@@ -18,12 +18,67 @@ const Hero = () => {
 					lineHeight='305px'
 					fontWeight='extrabold'
 					color='black'
-					display={{ base: 'block', lg: 'inline' }}
+					display='inline'
 					w='full'
 					bgClip='text'
 					bgGradient='linear(to-r, green.400,purple.500)'
 				>
-					ONPOINT
+					<Text
+						display='inline'
+						_hover={{
+							color: 'white'
+						}}
+					>
+						O
+					</Text>
+					<Text
+						display='inline'
+						_hover={{
+							color: 'white'
+						}}
+					>
+						N
+					</Text>
+					<Text
+						display='inline'
+						_hover={{
+							color: 'white'
+						}}
+					>
+						P
+					</Text>
+					<Text
+						display='inline'
+						_hover={{
+							color: 'white'
+						}}
+					>
+						O
+					</Text>
+					<Text
+						display='inline'
+						_hover={{
+							color: 'white'
+						}}
+					>
+						I
+					</Text>
+					<Text
+						display='inline'
+						_hover={{
+							color: 'white'
+						}}
+					>
+						N
+					</Text>
+					<Text
+						display='inline'
+						_hover={{
+							color: 'white'
+						}}
+					>
+						T
+					</Text>
 				</chakra.h1>
 			</Box>
 		</Box>
