@@ -21,7 +21,7 @@ export default function Navbar() {
 		<div>
 			<chakra.header
 				bg='rgba(0,0,0,0.8)'
-				backdropFilter='saturate(175%) blur(5px)'
+				backdropFilter='blur(5px)'
 				zIndex='1'
 				top='0'
 				position='fixed'

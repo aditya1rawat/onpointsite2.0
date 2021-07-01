@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import GetStarted from '../components/Home/GetStarted';
 
 import Hero from '../components/Home/Hero';
 import Navbar from '../components/Navbar';
@@ -17,6 +18,7 @@ export default function Home() {
 			<main>
 				<Navbar />
 				<Hero />
+				<GetStarted />
 			</main>
 		</div>
 	);
