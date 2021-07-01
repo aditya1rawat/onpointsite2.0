@@ -1,5 +1,5 @@
 import React from 'react';
-import { chakra, Box, Text, Icon, useBreakpointValue } from '@chakra-ui/react';
+import { chakra, Box, Text } from '@chakra-ui/react';
 
 const Hero = () => {
 	return (
@@ -7,7 +7,7 @@ const Hero = () => {
 			<Box
 				px={8}
 				overflow='hidden'
-				pt='52'
+				my={{ lg: '64', sm: '20' }}
 				mx='auto'
 				sx={{ height: '100%' }}
 			>
@@ -20,9 +20,10 @@ const Hero = () => {
 						color='black'
 						display='inline'
 						w='full'
-						bgClip='text'
-						bgGradient='linear(to-r, green.400,purple.500)'
 						whiteSpace={{ base: 'normal', lg: 'nowrap' }}
+						sx={{
+							WebkitTextStroke: '5px white'
+						}}
 					>
 						<Text
 							display='inline'
@@ -92,7 +93,17 @@ const Hero = () => {
 
 export const Mouse = () => {
 	return (
-		<Box pos='absolute' right='10' top={{ lg: '700', md: '1000' }}>
+		<Box
+			pos='absolute'
+			right='10'
+			top={{ lg: '450', md: '1000' }}
+			transition='0.3s ease-in-out'
+			_hover={{
+				cursor: 'pointer',
+				transform: 'scale(1.1)',
+				transition: '0.3s ease-in-out'
+			}}
+		>
 			<svg
 				width='41'
 				height='60'

@@ -22,7 +22,7 @@ export default function Navbar() {
 			<chakra.header
 				bg='rgba(0,0,0,0.8)'
 				backdropFilter='blur(5px)'
-				zIndex='1'
+				zIndex='999'
 				top='0'
 				position='fixed'
 				w='full'
@@ -160,7 +160,7 @@ export default function Navbar() {
 									color='white'
 									colorScheme='black'
 								>
-									Log In / Sign Up
+									<Link href='/signup'>Log In / Sign Up</Link>
 								</Button>
 							</VStack>
 						</Box>
@@ -176,14 +176,16 @@ export default function Navbar() {
 						>
 							<Link href='/signup'>
 								<Button
+									borderRadius='7px'
 									color='white'
 									colorScheme='black'
-									backgroundColor='black'
-									transition='background 0.5s'
+									background='black'
+									transition='background 0.3s ease-in-out'
 									_hover={{
 										background:
 											'linear-gradient(to right, #09E85E, #5465FF)',
-										transition: '0.5s'
+										transition:
+											'background 0.3s ease-in-out'
 									}}
 								>
 									Log In / Sign Up

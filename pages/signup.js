@@ -40,7 +40,7 @@ const avatars = [
 
 export default function SignUp() {
 	return (
-		<Box position={'relative'}>
+		<Box position={'relative'} overflow='hidden'>
 			<Navbar />
 			<Container
 				as={SimpleGrid}
@@ -48,6 +48,7 @@ export default function SignUp() {
 				columns={{ base: 1, md: 2 }}
 				spacing={{ base: 10, lg: 32 }}
 				pt={{ base: 32, sm: 32, lg: 52 }}
+				pb={{ base: 10, sm: 10, lg: '28' }}
 			>
 				<Stack spacing={{ base: 10, md: 20 }}>
 					<Heading
@@ -227,6 +228,13 @@ export default function SignUp() {
 				position={'absolute'}
 				left={-10}
 				top={-20}
+				style={{ filter: 'blur(70px)' }}
+				zIndex='-1'
+			/>
+			<Blur
+				position={'absolute'}
+				right={-10}
+				bottom={-200}
 				style={{ filter: 'blur(70px)' }}
 				zIndex='-1'
 			/>

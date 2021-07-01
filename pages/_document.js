@@ -5,7 +5,7 @@ import theme from '../components/theme/theme';
 export default class Document extends NextDocument {
 	render() {
 		return (
-			<Html lang='en'>
+			<Html lang='en' style={{ overflowX: 'hidden' }}>
 				<Head />
 				<body>
 					<ColorModeScript
