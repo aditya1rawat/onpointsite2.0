@@ -268,8 +268,8 @@ export const Blur = IconProps => {
 						y2='922.337'
 						gradientUnits='userSpaceOnUse'
 					>
-						<stop stop-color='#5465FF' />
-						<stop offset='1' stop-color='#09E85E' />
+						<stop stopColor='#5465FF' />
+						<stop offset='1' stopColor='#09E85E' />
 					</linearGradient>
 				</defs>
 			</svg>

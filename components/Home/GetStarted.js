@@ -38,8 +38,8 @@ export const Blur = () => {
 						y2='922.337'
 						gradientUnits='userSpaceOnUse'
 					>
-						<stop stop-color='#5465FF' />
-						<stop offset='1' stop-color='#09E85E' />
+						<stop stopColor='#5465FF' />
+						<stop offset='1' stopColor='#09E85E' />
 					</linearGradient>
 				</defs>
 			</svg>
@@ -65,8 +65,8 @@ export const GetStarted1 = () => {
 					/>
 				</g>
 				<path
-					fill-rule='evenodd'
-					clip-rule='evenodd'
+					fillRule='evenodd'
+					clipRule='evenodd'
 					d='M381.009 537.092C381.009 567.806 356.112 592.703 325.398 592.703C294.685 592.703 269.788 567.806 269.788 537.092C269.788 506.378 294.685 481.481 325.398 481.481C356.112 481.481 381.009 506.378 381.009 537.092ZM392.132 537.092C392.132 573.945 362.252 603.825 325.398 603.825C288.545 603.825 258.665 573.945 258.665 537.092C258.665 500.238 288.545 470.359 325.398 470.359C362.252 470.359 392.132 500.238 392.132 537.092ZM294.812 537.092C299.423 537.092 303.154 533.355 303.154 528.75C303.154 524.145 299.423 520.408 294.812 520.408C290.202 520.408 286.471 524.145 286.471 528.75C286.471 533.355 290.202 537.092 294.812 537.092ZM364.326 528.75C364.326 533.355 360.595 537.092 355.984 537.092C351.374 537.092 347.643 533.355 347.643 528.75C347.643 524.145 351.374 520.408 355.984 520.408C360.595 520.408 364.326 524.145 364.326 528.75ZM325.404 573.239C339.029 573.239 350.618 563.701 353.209 550.994C354.5 544.655 336.526 542.653 325.404 542.653C314.282 542.653 296.158 543.937 297.599 550.994C300.19 563.701 311.774 573.239 325.404 573.239ZM325.404 564.897C331.543 564.897 336.526 562.117 336.526 562.117C336.526 562.117 331.543 556.555 325.404 556.555C319.259 556.555 314.282 562.117 314.282 562.117C314.282 562.117 319.259 564.897 325.404 564.897Z'
 					fill='white'
 				/>
@@ -90,12 +90,9 @@ export const GetStarted1 = () => {
 						width='1033.86'
 						height='1033.86'
 						filterUnits='userSpaceOnUse'
-						color-interpolation-filters='sRGB'
+						colorInterpolationFilters='sRGB'
 					>
-						<feFlood
-							flood-opacity='0'
-							result='BackgroundImageFix'
-						/>
+						<feFlood floodOpacity='0' result='BackgroundImageFix' />
 						<feColorMatrix
 							in='SourceAlpha'
 							type='matrix'
@@ -126,12 +123,9 @@ export const GetStarted1 = () => {
 						width='214.323'
 						height='60.35'
 						filterUnits='userSpaceOnUse'
-						color-interpolation-filters='sRGB'
+						colorInterpolationFilters='sRGB'
 					>
-						<feFlood
-							flood-opacity='0'
-							result='BackgroundImageFix'
-						/>
+						<feFlood floodOpacity='0' result='BackgroundImageFix' />
 						<feColorMatrix
 							in='SourceAlpha'
 							type='matrix'
@@ -208,12 +202,9 @@ export const GetStarted1 = () => {
 						width='59.2'
 						height='115'
 						filterUnits='userSpaceOnUse'
-						color-interpolation-filters='sRGB'
+						colorInterpolationFilters='sRGB'
 					>
-						<feFlood
-							flood-opacity='0'
-							result='BackgroundImageFix'
-						/>
+						<feFlood floodOpacity='0' result='BackgroundImageFix' />
 						<feColorMatrix
 							in='SourceAlpha'
 							type='matrix'
@@ -291,8 +282,8 @@ export const GetStarted1 = () => {
 						y2='683.904'
 						gradientUnits='userSpaceOnUse'
 					>
-						<stop stop-color='#FC466B' />
-						<stop offset='1' stop-color='#5465FF' />
+						<stop stopColor='#FC466B' />
+						<stop offset='1' stopColor='#5465FF' />
 					</linearGradient>
 				</defs>
 			</svg>

@@ -107,7 +107,7 @@ export const Mouse = () => {
 					height='58'
 					rx='19.5'
 					stroke='white'
-					stroke-width='2'
+					strokeWidth='2'
 				/>
 				<line
 					x1='21'
@@ -115,8 +115,8 @@ export const Mouse = () => {
 					x2='21'
 					y2='16'
 					stroke='white'
-					stroke-width='2'
-					stroke-linecap='round'
+					strokeWidth='2'
+					strokeLinecap='round'
 				/>
 			</svg>
 		</Box>
