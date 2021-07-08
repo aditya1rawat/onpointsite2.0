@@ -84,8 +84,14 @@ const Hero = () => {
 					</chakra.h1>
 				</Box>
 			</Box>
-			<Box visibility={{ lg: 'visible', md: 'hidden', sm: 'hidden' }}>
+			<Box
+				visibility={{ lg: 'visible', md: 'hidden', sm: 'hidden' }}
+				display={{ lg: 'unset', md: 'unset', sm: 'none' }}
+			>
 				<Mouse />
+
+				<Blur top={0} left={-500} />
+				<Blur top={-700} right={-500} />
 			</Box>
 		</Box>
 	);
@@ -129,6 +135,46 @@ export const Mouse = () => {
 					strokeWidth='2'
 					strokeLinecap='round'
 				/>
+			</svg>
+		</Box>
+	);
+};
+
+export const Blur = BoxProps => {
+	return (
+		<Box
+			pos='absolute'
+			zIndex='-1'
+			sx={{ filter: 'blur(100px)' }}
+			{...BoxProps}
+		>
+			<svg
+				width='1060'
+				height='1060'
+				viewBox='0 0 1060 1060'
+				fill='none'
+				xmlns='http://www.w3.org/2000/svg'
+			>
+				<circle
+					cx='530'
+					cy='530'
+					r='500'
+					transform='rotate(-135.906 530 530)'
+					fill='url(#paint0_linear)'
+				/>
+				<defs>
+					<linearGradient
+						id='paint0_linear'
+						x1='798.852'
+						y1='144.521'
+						x2='205.426'
+						y2='922.337'
+						gradientUnits='userSpaceOnUse'
+					>
+						<stop stop-color='#5465FF' />
+						<stop offset='1' stop-color='#09E85E' />
+					</linearGradient>
+				</defs>
 			</svg>
 		</Box>
 	);
