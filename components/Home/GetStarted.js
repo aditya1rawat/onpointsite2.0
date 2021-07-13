@@ -1,29 +1,29 @@
 import React from 'react';
-import { Box, Grid, chakra } from '@chakra-ui/react';
+import { Box, SimpleGrid, chakra } from '@chakra-ui/react';
 
 const GetStarted = () => {
 	return (
 		<Box width='100%' display='block' mx='auto' justifyContent='center'>
-			<chakra.h1 fontSize='90px' fontWeight='semibold'>
+			<chakra.h1 fontSize='90px' fontWeight='semibold' pl='10'>
 				Get Started In 3 Steps
 			</chakra.h1>
-			<Grid templateColumns='repeat(3, 1fr)' gap={3}>
+			<SimpleGrid columns={3} mt='14'>
 				<GetStartedThing
 					number={1}
-					icon={<GetStarted1Icon />}
+					icon={<SmileIcon />}
 					step={'Sign Up'}
 				/>
 				<GetStartedThing
-					number={1}
+					number={2}
 					icon={<EditIcon />}
 					step={'Write'}
 				/>
 				<GetStartedThing
-					number={1}
-					icon={<GetStarted1Icon />}
-					step={'Sign Up'}
+					number={3}
+					icon={<ClockIcon />}
+					step={'Earn'}
 				/>
-			</Grid>
+			</SimpleGrid>
 		</Box>
 	);
 };
@@ -34,13 +34,17 @@ export const GetStartedThing = ({ number, icon, step }) => {
 			zIndex='2'
 			borderRadius='500px'
 			bgGradient='linear(to-r, #FC466B,#5465FF)'
-			width='525px'
-			height='525px'
-			m='10'
+			width='450px'
+			height='450px'
+			m='5'
+			transition='all 0.2s ease-in-out'
+			_hover={{
+				transform: 'scale(1.05)'
+			}}
 		>
 			<chakra.h1
 				pt='5'
-				fontSize='125px'
+				fontSize='100px'
 				textAlign='center'
 				fontWeight='extrabold'
 			>
@@ -48,7 +52,8 @@ export const GetStartedThing = ({ number, icon, step }) => {
 			</chakra.h1>
 			{icon}
 			<chakra.h1
-				fontSize='75px'
+				mt='5'
+				fontSize='50px'
 				textAlign='center'
 				fontWeight='extrabold'
 			>
@@ -58,7 +63,7 @@ export const GetStartedThing = ({ number, icon, step }) => {
 	);
 };
 
-const GetStarted1Icon = () => {
+const SmileIcon = () => {
 	return (
 		<Box width='100%' display='flex' mx='auto' justifyContent='center'>
 			<svg
@@ -90,6 +95,34 @@ const EditIcon = () => {
 			>
 				<path
 					d='M32.5524 3.19651C33.4333 1.58157 34.8614 0 36.7032 0H46.7131C50.3968 0 53.3865 2.98964 53.3865 6.67331C53.3865 10.357 50.3968 13.3466 46.7131 13.3466H40.0398C36.3562 13.3466 33.3665 16.3363 33.3665 20.0199V86.753C33.3665 90.4366 36.3562 93.4263 40.0398 93.4263H46.7131C50.3968 93.4263 53.3865 96.4159 53.3865 100.1C53.3865 103.783 50.3968 106.773 46.7131 106.773H36.7032C34.8614 106.773 33.4333 105.191 32.5524 103.57C31.4179 101.501 29.2224 100.1 26.6932 100.1C24.164 100.1 21.9685 101.501 20.8341 103.57C19.9532 105.191 18.5251 106.773 16.6833 106.773H6.67331C2.98964 106.773 0 103.783 0 100.1C0 96.4159 2.98964 93.4263 6.67331 93.4263H13.3466C17.0303 93.4263 20.0199 90.4366 20.0199 86.753V20.0199C20.0199 16.3363 17.0303 13.3466 13.3466 13.3466H6.67331C2.98964 13.3466 0 10.357 0 6.67331C0 2.98964 2.98964 0 6.67331 0H16.6833C18.5251 0 19.9532 1.58157 20.8341 3.19651C21.9685 5.27191 24.164 6.67331 26.6932 6.67331C29.2224 6.67331 31.4179 5.27191 32.5524 3.19651ZM6.67331 120.12C2.98964 120.12 0 123.109 0 126.793C0 130.476 2.98964 133.466 6.67331 133.466H113.446C117.13 133.466 120.12 130.476 120.12 126.793C120.12 123.109 117.13 120.12 113.446 120.12H6.67331Z'
+					fill='white'
+				/>
+			</svg>
+		</Box>
+	);
+};
+const ClockIcon = () => {
+	return (
+		<Box width='100%' display='flex' mx='auto' justifyContent='center'>
+			<svg
+				width='134'
+				height='134'
+				viewBox='0 0 134 134'
+				fill='none'
+				xmlns='http://www.w3.org/2000/svg'
+			>
+				<path
+					fill-rule='evenodd'
+					clip-rule='evenodd'
+					d='M133.466 66.7331C133.466 103.586 103.586 133.466 66.7331 133.466C29.8797 133.466 0 103.586 0 66.7331C0 29.8797 29.8797 0 66.7331 0C103.586 0 133.466 29.8797 133.466 66.7331ZM66.7331 122.344C97.447 122.344 122.344 97.447 122.344 66.7331C122.344 36.0192 97.447 11.1222 66.7331 11.1222C36.0192 11.1222 11.1222 36.0192 11.1222 66.7331C11.1222 97.447 36.0192 122.344 66.7331 122.344Z'
+					fill='white'
+				/>
+				<path
+					d='M64.7313 72.2942C63.2564 72.2942 61.8419 71.7083 60.799 70.6654C59.7561 69.6225 59.1702 68.208 59.1702 66.7331V27.8055C59.1702 26.3306 59.7561 24.9161 60.799 23.8732C61.8419 22.8303 63.2564 22.2444 64.7313 22.2444C66.2061 22.2444 67.6206 22.8303 68.6635 23.8732C69.7064 24.9161 70.2923 26.3306 70.2923 27.8055V66.7331C70.2923 68.208 69.7064 69.6225 68.6635 70.6654C67.6206 71.7083 66.2061 72.2942 64.7313 72.2942Z'
+					fill='white'
+				/>
+				<path
+					d='M98.4426 86.2081C97.7052 87.4854 96.4905 88.4173 95.0659 88.799C93.6413 89.1807 92.1234 88.9809 90.8462 88.2435L61.9508 71.5602C60.6839 70.8175 59.7622 69.6039 59.3869 68.1842C59.0115 66.7645 59.213 65.2539 59.9472 63.9822C60.6815 62.7104 61.889 61.7807 63.3062 61.3959C64.7234 61.0112 66.2353 61.2026 67.5118 61.9284L96.4073 78.6117C97.6845 79.3491 98.6165 80.5638 98.9982 81.9884C99.3799 83.413 99.18 84.9309 98.4426 86.2081V86.2081Z'
 					fill='white'
 				/>
 			</svg>
