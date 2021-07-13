@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import GetStarted from '../components/Home/GetStarted';
+import Features from '../components/Landing/Features';
+import GetStarted from '../components/Landing/GetStarted';
 
-import Hero from '../components/Home/Hero';
+import Hero from '../components/Landing/Hero';
 import Navbar from '../components/Navbar';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
 				<Navbar />
 				<Hero />
 				<GetStarted />
+				<Features />
 			</main>
 		</div>
 	);
