@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react';
 import Head from 'next/head';
 import Features from '../components/Landing/Features';
 import GetStarted from '../components/Landing/GetStarted';
@@ -16,12 +17,12 @@ export default function Home() {
 				/>
 				<link rel='icon' href='/Logo.svg' />
 			</Head>
-			<main>
+			<Box width='100%'>
 				<Navbar />
 				<Hero />
 				<GetStarted />
 				<Features />
-			</main>
+			</Box>
 		</div>
 	);
 }

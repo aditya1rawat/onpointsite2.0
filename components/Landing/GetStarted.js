@@ -7,7 +7,7 @@ const GetStarted = () => {
 			<chakra.h1 fontSize='75px' fontWeight='semibold' pl='10'>
 				Get Started In 3 Steps
 			</chakra.h1>
-			<SimpleGrid columns={[1, 1, 3]} mt='20'>
+			<SimpleGrid columns={{ sm: '1', md: '1', lg: '3' }} mt='20'>
 				<GetStartedThing
 					number={1}
 					icon={<SmileIcon />}
@@ -40,10 +40,10 @@ export const GetStartedThing = ({ number, icon, step }) => {
 			bgGradient='linear(to-r, #FC466B,#5465FF)'
 			width='450px'
 			height='450px'
-			mb='5'
+			mb='10'
 			transition='all 0.2s ease-in-out'
 			_hover={{
-				transform: 'scale(1.05)'
+				transform: 'scale(1.02)'
 			}}
 		>
 			<chakra.h1
@@ -72,8 +72,8 @@ const SmileIcon = () => {
 		<Box width='100%' display='flex' mx='auto' justifyContent='center'>
 			<svg
 				width='135'
-				height='134'
-				viewBox='0 0 135 134'
+				height='135'
+				viewBox='0 0 135 135'
 				fill='none'
 				xmlns='http://www.w3.org/2000/svg'
 			>
