@@ -17,7 +17,7 @@ export default function ExtraFeature() {
 		<Box
 			bg={'#27292A'}
 			position={'relative'}
-			mx='5'
+			mx='20'
 			mt='5'
 			p='10'
 			borderRadius='15px'
@@ -35,7 +35,7 @@ export default function ExtraFeature() {
 						</Text>
 					</Box>
 
-					<SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+					<SimpleGrid columns={1} spacing={10}>
 						{stats.map(stat => (
 							<Box
 								key={stat.title}
@@ -75,6 +75,7 @@ export default function ExtraFeature() {
 						mx='auto'
 						justifyContent='center'
 						ml='5'
+						mt='24'
 					>
 						<Image src={Newsletter} alt='Newsletter' />
 					</Box>
@@ -92,38 +93,31 @@ const StatsText = ({ children }) => (
 
 const stats = [
 	{
-		title: '10+',
+		title: 'Newsletter',
 		content: (
 			<>
-				<StatsText>Software modules</StatsText> for detailed monitoring
-				and real-time analytics
+				<StatsText>Important articles</StatsText> are sent out every
+				week to users. It is <StatsText>customizable</StatsText> to the
+				user’s preference.
 			</>
 		)
 	},
 	{
-		title: '24/7',
+		title: 'Guest Speakers',
 		content: (
 			<>
-				<StatsText>Analytics</StatsText> enabled right in your dashboard
-				without history limitations
+				We will <StatsText>conduct interviews</StatsText> to help
+				further educate the public on many topics.
 			</>
 		)
 	},
 	{
-		title: '13%',
+		title: 'Community',
 		content: (
 			<>
-				<StatsText>Farms</StatsText> in North America has chosen
-				NewLife™ as their management solution
-			</>
-		)
-	},
-	{
-		title: '250M+',
-		content: (
-			<>
-				<StatsText>Plants</StatsText> currently connected and monitored
-				by the NewLife™ software
+				We want to use our platform to allow others to{' '}
+				<StatsText>provide opportunities</StatsText> that will benefit
+				our community.
 			</>
 		)
 	}
