@@ -3,7 +3,7 @@ import { chakra, Box, Text } from '@chakra-ui/react';
 
 const Hero = () => {
 	return (
-		<Box>
+		<Box w='full'>
 			<Box
 				px={8}
 				overflow='hidden'

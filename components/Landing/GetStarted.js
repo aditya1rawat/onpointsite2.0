@@ -3,11 +3,24 @@ import { Box, SimpleGrid, chakra } from '@chakra-ui/react';
 
 const GetStarted = () => {
 	return (
-		<Box width='100%' display='block' mx='auto' justifyContent='center'>
+		<Box
+			width='100%'
+			display='block'
+			mx='auto'
+			justifyContent='center'
+			position='relative'
+		>
 			<chakra.h1 fontSize='75px' fontWeight='semibold' pl='10'>
 				Get Started In 3 Steps
 			</chakra.h1>
-			<SimpleGrid columns={{ sm: '1', md: '1', lg: '3' }} mt='20'>
+			<SimpleGrid
+				columns={{ sm: '1', md: '3', lg: '3' }}
+				mt='20'
+				spacing='40'
+				width='100%'
+				mx='auto'
+				justifyContent='center'
+			>
 				<GetStartedThing
 					number={1}
 					icon={<SmileIcon />}
@@ -38,8 +51,8 @@ export const GetStartedThing = ({ number, icon, step }) => {
 			zIndex='2'
 			borderRadius='500px'
 			bgGradient='linear(to-r, #FC466B,#5465FF)'
-			width='450px'
-			height='450px'
+			width={{ sm: '400px', md: '450px', lg: '450px' }}
+			height={{ sm: '400px', md: '450px', lg: '450px' }}
 			mb='10'
 			transition='all 0.2s ease-in-out'
 			_hover={{

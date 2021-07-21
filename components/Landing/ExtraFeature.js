@@ -17,7 +17,7 @@ export default function ExtraFeature() {
 		<Box
 			bg={'#27292A'}
 			position={'relative'}
-			mx='20'
+			mx={{ lg: '20', md: '20', sm: 0 }}
 			mt='5'
 			p='10'
 			borderRadius='15px'
