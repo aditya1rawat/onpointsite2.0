@@ -16,7 +16,7 @@ const GetStarted = () => {
 			<SimpleGrid
 				columns={{ sm: '1', md: '3', lg: '3' }}
 				mt='20'
-				spacing='40'
+				spacing={{ lg: '10', md: '30', sm: '25' }}
 				width='100%'
 				mx='auto'
 				justifyContent='center'
@@ -51,8 +51,8 @@ export const GetStartedThing = ({ number, icon, step }) => {
 			zIndex='2'
 			borderRadius='500px'
 			bgGradient='linear(to-r, #FC466B,#5465FF)'
-			width={{ sm: '400px', md: '450px', lg: '450px' }}
-			height={{ sm: '400px', md: '450px', lg: '450px' }}
+			width={{ sm: '420px', md: '425px', lg: '450px' }}
+			height={{ sm: '420px', md: '425px', lg: '450px' }}
 			mb='10'
 			transition='all 0.2s ease-in-out'
 			_hover={{
@@ -67,7 +67,7 @@ export const GetStartedThing = ({ number, icon, step }) => {
 			>
 				{number}
 			</chakra.h1>
-			{icon}
+			<Box>{icon}</Box>
 			<chakra.h1
 				mt='5'
 				fontSize='50px'
