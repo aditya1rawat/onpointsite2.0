@@ -11,7 +11,8 @@ import {
 	Avatar,
 	AvatarGroup,
 	useBreakpointValue,
-	Icon
+	Icon,
+	useColorModeValue
 } from '@chakra-ui/react';
 import Navbar from '../components/Landing/Navbar/Navbar';
 
@@ -60,7 +61,7 @@ export default function SignUp() {
 							md: '5xl',
 							lg: '95px'
 						}}
-						color='black'
+						color={useColorModeValue('black', 'white')}
 						zIndex='1'
 					>
 						Write Articles{' '}
