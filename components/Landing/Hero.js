@@ -1,4 +1,3 @@
-import { ArrowForwardIcon } from '@chakra-ui/icons';
 import { Box, Button, chakra, HStack } from '@chakra-ui/react';
 import Logo from '../../public/Logo.png';
 import Image from 'next/image';
