@@ -18,7 +18,7 @@ export default function Hero() {
 					alignItems='center'
 					display='block'
 					mx='auto'
-					width='80%'
+					width='75%'
 				>
 					<Box fontSize='75px' fontWeight='bold' color='white'>
 						<chakra.h1>Write. Earn.</chakra.h1>
@@ -39,7 +39,7 @@ export default function Hero() {
 						Get Started <GetStartedArrowIcon />
 					</Button>
 				</Box>
-				<Box pt='20'>
+				<Box pt='20' pr='16'>
 					<Image src={Logo} width='250px' height='250px' />
 				</Box>
 			</HStack>
