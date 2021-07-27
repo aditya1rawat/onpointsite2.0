@@ -23,7 +23,7 @@ export default function Navbar() {
 	return (
 		<div>
 			<chakra.header
-				// bg={useColorModeValue('rgba(0,0,0,0)', 'black')}
+				bg={useColorModeValue('white', 'black')}
 				zIndex='999'
 				top='0'
 				position='fixed'
