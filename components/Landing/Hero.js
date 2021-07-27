@@ -1,4 +1,10 @@
-import { Box, Button, chakra, HStack } from '@chakra-ui/react';
+import {
+	Box,
+	Button,
+	chakra,
+	HStack,
+	useColorModeValue
+} from '@chakra-ui/react';
 import Logo from '../../public/Logo.png';
 import Image from 'next/image';
 
@@ -10,15 +16,19 @@ export default function Hero() {
 					'linear-gradient(102.92deg, #00F260 0%, #00F260 0.01%, #0575E6 49.89%, #00F260 100%)'
 			}}
 			p='10'
-			borderBottom='10px solid black'
+			borderBottom={useColorModeValue(
+				'10px solid black',
+				'10px solid white'
+			)}
 		>
 			<HStack>
 				<Box
 					pt='20'
+					pl='5'
 					alignItems='center'
 					display='block'
 					mx='auto'
-					width='75%'
+					width='80%'
 				>
 					<Box fontSize='75px' fontWeight='bold' color='white'>
 						<chakra.h1>Write. Earn.</chakra.h1>
@@ -40,7 +50,7 @@ export default function Hero() {
 					</Button>
 				</Box>
 				<Box pt='20' pr='16'>
-					<Image src={Logo} width='250px' height='250px' />
+					<Image src={Logo} width='300px' height='300px' />
 				</Box>
 			</HStack>
 		</Box>
