@@ -1,0 +1,31 @@
+{
+	"name": "svelte-template",
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"lint": "eslint .",
+		"format": "prettier --write .",
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"preview": "svelte-kit preview"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-vercel": "next",
+		"@sveltejs/kit": "next",
+		"@types/randomcolor": "^0.5.6",
+		"@typescript-eslint/eslint-plugin": "^4.28.5",
+		"@typescript-eslint/parser": "^4.28.5",
+		"eslint": "^7.31.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-svelte3": "^3.2.0",
+		"prettier": "^2.3.2",
+		"prettier-plugin-svelte": "^2.3.1",
+		"randomcolor": "^0.6.2",
+		"sass": "^1.36.0",
+		"svelte": "^3.41.0",
+		"svelte-preprocess": "^4.7.4",
+		"tslib": "^2.3.0",
+		"typescript": "^4.3.5"
+	},
+	"private": true
+}
