@@ -23,7 +23,7 @@ export default function Hero() {
 		>
 			<HStack>
 				<Box
-					pt='20'
+					py='36'
 					pl='5'
 					alignItems='center'
 					display='block'
@@ -50,7 +50,7 @@ export default function Hero() {
 					</Button>
 				</Box>
 				<Box pt='20' pr='16'>
-					<Image src={Logo} width='300px' height='300px' />
+					<Image src={Logo} width='500px' height='500px' />
 				</Box>
 			</HStack>
 		</Box>

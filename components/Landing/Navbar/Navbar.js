@@ -16,14 +16,37 @@ import Logo from '../../../public/Logo.png';
 import { BsTextRight } from 'react-icons/bs';
 import ThemeButton from './ThemeSwitcher';
 import NavLink from './NavLink';
+import { useEffect, useState } from 'react';
 
 export default function Navbar() {
+	const [scrollY, setScrollY] = useState(0);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setScrollY(window.scrollY);
+		};
+
+		handleScroll();
+
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
+
 	const mobileNav = useDisclosure();
 
 	return (
 		<div>
 			<chakra.header
-				bg={useColorModeValue('white', 'black')}
+				bg={
+					scrollY > 75
+						? useColorModeValue('white', 'black')
+						: useColorModeValue('rgba(0,0,0,0)', 'rgba(0,0,0,0)')
+				}
+				transition='background-color 0.5s ease'
 				zIndex='999'
 				top='0'
 				position='fixed'
@@ -33,18 +56,23 @@ export default function Navbar() {
 			>
 				<Flex>
 					<Flex>
-						<chakra.a
-							href='/'
-							title='Home'
-							display='flex'
-							alignItems='center'
-							ml='10'
-						>
-							<Image src={Logo} width='50px' height='50px' />
-							<chakra.h1 fontSize='35px' fontWeight='700' ml='2'>
-								OnPoint
-							</chakra.h1>
-						</chakra.a>
+						<Link href='/' passHref>
+							<chakra.a
+								title='Home'
+								display='flex'
+								alignItems='center'
+								ml='10'
+							>
+								<Image src={Logo} width='50px' height='50px' />
+								<chakra.h1
+									fontSize='35px'
+									fontWeight='700'
+									ml='2'
+								>
+									OnPoint
+								</chakra.h1>
+							</chakra.a>
+						</Link>
 					</Flex>
 					<HStack
 						display='flex'

@@ -99,20 +99,25 @@ const FireIcon = () => {
 
 const Article = () => {
 	return (
-		<Box>
+		<Box position='relative' width='500px' height='300px'>
 			<Box
 				border={useColorModeValue('3px solid black', '3px solid white')}
 				borderRadius='15px'
-				width='500px'
-				height='300px'
 				background="linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://storage.googleapis.com/u.filein.io/AYE9g8e4T3.jpeg')"
 				backgroundAttachment='fixed'
 				backgroundSize='cover'
+				inset='0'
+				position='absolute'
 			/>
 			<Box
 				border={useColorModeValue('3px solid black', '3px solid white')}
 				borderRadius='15px'
+				bg={useColorModeValue('white', 'black')}
 				p='3'
+				position='absolute'
+				bottom='0'
+				left='0'
+				right='0'
 			>
 				<HStack spacing='14'>
 					<Box>
