@@ -120,7 +120,7 @@ export default function Features() {
 
 const CalendarIcon = () => {
 	return (
-		<Box>
+		<Box textAlign='right'>
 			<svg
 				width='100'
 				height='100'
