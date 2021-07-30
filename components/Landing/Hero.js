@@ -16,7 +16,7 @@ export default function Hero() {
 				background:
 					'linear-gradient(102.92deg, #00F260 0%, #00F260 0.01%, #0575E6 49.89%, #00F260 100%)'
 			}}
-			p='10'
+			p='7'
 			borderBottom={useColorModeValue(
 				'10px solid black',
 				'10px solid white'
@@ -24,18 +24,25 @@ export default function Hero() {
 		>
 			<Stack direction={['column', 'row']}>
 				<Box
-					py='36'
-					pl='5'
+					pt={['24', '36']}
+					pl={['0', '5']}
 					alignItems='center'
 					display='block'
 					mx='auto'
 					width='80%'
 				>
-					<Box fontSize='75px' fontWeight='bold' color='white'>
+					<Box
+						textAlign={['center', 'left']}
+						fontSize={['50px', '40px', '75px']}
+						fontWeight='bold'
+						color='white'
+					>
 						<chakra.h1>Write. Earn.</chakra.h1>
 						<chakra.h1>It's That Simple.</chakra.h1>
 					</Box>
 					<Button
+						width={['100%', 'auto']}
+						mx='auto'
 						mt='10'
 						border='5px solid black'
 						boxSizing='border-box'
@@ -50,7 +57,11 @@ export default function Hero() {
 						Get Started <GetStartedArrowIcon />
 					</Button>
 				</Box>
-				<Box pt='20' pr='16'>
+				<Box
+					pt={['6', '20']}
+					pr={['-1', '16']}
+					display={['none', 'unset']}
+				>
 					<Image src={Logo} width='500px' height='500px' />
 				</Box>
 			</Stack>

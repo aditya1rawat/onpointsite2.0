@@ -22,10 +22,19 @@ export default function TrendingArticles() {
 			mx='auto'
 			width='100%'
 		>
-			<Box fontSize='40px' fontWeight='700' mt='35px' ml='16'>
+			<Box
+				fontSize={['30px', '40px']}
+				fontWeight='700'
+				mt='35px'
+				ml={['0', '16']}
+			>
 				<HStack spacing='5'>
-					<chakra.h1>Trending Articles</chakra.h1>
-					<FireIcon />
+					<chakra.h1 textAlign={['center', 'left']}>
+						Trending Articles
+					</chakra.h1>
+					<Box display={['none', 'unset']}>
+						<FireIcon />
+					</Box>
 				</HStack>
 			</Box>
 			<Box ml='16' mt='35px' overflow='hidden'>
