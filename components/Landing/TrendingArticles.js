@@ -29,7 +29,10 @@ export default function TrendingArticles() {
 				</HStack>
 			</Box>
 			<Box ml='16' mt='35px' overflow='hidden'>
-				<Stack direction={['column', 'row']} spacing='10'>
+				<Stack
+					direction={['column', 'column', 'column', 'row']}
+					spacing='10'
+				>
 					<Article />
 					<Article />
 					<Article />

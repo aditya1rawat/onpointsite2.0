@@ -61,7 +61,7 @@ export default function Navbar() {
 								title='Home'
 								display='flex'
 								alignItems='center'
-								ml='10'
+								ml={['0', '0', '10']}
 							>
 								<Image src={Logo} width='50px' height='50px' />
 								<chakra.h1
