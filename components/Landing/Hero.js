@@ -3,6 +3,7 @@ import {
 	Button,
 	chakra,
 	HStack,
+	Stack,
 	useColorModeValue
 } from '@chakra-ui/react';
 import Logo from '../../public/Logo.png';
@@ -21,7 +22,7 @@ export default function Hero() {
 				'10px solid white'
 			)}
 		>
-			<HStack>
+			<Stack direction={['column', 'row']}>
 				<Box
 					py='36'
 					pl='5'
@@ -52,7 +53,7 @@ export default function Hero() {
 				<Box pt='20' pr='16'>
 					<Image src={Logo} width='500px' height='500px' />
 				</Box>
-			</HStack>
+			</Stack>
 		</Box>
 	);
 }

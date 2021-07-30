@@ -96,7 +96,6 @@ export default function Navbar() {
 						<Box
 							display={{ base: 'inline-flex', md: 'none' }}
 							alignItems='right'
-							width='full'
 						>
 							<IconButton
 								position='absolute'
@@ -104,7 +103,7 @@ export default function Navbar() {
 								top='6'
 								aria-label='Open menu'
 								fontSize='30px'
-								color='white'
+								color={useColorModeValue('black', 'white')}
 								colorScheme='black'
 								variant='ghost'
 								icon={<BsTextRight />}

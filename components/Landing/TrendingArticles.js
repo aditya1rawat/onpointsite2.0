@@ -6,7 +6,8 @@ import {
 	Text,
 	Flex,
 	Icon,
-	Button
+	Button,
+	Stack
 } from '@chakra-ui/react';
 import Pfp from '../../public/pfp.png';
 import Image from 'next/image';
@@ -28,11 +29,11 @@ export default function TrendingArticles() {
 				</HStack>
 			</Box>
 			<Box ml='16' mt='35px' overflow='hidden'>
-				<HStack spacing='10'>
+				<Stack direction={['column', 'row']} spacing='10'>
 					<Article />
 					<Article />
 					<Article />
-				</HStack>
+				</Stack>
 			</Box>
 		</Box>
 	);
