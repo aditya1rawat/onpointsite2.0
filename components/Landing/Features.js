@@ -20,12 +20,31 @@ export default function Features() {
 			width='92%'
 		>
 			<VStack spacing='25px'>
-				<Stack direction={['column', 'row']} spacing='25px' mt='10'>
+				<Stack
+					direction={{
+						sm: 'column',
+						md: 'column',
+						lg: 'column',
+						xl: 'row'
+					}}
+					spacing='25px'
+					mt='10'
+				>
 					<Box
 						color={useColorModeValue('white', 'black')}
 						bg='#09E85E'
-						width={['315px', '500px', '725px']}
-						height='450px'
+						width={{
+							sm: 'full',
+							md: '725px',
+							lg: 'full',
+							xl: '725px'
+						}}
+						height={{
+							sm: '750px',
+							md: '450px',
+							lg: '425px',
+							xl: '450px'
+						}}
 						borderRadius='25px'
 						position='relative'
 						px='7'
@@ -36,10 +55,15 @@ export default function Features() {
 							What Makes Us Different?
 						</chakra.h1>
 						<Text
-							fontSize={['15px', '20px']}
+							fontSize={{
+								sm: '20px',
+								md: '25px',
+								lg: '25px',
+								xl: '20px'
+							}}
 							fontWeight='500'
 							width={['275px', '350px']}
-							mt={['5', '10']}
+							mt='3'
 						>
 							We have a whole assortment of features that make us
 							stand out from the rest
@@ -47,17 +71,40 @@ export default function Features() {
 						<Box
 							position='absolute'
 							bottom='-10'
-							right={['0', '-10']}
-							transform={['', 'rotate(15deg)']}
+							right={{
+								sm: '5',
+								md: '-6',
+								lg: '-1',
+								xl: '-10'
+							}}
+							transform={{
+								sm: '',
+								md: 'rotate(15deg)',
+								lg: 'rotate(0deg)',
+								xl: 'rotate(15deg)'
+							}}
 						>
 							<Image src={WowMan} width='400px' height='400px' />
 						</Box>
 					</Box>
 					<VStack spacing='25px'>
-						<Stack direction={['column', 'row']} spacing='25px'>
+						<Stack
+							direction={{
+								sm: 'column',
+								md: 'column',
+								lg: 'row',
+								xl: 'row'
+							}}
+							spacing='25px'
+						>
 							<Box
 								bg='#5465FF'
-								width='315px'
+								width={{
+									sm: 'full',
+									md: '725px',
+									lg: '500px',
+									xl: '315px'
+								}}
 								height='200px'
 								borderRadius='25px'
 								position='relative'
@@ -82,7 +129,12 @@ export default function Features() {
 							</Box>
 							<Box
 								bg='#669bbc'
-								width='315px'
+								width={{
+									sm: 'full',
+									md: '725px',
+									lg: '500px',
+									xl: '315px'
+								}}
 								height='200px'
 								borderRadius='25px'
 								position='relative'
@@ -102,8 +154,18 @@ export default function Features() {
 						</Stack>
 						<Box
 							bg='#e07a5f'
-							width={['315px', '400px', '657px']}
-							height={['375px', '225px']}
+							width={{
+								sm: 'full',
+								md: '725px',
+								lg: 'full',
+								xl: '315px'
+							}}
+							height={{
+								sm: 'full',
+								md: '225px',
+								lg: '225px',
+								xl: '225px'
+							}}
 							borderRadius='25px'
 							position='relative'
 							px='5'
@@ -132,7 +194,15 @@ export default function Features() {
 						</Box>
 					</VStack>
 				</Stack>
-				<Stack direction={['column', 'row']} spacing='25px'>
+				<Stack
+					direction={{
+						sm: 'column',
+						md: 'column',
+						lg: 'column',
+						xl: 'row'
+					}}
+					spacing='25px'
+				>
 					<Box
 						bg='#02c39a'
 						width={['315px', '400px', '450px']}

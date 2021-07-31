@@ -22,9 +22,9 @@ export default function Hero() {
 				'10px solid white'
 			)}
 		>
-			<Stack direction={['column', 'row']}>
+			<Stack direction={['column', 'column', 'row']}>
 				<Box
-					pt={['24', '36']}
+					pt={['16', '36']}
 					pl={['0', '5']}
 					alignItems='center'
 					display='block'
@@ -33,7 +33,7 @@ export default function Hero() {
 				>
 					<Box
 						textAlign={['center', 'left']}
-						fontSize={['50px', '40px', '75px']}
+						fontSize={['55px', '65px', '75px']}
 						fontWeight='bold'
 						color='white'
 					>
