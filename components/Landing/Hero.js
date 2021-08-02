@@ -37,9 +37,16 @@ export default function Hero() {
 							md: 'center',
 							lg: 'left',
 							xl: 'left',
-							base: '100%'
+							base: 'center'
 						}}
 						fontSize={['55px', '65px', '75px']}
+						fontsize={{
+							sm: '55px',
+							md: '65px',
+							lg: '75px',
+							xl: '75px',
+							base: '55px'
+						}}
 						fontWeight='bold'
 						color='white'
 					>

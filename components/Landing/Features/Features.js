@@ -346,21 +346,21 @@ const CalendarIcon = () => {
 			position='absolute'
 			bottom={{
 				sm: '-7',
-				md: '-7',
+				md: '12',
 				lg: '0',
 				xl: '-7',
 				base: '-7'
 			}}
 			right={{
 				sm: '-2',
-				md: '-2',
+				md: '14',
 				lg: '2',
 				xl: '-2',
 				base: '-2'
 			}}
 			transform={{
 				sm: 'rotate(-15deg)',
-				md: 'rotate(-15deg)',
+				md: 'none',
 				lg: 'rotate(-30deg)',
 				xl: 'rotate(-15deg)',
 				base: 'rotate(-15deg)'
@@ -410,7 +410,23 @@ const ChartIcon = () => {
 };
 const MagGlassIcon = () => {
 	return (
-		<Box position='absolute' bottom='-3' right='-1'>
+		<Box
+			position='absolute'
+			right={{
+				sm: '-1',
+				md: '10',
+				lg: '-1',
+				xl: '-1',
+				base: '-1'
+			}}
+			bottom={{
+				sm: '-3',
+				md: '10',
+				lg: '-3',
+				xl: '-3',
+				base: '-3'
+			}}
+		>
 			<svg
 				width='100'
 				height='100'
@@ -649,9 +665,34 @@ const MailBoxIllustration = () => {
 		<Box
 			width='100%'
 			position='absolute'
-			bottom={['-10', '-5']}
-			right={['-3', '-32']}
-			transform='rotate(-15deg)'
+			bottom={{
+				sm: '-10',
+				md: '0',
+				lg: '0',
+				xl: '-5',
+				base: '-10'
+			}}
+			right={{
+				sm: '-3',
+				md: '-410px',
+				lg: '-1',
+				xl: '-32',
+				base: '-3'
+			}}
+			display={{
+				sm: 'none',
+				md: 'none',
+				lg: 'unset',
+				xl: 'unset',
+				base: 'none'
+			}}
+			transform={{
+				sm: 'rotate(-15deg)',
+				md: 'rotate(-15deg)',
+				lg: 'none',
+				xl: 'rotate(-15deg)',
+				base: 'rotate(-15deg)'
+			}}
 		>
 			<svg
 				id='a063a011-c7fd-495c-af8f-4b3f764f6bd6'
@@ -790,7 +831,31 @@ const MailBoxIllustration = () => {
 
 const Speaker = () => {
 	return (
-		<Box width='100%' position='absolute' bottom='-5' right='-60'>
+		<Box
+			width='100%'
+			position='absolute'
+			bottom={{
+				sm: '-5',
+				md: '-5',
+				lg: '2',
+				xl: '-5',
+				base: '-5'
+			}}
+			right={{
+				sm: '-60',
+				md: '-60',
+				lg: '-24',
+				xl: '-60',
+				base: '-60'
+			}}
+			display={{
+				sm: 'none',
+				md: 'none',
+				lg: 'unset',
+				xl: 'unset',
+				base: 'none'
+			}}
+		>
 			<svg
 				width='350'
 				height='187'
@@ -1041,7 +1106,25 @@ const Speaker = () => {
 };
 const Group = () => {
 	return (
-		<Box width='100%' position='absolute' left='50px' mt='3'>
+		<Box
+			width='100%'
+			position='absolute'
+			left={{
+				sm: '50px',
+				md: '50px',
+				lg: '30px',
+				xl: '50px',
+				base: '50px'
+			}}
+			mt='4'
+			display={{
+				sm: 'none',
+				md: 'none',
+				lg: 'unset',
+				xl: 'unset',
+				base: 'none'
+			}}
+		>
 			<svg
 				width='350'
 				height='193'

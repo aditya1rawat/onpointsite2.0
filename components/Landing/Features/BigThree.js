@@ -11,7 +11,13 @@ export default function BigThree({ bgColor, title, description, image }) {
 				xl: '450px',
 				base: '300px'
 			}}
-			height='400px'
+			height={{
+				sm: 'auto',
+				md: 'auto',
+				lg: '435px',
+				xl: '450px',
+				base: 'auto'
+			}}
 			borderRadius='25px'
 			position='relative'
 			overflow='hidden'
@@ -21,7 +27,7 @@ export default function BigThree({ bgColor, title, description, image }) {
 					fontSize={{
 						sm: '44px',
 						md: '44px',
-						lg: '44px',
+						lg: '42px',
 						xl: '40px',
 						base: '40px'
 					}}
@@ -40,12 +46,19 @@ export default function BigThree({ bgColor, title, description, image }) {
 					fontWeight='600'
 					width={{
 						sm: '300px',
-						md: '600px',
+						md: '100px',
 						lg: '250px',
 						xl: '375px',
-						base: '300px'
+						base: '250px'
 					}}
 					mt='3'
+					display={{
+						sm: 'unset',
+						md: 'unset',
+						lg: 'none',
+						xl: 'unset',
+						base: 'unset'
+					}}
 				>
 					{description}
 				</Text>
