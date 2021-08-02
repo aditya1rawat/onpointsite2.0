@@ -15,29 +15,16 @@ import { CalendarIcon, AtSignIcon } from '@chakra-ui/icons';
 
 export default function TrendingArticles() {
 	return (
-		<Box
-			bg={useColorModeValue('white', 'black')}
-			alignItems='center'
-			display='block'
-			mx='auto'
-			width='100%'
-		>
-			<Box
-				fontSize={['30px', '40px']}
-				fontWeight='700'
-				mt='35px'
-				ml={['0', '16']}
-			>
-				<HStack spacing='5'>
-					<chakra.h1 textAlign={['center', 'left']}>
+		<Box bg={useColorModeValue('white', 'black')}>
+			<Box>
+				<Flex fontSize={['30px', '40px']} fontWeight='700' mt='35px'>
+					<chakra.h1 textAlign={['center', 'left']} mx='auto'>
 						Trending Articles
 					</chakra.h1>
-					<Box display={['none', 'unset']}>
-						<FireIcon />
-					</Box>
-				</HStack>
+				</Flex>
+				{/* <FireIcon /> */}
 			</Box>
-			<Box ml='16' mt='35px' overflow='hidden'>
+			<Box mx='auto' mt='35px' overflow='hidden'>
 				<Stack
 					direction={['column', 'column', 'column', 'row']}
 					spacing='10'
@@ -53,7 +40,7 @@ export default function TrendingArticles() {
 
 const FireIcon = () => {
 	return (
-		<Box>
+		<Box mt='1'>
 			<svg
 				width='34'
 				height='43'

@@ -1,4 +1,4 @@
-import { Box, Text, chakra } from '@chakra-ui/react';
+import { Box, Text, chakra, useColorModeValue } from '@chakra-ui/react';
 
 export default function BigThree({ bgColor, title, description, image }) {
 	return (
@@ -32,6 +32,7 @@ export default function BigThree({ bgColor, title, description, image }) {
 						base: '40px'
 					}}
 					fontWeight='800'
+					color={useColorModeValue('white', 'black')}
 				>
 					{title}
 				</chakra.h1>
@@ -40,7 +41,7 @@ export default function BigThree({ bgColor, title, description, image }) {
 						sm: '25px',
 						md: '25px',
 						lg: '20px',
-						xl: '18px',
+						xl: '22px',
 						base: '20px'
 					}}
 					fontWeight='600'

@@ -80,6 +80,7 @@ export default function Features() {
 							xl: '350px'
 						}}
 						mt='3'
+						color={useColorModeValue('black', 'white')}
 					>
 						We have a whole assortment of features that make us
 						stand out from the rest
@@ -155,6 +156,7 @@ export default function Features() {
 									base: '35px'
 								}}
 								fontWeight='800'
+								color={useColorModeValue('white', 'black')}
 							>
 								Daily Articles
 							</chakra.h1>
@@ -207,7 +209,11 @@ export default function Features() {
 							py='4'
 							overflow='hidden'
 						>
-							<chakra.h1 fontSize='30px' fontWeight='800'>
+							<chakra.h1
+								fontSize='30px'
+								fontWeight='800'
+								color={useColorModeValue('white', 'black')}
+							>
 								Analytic Articles
 							</chakra.h1>
 							<Text
@@ -250,7 +256,11 @@ export default function Features() {
 					>
 						<HStack spacing='3'>
 							<Box>
-								<chakra.h1 fontSize='30px' fontWeight='800'>
+								<chakra.h1
+									fontSize='30px'
+									fontWeight='800'
+									color={useColorModeValue('white', 'black')}
+								>
 									Weekly Videos
 								</chakra.h1>
 								<Text
@@ -1116,7 +1126,10 @@ const Group = () => {
 				xl: '50px',
 				base: '50px'
 			}}
-			mt='4'
+			mt={{
+				xl: '9',
+				base: '4'
+			}}
 			display={{
 				sm: 'none',
 				md: 'none',
