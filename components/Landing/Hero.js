@@ -32,7 +32,13 @@ export default function Hero() {
 					width='80%'
 				>
 					<Box
-						textAlign={['center', 'left']}
+						textAlign={{
+							sm: 'center',
+							md: 'center',
+							lg: 'left',
+							xl: 'left',
+							base: '100%'
+						}}
 						fontSize={['55px', '65px', '75px']}
 						fontWeight='bold'
 						color='white'
@@ -41,7 +47,13 @@ export default function Hero() {
 						<chakra.h1>It's That Simple.</chakra.h1>
 					</Box>
 					<Button
-						width={['100%', 'auto']}
+						width={{
+							sm: '100%',
+							md: '100%',
+							lg: 'auto',
+							xl: 'auto',
+							base: '100%'
+						}}
 						mx='auto'
 						mt='10'
 						border='5px solid black'
@@ -60,7 +72,13 @@ export default function Hero() {
 				<Box
 					pt={['6', '20']}
 					pr={['-1', '16']}
-					display={['none', 'unset']}
+					display={{
+						sm: 'none',
+						md: 'none',
+						lg: 'unset',
+						xl: 'unset',
+						base: 'none'
+					}}
 				>
 					<Image src={Logo} width='500px' height='500px' />
 				</Box>

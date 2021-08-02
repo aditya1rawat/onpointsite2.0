@@ -7,164 +7,138 @@ import {
 	VStack,
 	useColorModeValue
 } from '@chakra-ui/react';
-import WowMan from '../../public/wowman.png';
+import WowMan from '../../../public/wowman.png';
 import Image from 'next/image';
+import BigThree from './BigThree';
 
 export default function Features() {
 	return (
-		<Box
-			bg={useColorModeValue('white', 'black')}
-			alignItems='center'
-			display='block'
-			mx='auto'
-			width='92%'
-		>
-			<VStack spacing='25px'>
-				<Stack
-					direction={{
-						sm: 'column',
-						md: 'column',
-						lg: 'column',
-						xl: 'row'
+		// <Box
+
+		// >
+		<VStack spacing='25px' bg={useColorModeValue('white', 'black')}>
+			<Stack
+				direction={{
+					sm: 'column',
+					md: 'column',
+					lg: 'column',
+					xl: 'row',
+					base: 'column'
+				}}
+				spacing='25px'
+				mt='10'
+			>
+				<Box
+					mx='auto'
+					color={useColorModeValue('white', 'black')}
+					bg='#09E85E'
+					width={{
+						sm: '300px',
+						md: '725px',
+						lg: '975px',
+						xl: '725px',
+						base: '300px'
 					}}
-					spacing='25px'
-					mt='10'
+					height={{
+						sm: '750px',
+						md: '450px',
+						lg: '425px',
+						xl: '450px',
+						base: '550px'
+					}}
+					borderRadius='25px'
+					position='relative'
+					px='7'
+					py='5'
+					overflow='hidden'
 				>
-					<Box
-						color={useColorModeValue('white', 'black')}
-						bg='#09E85E'
+					<chakra.h1
+						fontSize={{
+							sm: '40px',
+							md: '70px',
+							lg: '70px',
+							xl: '70px',
+							base: '40px'
+						}}
+						fontWeight='800'
+					>
+						What Makes Us Different?
+					</chakra.h1>
+					<Text
+						fontSize={{
+							sm: '20px',
+							md: '25px',
+							lg: '25px',
+							xl: '25px',
+							base: '20px'
+						}}
+						fontWeight='500'
 						width={{
 							sm: 'full',
-							md: '725px',
-							lg: 'full',
-							xl: '725px'
+							md: '300px',
+							lg: '500px',
+							xl: '350px'
 						}}
-						height={{
-							sm: '750px',
-							md: '450px',
-							lg: '425px',
-							xl: '450px'
-						}}
-						borderRadius='25px'
-						position='relative'
-						px='7'
-						py='5'
-						overflow='hidden'
+						mt='3'
 					>
-						<chakra.h1 fontSize={['35px', '70px']} fontWeight='800'>
-							What Makes Us Different?
-						</chakra.h1>
-						<Text
-							fontSize={{
-								sm: '20px',
-								md: '25px',
-								lg: '25px',
-								xl: '20px'
-							}}
-							fontWeight='500'
-							width={['275px', '350px']}
-							mt='3'
-						>
-							We have a whole assortment of features that make us
-							stand out from the rest
-						</Text>
-						<Box
-							position='absolute'
-							bottom='-10'
-							right={{
-								sm: '5',
-								md: '-6',
-								lg: '-1',
-								xl: '-10'
-							}}
-							transform={{
-								sm: '',
-								md: 'rotate(15deg)',
-								lg: 'rotate(0deg)',
-								xl: 'rotate(15deg)'
-							}}
-						>
-							<Image src={WowMan} width='400px' height='400px' />
-						</Box>
+						We have a whole assortment of features that make us
+						stand out from the rest
+					</Text>
+					<Box
+						position='absolute'
+						bottom='-10'
+						right={{
+							sm: '5',
+							md: '-6',
+							lg: '-1',
+							xl: '-10',
+							base: '3'
+						}}
+						transform={{
+							sm: '',
+							md: 'rotate(15deg)',
+							lg: 'rotate(0deg)',
+							xl: 'rotate(15deg)'
+						}}
+					>
+						<Image src={WowMan} width='400px' height='400px' />
 					</Box>
-					<VStack spacing='25px'>
-						<Stack
-							direction={{
-								sm: 'column',
-								md: 'column',
-								lg: 'row',
-								xl: 'row'
-							}}
-							spacing='25px'
-						>
-							<Box
-								bg='#5465FF'
-								width={{
-									sm: 'full',
-									md: '725px',
-									lg: '500px',
-									xl: '315px'
-								}}
-								height='200px'
-								borderRadius='25px'
-								position='relative'
-								px='5'
-								py='4'
-								overflow='hidden'
-							>
-								<chakra.h1 fontSize='30px' fontWeight='800'>
-									Daily Articles
-								</chakra.h1>
-								<Text fontSize='16px' fontWeight='600'>
-									Relevant. Concise. Accurate.
-								</Text>
-								<Text
-									fontSize='20px'
-									fontWeight='500'
-									fontWeight='600'
-								>
-									Crafted for precision.
-								</Text>
-								<CalendarIcon />
-							</Box>
-							<Box
-								bg='#669bbc'
-								width={{
-									sm: 'full',
-									md: '725px',
-									lg: '500px',
-									xl: '315px'
-								}}
-								height='200px'
-								borderRadius='25px'
-								position='relative'
-								px='5'
-								py='4'
-								overflow='hidden'
-							>
-								<chakra.h1 fontSize='30px' fontWeight='800'>
-									Analytic Articles
-								</chakra.h1>
-								<Text fontSize='16px' fontWeight='600'>
-									Longer Articles. Deeper Analysis.
-								</Text>
-								<ChartIcon />
-								<MagGlassIcon />
-							</Box>
-						</Stack>
+				</Box>
+				<VStack
+					// direction={{
+					// 	sm: 'column',
+					// 	md: 'column',
+					// 	lg: 'row',
+					// 	xl: 'column',
+					// 	base: 'column'
+					// }}
+					spacing='25px'
+				>
+					<Stack
+						direction={{
+							sm: 'column',
+							md: 'column',
+							lg: 'row',
+							xl: 'row',
+							base: 'column'
+						}}
+						spacing='25px'
+					>
 						<Box
-							bg='#e07a5f'
+							bg='#5465FF'
 							width={{
 								sm: 'full',
 								md: '725px',
-								lg: 'full',
-								xl: '315px'
+								lg: '475px',
+								xl: '315px',
+								base: '300px'
 							}}
 							height={{
-								sm: 'full',
-								md: '225px',
-								lg: '225px',
-								xl: '225px'
+								sm: '200px',
+								md: '200px',
+								lg: '200px',
+								xl: '200px',
+								base: '250px'
 							}}
 							borderRadius='25px'
 							position='relative'
@@ -172,118 +146,197 @@ export default function Features() {
 							py='4'
 							overflow='hidden'
 						>
-							<HStack spacing='3'>
-								<Box>
-									<chakra.h1 fontSize='30px' fontWeight='800'>
-										Weekly Videos
-									</chakra.h1>
-									<Text
-										fontSize='16px'
-										fontWeight='600'
-										width={['300px', '350px']}
-									>
-										Weekly videos provide a brief
-										description of the events we covered
-										during the week.
-									</Text>
-								</Box>
-								<Box>
-									<VideoIcon />
-								</Box>
-							</HStack>
-						</Box>
-					</VStack>
-				</Stack>
-				<Stack
-					direction={{
-						sm: 'column',
-						md: 'column',
-						lg: 'column',
-						xl: 'row'
-					}}
-					spacing='25px'
-				>
-					<Box
-						bg='#02c39a'
-						width={['315px', '400px', '450px']}
-						height='400px'
-						borderRadius='25px'
-						position='relative'
-						overflow='hidden'
-					>
-						<Box py='4' px='6'>
 							<chakra.h1
-								fontSize={['45px', '50px']}
+								fontSize={{
+									sm: '35px',
+									md: '40px',
+									lg: '30px',
+									xl: '30px',
+									base: '35px'
+								}}
 								fontWeight='800'
 							>
-								Newsletter
+								Daily Articles
 							</chakra.h1>
 							<Text
-								fontSize='16px'
+								fontSize={{
+									sm: '25px',
+									md: '25px',
+									lg: '25px',
+									xl: '20px',
+									base: '20px'
+								}}
 								fontWeight='600'
-								width={['300px', '350px']}
-								mt='3'
 							>
-								Important articles are sent out every week to
-								users. It is customizable to the user’s
-								preference.
+								Relevant. Concise. Accurate.
 							</Text>
+							<Text
+								fontSize={{
+									sm: '25px',
+									md: '30px',
+									lg: '25px',
+									xl: '19px',
+									base: '20px'
+								}}
+								fontWeight='500'
+								fontWeight='600'
+							>
+								Crafted for precision.
+							</Text>
+							<CalendarIcon />
 						</Box>
-						<MailBoxIllustration />
-					</Box>
+						<Box
+							bg='#669bbc'
+							width={{
+								sm: 'full',
+								md: '725px',
+								lg: '475px',
+								xl: '315px',
+								base: '300px'
+							}}
+							height={{
+								sm: '275px',
+								md: '200px',
+								lg: '200px',
+								xl: '200px',
+								base: '275px'
+							}}
+							borderRadius='25px'
+							position='relative'
+							px='5'
+							py='4'
+							overflow='hidden'
+						>
+							<chakra.h1 fontSize='30px' fontWeight='800'>
+								Analytic Articles
+							</chakra.h1>
+							<Text
+								fontSize={{
+									sm: '25px',
+									md: '25px',
+									lg: '25px',
+									xl: '18px',
+									base: '20px'
+								}}
+								fontWeight='600'
+							>
+								Longer Articles. Deeper Analysis.
+							</Text>
+							<ChartIcon />
+							<MagGlassIcon />
+						</Box>
+					</Stack>
 					<Box
-						bg='#6a6b83'
-						width={['315px', '400px', '450px']}
-						height='400px'
+						bg='#e07a5f'
+						width={{
+							sm: 'full',
+							md: '725px',
+							lg: '975px',
+							xl: '657px',
+							base: '300px'
+						}}
+						height={{
+							sm: '400px',
+							md: '200px',
+							lg: '200px',
+							xl: '225px',
+							base: '400px'
+						}}
 						borderRadius='25px'
 						position='relative'
+						px='5'
+						py='4'
 						overflow='hidden'
 					>
-						<Box py='4' px='6'>
-							<chakra.h1 fontSize='40px' fontWeight='800'>
-								Guest Speakers / Interviews
-							</chakra.h1>
-							<Text
-								fontSize='16px'
-								fontWeight='600'
-								width='350px'
-								mt='3'
+						<HStack spacing='3'>
+							<Box>
+								<chakra.h1 fontSize='30px' fontWeight='800'>
+									Weekly Videos
+								</chakra.h1>
+								<Text
+									fontSize={{
+										sm: '25px',
+										md: '20px',
+										lg: '25px',
+										xl: '20px',
+										base: '20px'
+									}}
+									fontWeight='600'
+									width={{
+										sm: '400px',
+										md: '400px',
+										lg: '475px',
+										xl: '350px',
+										base: '275px'
+									}}
+								>
+									Weekly videos provide a brief description of
+									the events we covered during the week.
+								</Text>
+							</Box>
+							<Box
+								display={{
+									sm: 'none',
+									md: 'unset',
+									lg: 'unset',
+									xl: 'unset',
+									base: 'unset'
+								}}
 							>
-								We will conduct interviews and hold speaker
-								events to further educate the public about
-								specific topics.
-							</Text>
-						</Box>
-						<Speaker />
-					</Box>
-					<Box
-						bg='#3a86ff'
-						width={['315px', '400px', '450px']}
-						height='400px'
-						borderRadius='25px'
-						position='relative'
-						overflow='hidden'
-					>
-						<Box py='4' px='6'>
-							<chakra.h1 fontSize='40px' fontWeight='800'>
-								Active Community
-							</chakra.h1>
-							<Text
-								fontSize='16px'
-								fontWeight='600'
-								width='350px'
-								mt='3'
+								<VideoIcon />
+							</Box>
+							<Box
+								display={{
+									sm: 'none',
+									md: 'none',
+									lg: 'unset',
+									xl: 'none',
+									base: 'none'
+								}}
 							>
-								We want to use our platform to allow others to
-								provide opportunities that will benefit our
-								community.
-							</Text>
-						</Box>
-						<Group />
+								<PlaylistIcon />
+							</Box>
+						</HStack>
 					</Box>
-				</Stack>
-			</VStack>
-		</Box>
+				</VStack>
+			</Stack>
+			<Stack
+				direction={{
+					sm: 'column',
+					md: 'column',
+					lg: 'row',
+					xl: 'row',
+					base: 'column'
+				}}
+				spacing='25px'
+			>
+				<BigThree
+					bgColor={'#02c39a'}
+					title={'Newsletter'}
+					description={
+						'Important articles are sent out every week to users. It is customizable to the user’s preference.'
+					}
+					image={<MailBoxIllustration />}
+				/>
+				<BigThree
+					bgColor={'#6a6b83'}
+					title={'Guest Speakers / Interviews'}
+					description={
+						'We will conduct interviews and hold speaker events to further educate the public about specific topics.'
+					}
+					image={<Speaker />}
+				/>
+				<BigThree
+					bgColor={'#3a86ff'}
+					title={'Active Community'}
+					description={
+						'We want to use our platform to allow others to provide opportunities that will benefit our community.'
+					}
+					image={<Group />}
+				/>
+			</Stack>
+		</VStack>
+		// </Box>
 	);
 }
 
@@ -291,9 +344,27 @@ const CalendarIcon = () => {
 	return (
 		<Box
 			position='absolute'
-			bottom='-5'
-			right='0'
-			transform='rotate(-15deg)'
+			bottom={{
+				sm: '-7',
+				md: '-7',
+				lg: '0',
+				xl: '-7',
+				base: '-7'
+			}}
+			right={{
+				sm: '-2',
+				md: '-2',
+				lg: '2',
+				xl: '-2',
+				base: '-2'
+			}}
+			transform={{
+				sm: 'rotate(-15deg)',
+				md: 'rotate(-15deg)',
+				lg: 'rotate(-30deg)',
+				xl: 'rotate(-15deg)',
+				base: 'rotate(-15deg)'
+			}}
 		>
 			<svg
 				width='100'
@@ -316,7 +387,7 @@ const ChartIcon = () => {
 	return (
 		<Box
 			position='absolute'
-			bottom='-4'
+			bottom='-6'
 			left='-1'
 			transform='rotate(18deg)'
 		>
@@ -357,9 +428,69 @@ const MagGlassIcon = () => {
 		</Box>
 	);
 };
+
+const PlaylistIcon = () => {
+	return (
+		<Box
+			position='absolute'
+			bottom={{
+				sm: '-3',
+				md: '-3',
+				lg: '12',
+				xl: '-3',
+				base: '-3'
+			}}
+			right={{
+				sm: '3',
+				md: '3',
+				lg: '20',
+				xl: '3',
+				base: '3'
+			}}
+			transform={{
+				sm: 'rotate(-15deg)',
+				md: 'rotate(-15deg)',
+				lg: 'none',
+				xl: 'rotate(-15deg)',
+				base: 'rotate(-15deg)'
+			}}
+		>
+			<svg
+				width='100'
+				height='81.82'
+				viewBox='0 0 200 165'
+				fill='none'
+				xmlns='http://www.w3.org/2000/svg'
+			>
+				<path
+					fill-rule='evenodd'
+					clip-rule='evenodd'
+					d='M200 146.273C200 156.314 191.86 164.455 181.818 164.455H72.7273C62.6858 164.455 54.5455 156.314 54.5455 146.273V19.0001C54.5455 8.95851 62.6858 0.818237 72.7273 0.818237H181.818C191.86 0.818237 200 8.95851 200 19.0001V146.273ZM45.4546 155.364C35.413 155.364 27.2728 147.223 27.2728 137.182V28.0909C27.2728 18.0494 35.413 9.9091 45.4546 9.9091V155.364ZM0 128.091C0 138.132 8.14028 146.273 18.1818 146.273V19C8.14028 19 0 27.1402 0 37.1818V128.091ZM181.818 146.273V19H72.7272V146.273H181.818ZM145.455 82.6365L109.091 55.3638V109.909L145.455 82.6365Z'
+					fill='white'
+				/>
+			</svg>
+		</Box>
+	);
+};
 const VideoIcon = () => {
 	return (
-		<Box position='absolute' bottom='5' right='7'>
+		<Box
+			position='absolute'
+			bottom={{
+				sm: '5',
+				md: '5',
+				lg: '1',
+				xl: '5',
+				base: '5'
+			}}
+			right={{
+				sm: '5',
+				md: '5',
+				lg: '64',
+				xl: '5',
+				base: '5'
+			}}
+		>
 			<svg
 				width='250'
 				height='187'
@@ -910,7 +1041,7 @@ const Speaker = () => {
 };
 const Group = () => {
 	return (
-		<Box width='100%' position='absolute' left='50px'>
+		<Box width='100%' position='absolute' left='50px' mt='3'>
 			<svg
 				width='350'
 				height='193'

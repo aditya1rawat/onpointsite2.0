@@ -1,6 +1,6 @@
 import { Box, useColorModeValue } from '@chakra-ui/react';
 import Head from 'next/head';
-import Features from '../components/Landing/Features';
+import Features from '../components/Landing/Features/Features';
 import Hero from '../components/Landing/Hero';
 import Navbar from '../components/Landing/Navbar/Navbar';
 import TrendingArticles from '../components/Landing/TrendingArticles';

@@ -68,7 +68,13 @@ export default function Navbar() {
 									fontSize='35px'
 									fontWeight='700'
 									ml='2'
-									// display={['none', 'unset']}
+									display={{
+										sm: 'none',
+										md: 'none',
+										lg: 'unset',
+										xl: 'unset',
+										base: 'none'
+									}}
 								>
 									OnPoint
 								</chakra.h1>
