@@ -1,5 +1,6 @@
 import { Box, useColorModeValue } from '@chakra-ui/react';
 import Head from 'next/head';
+import CategoriesWriters from '../components/Landing/CategoriesWriters/CategoriesWriters';
 import Features from '../components/Landing/Features/Features';
 import Hero from '../components/Landing/Hero';
 import Navbar from '../components/Landing/Navbar/Navbar';
@@ -21,6 +22,7 @@ export default function Home() {
 				<Hero />
 				<TrendingArticles />
 				<Features />
+				<CategoriesWriters />
 			</Box>
 		</div>
 	);
