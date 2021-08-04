@@ -4,7 +4,7 @@ import CategoriesWriters from '../components/Landing/CategoriesWriters/Categorie
 import Features from '../components/Landing/Features/Features';
 import Hero from '../components/Landing/Hero';
 import Navbar from '../components/Landing/Navbar/Navbar';
-import TrendingArticles from '../components/Landing/TrendingArticles';
+import GetStarted from '../components/Landing/GetStarted';
 
 export default function Home() {
 	return (
@@ -20,7 +20,7 @@ export default function Home() {
 			<Box bg={useColorModeValue('white', 'black')}>
 				<Navbar />
 				<Hero />
-				<TrendingArticles />
+				<GetStarted />
 				<Features />
 				<CategoriesWriters />
 			</Box>

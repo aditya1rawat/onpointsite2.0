@@ -13,9 +13,6 @@ import BigThree from './BigThree';
 
 export default function Features() {
 	return (
-		// <Box
-
-		// >
 		<VStack spacing='25px' bg={useColorModeValue('white', 'black')}>
 			<Stack
 				direction={{
@@ -346,7 +343,6 @@ export default function Features() {
 				/>
 			</Stack>
 		</VStack>
-		// </Box>
 	);
 }
 
