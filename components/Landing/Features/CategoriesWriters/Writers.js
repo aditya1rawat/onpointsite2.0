@@ -8,7 +8,7 @@ import {
 	Button,
 	useColorModeValue
 } from '@chakra-ui/react';
-import PhoneMockup from '../../../public/phonemockup.png';
+import PhoneMockup from '../../../../public/phonemockup.png';
 import Image from 'next/image';
 
 export default function Categories() {
