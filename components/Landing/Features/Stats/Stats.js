@@ -12,9 +12,10 @@ export default function Stats() {
 				</Text>
 			</Box>
 			<Box
-				width='1250px'
+				width='1200px'
 				height='auto'
-				bg={useColorModeValue('black', 'white')}
+				// bg={useColorModeValue('black', 'white')}
+				bg='#5465FF'
 				mx='auto'
 				borderRadius='25px'
 			>

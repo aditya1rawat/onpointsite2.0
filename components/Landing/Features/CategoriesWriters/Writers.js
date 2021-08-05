@@ -13,10 +13,7 @@ import Image from 'next/image';
 
 export default function Categories() {
 	return (
-		<Box
-			bg={useColorModeValue('black', 'white')}
-			color={useColorModeValue('white', 'black')}
-		>
+		<Box bg='#09E85E' color={useColorModeValue('white', 'black')}>
 			<Flex width='100%' py='16'>
 				<Stack
 					direction='row'

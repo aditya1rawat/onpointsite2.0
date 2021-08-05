@@ -11,7 +11,8 @@ import {
 export default function Categories() {
 	return (
 		<Box
-			bg={useColorModeValue('black', 'white')}
+			// bg={useColorModeValue('black', 'white')}
+			bg='#09E85E'
 			color={useColorModeValue('white', 'black')}
 			py='16'
 			mt='16'
@@ -153,7 +154,7 @@ export default function Categories() {
 					<Box
 						width='500px'
 						height='500px'
-						bg='#09E85E'
+						bg='#5465FF'
 						borderRadius='250px'
 					>
 						<Flex mx='auto' justifyContent='center'>
