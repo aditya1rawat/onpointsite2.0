@@ -6,6 +6,7 @@ import Navbar from '../components/Landing/Navbar/Navbar';
 import GetStarted from '../components/Landing/GetStarted';
 import Categories from '../components/Landing/Features/CategoriesWriters/Categories';
 import Writers from '../components/Landing/Features/CategoriesWriters/Writers';
+import Stats from '../components/Landing/Features/Stats/Stats';
 
 export default function Home() {
 	return (
@@ -25,6 +26,7 @@ export default function Home() {
 				<Features />
 				<Categories />
 				<Writers />
+				<Stats />
 			</Box>
 		</div>
 	);

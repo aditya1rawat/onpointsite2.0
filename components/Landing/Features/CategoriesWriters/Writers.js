@@ -13,8 +13,11 @@ import Image from 'next/image';
 
 export default function Categories() {
 	return (
-		<Box>
-			<Flex width='100%' mt='24'>
+		<Box
+			bg={useColorModeValue('black', 'white')}
+			color={useColorModeValue('white', 'black')}
+		>
+			<Flex width='100%' py='16'>
 				<Stack
 					direction='row'
 					spacing='52'
@@ -62,108 +65,6 @@ export default function Categories() {
 					</Box>
 				</Stack>
 			</Flex>
-
-			{/* <Flex>
-				<Stack
-					mx='auto'
-					direction={{
-						sm: 'column',
-						md: 'column',
-						lg: 'row',
-						xl: 'row',
-						base: 'column'
-					}}
-					spacing='50px'
-					mt='25px'
-				>
-					<Box
-						pos='relative'
-						onClick={() => {
-							alert(document.body.clientWidth);
-						}}
-						width={{
-							sm: '300px',
-							md: '300px',
-							lg: '310px',
-							xl: '500px',
-							base: '300px'
-						}}
-						height={{
-							sm: '400px',
-							md: '400px',
-							lg: '400px',
-							xl: '525px',
-							base: '400px'
-						}}
-						borderRadius='25px'
-						border={useColorModeValue(
-							'1px black solid',
-							'1px white solid'
-						)}
-						px='5'
-						py='3'
-					>
-						<chakra.h1 fontSize='80px' fontWeight='700' mx='auto'>
-							Diverse Categories
-						</chakra.h1>
-						<Organizing />
-					</Box>
-					<SimpleGrid columns='2' spacing='25px'>
-						<Categories />
-						<Categories />
-						<Categories />
-						<Categories />
-					</SimpleGrid>
-				</Stack>
-			</Flex>
-			<Flex>
-				<Stack
-					mx='auto'
-					direction={{
-						sm: 'column',
-						md: 'column',
-						lg: 'column',
-						xl: 'row',
-						base: 'column'
-					}}
-					spacing='25px'
-					mt='25px'
-				>
-					<Writers />
-					<Writers />
-					<Writers />
-
-					<Box
-						pos='relative'
-						width={{
-							sm: '300px',
-							md: '300px',
-							lg: '300px',
-							xl: '425px',
-							base: '300px'
-						}}
-						height={{
-							sm: '400px',
-							md: '400px',
-							lg: '400px',
-							xl: '300px',
-							base: '400px'
-						}}
-						borderRadius='25px'
-						border={useColorModeValue(
-							'1px black solid',
-							'1px white solid'
-						)}
-						px='5'
-						py='3'
-					>
-						<chakra.h1 fontSize='40px' fontWeight='700'>
-							Talented Writers
-						</chakra.h1>
-						<Typing />
-					</Box>
-				</Stack>
-			</Flex> */}
 		</Box>
 	);
 }
