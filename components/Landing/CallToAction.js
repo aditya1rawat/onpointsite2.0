@@ -11,10 +11,11 @@ import {
 export default function CallToAction() {
 	return (
 		<Box
-			// bg={useColorModeValue('black', 'white')}
+			position='relative'
 			bg='#2EC5CE'
+			overflow='hidden'
 			color={useColorModeValue('white', 'black')}
-			py='16'
+			py='10'
 			mt='16'
 		>
 			<Flex width='100%'>
@@ -38,7 +39,6 @@ export default function CallToAction() {
 							elit. Condimentum diam orci pretium a pharetra,
 							feugiat cursus.
 						</Text>
-						<Stack direction='row' mt='10' spacing='25px'></Stack>
 					</Box>
 					<Box
 						width='500px'
@@ -46,10 +46,8 @@ export default function CallToAction() {
 						bg='#5465FF'
 						borderRadius='250px'
 					>
-						<Stack direction='row'>
-							<IPhoneOne />
-							<IPhoneTwo />
-						</Stack>
+						<IPhoneOne />
+						<IPhoneTwo />
 					</Box>
 				</Stack>
 			</Flex>
@@ -59,7 +57,7 @@ export default function CallToAction() {
 
 export const IPhoneOne = () => {
 	return (
-		<Box>
+		<Box position='absolute' top='-24' right='375px'>
 			<svg
 				width='292'
 				height='524'
@@ -445,7 +443,7 @@ export const IPhoneOne = () => {
 };
 export const IPhoneTwo = () => {
 	return (
-		<Box>
+		<Box position='absolute' bottom='-24' right='150px'>
 			<svg
 				width='232'
 				height='464'
