@@ -7,6 +7,7 @@ import GetStarted from '../components/Landing/GetStarted';
 import Categories from '../components/Landing/Features/CategoriesWriters/Categories';
 import Writers from '../components/Landing/Features/CategoriesWriters/Writers';
 import Stats from '../components/Landing/Features/Stats/Stats';
+import CallToAction from '../components/Landing/CallToAction';
 
 export default function Home() {
 	return (
@@ -27,6 +28,7 @@ export default function Home() {
 				<Categories />
 				<Writers />
 				<Stats />
+				<CallToAction />
 			</Box>
 		</div>
 	);
