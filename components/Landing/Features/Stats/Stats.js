@@ -11,14 +11,7 @@ export default function Stats() {
 					We come prepared with the facts for the tough crowds.
 				</Text>
 			</Box>
-			<Box
-				width='80%'
-				// height='auto'
-				// bg={useColorModeValue('black', 'white')}
-				bg='#5465FF'
-				mx='auto'
-				borderRadius='25px'
-			>
+			<Box bg='#5465FF' mx='auto' borderRadius='25px'>
 				<Stack
 					direction='row'
 					spacing='10'

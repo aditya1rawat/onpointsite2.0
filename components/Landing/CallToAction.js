@@ -4,8 +4,7 @@ import {
 	Box,
 	Stack,
 	Text,
-	Flex,
-	Tooltip
+	Flex
 } from '@chakra-ui/react';
 
 export default function CallToAction() {
@@ -16,7 +15,7 @@ export default function CallToAction() {
 			overflow='hidden'
 			color={useColorModeValue('white', 'black')}
 			py='10'
-			mt='16'
+			// mt='16'
 		>
 			<Flex width='100%'>
 				<Stack

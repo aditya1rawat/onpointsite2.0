@@ -26,7 +26,7 @@ export default function Categories() {
 					</Box>
 					<Box width='500px' height='500px'>
 						<chakra.h1
-							fontSize='40px'
+							fontSize='50px'
 							fontWeight='700'
 							mb='10'
 							mt='75px'
