@@ -1,9 +1,14 @@
-import { chakra, Text, Box, Stack } from '@chakra-ui/react';
+import { chakra, Text, Box, Stack, useColorModeValue } from '@chakra-ui/react';
 import DonateService from './DonateService';
 
 export default function Support() {
 	return (
-		<Box>
+		<Box
+			bg={useColorModeValue(
+				'linear-gradient(180deg, #FFFFFF 0%, #2EC5CE 100%)',
+				'linear-gradient(180deg, #000000 0%, #2EC5CE 100%)'
+			)}
+		>
 			<Box my='16' textAlign='center'>
 				<Text fontSize='20px'>
 					Now That You Know How Cool We Are...
@@ -20,7 +25,7 @@ export default function Support() {
 				direction='row'
 				justifyContent='center'
 				mx='auto'
-				mb='16'
+				pb='22'
 			>
 				<DonateService
 					icon={<HackClubLogo />}

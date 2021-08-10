@@ -16,33 +16,14 @@ import {
 } from '@chakra-ui/react';
 import Navbar from '../components/Landing/Navbar/Navbar';
 
-const avatars = [
-	{
-		name: 'Ryan Florence',
-		url: 'https://bit.ly/ryan-florence'
-	},
-	{
-		name: 'Segun Adebayo',
-		url: 'https://bit.ly/sage-adebayo'
-	},
-	{
-		name: 'Kent Dodds',
-		url: 'https://bit.ly/kent-c-dodds'
-	},
-	{
-		name: 'Prosper Otemuyiwa',
-		url: 'https://bit.ly/prosper-baba'
-	},
-	{
-		name: 'Christian Nwamba',
-		url: 'https://bit.ly/code-beast'
-	}
-];
-
 export default function SignUp() {
 	return (
 		// <Box background='black'>
-		<Box position={'relative'} overflow='hidden'>
+		<Box
+			position={'relative'}
+			overflow='hidden'
+			bg={useColorModeValue('white', 'black')}
+		>
 			<Navbar />
 			<Container
 				as={SimpleGrid}

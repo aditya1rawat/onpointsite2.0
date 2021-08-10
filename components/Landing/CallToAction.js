@@ -4,7 +4,8 @@ import {
 	Box,
 	Stack,
 	Text,
-	Flex
+	Flex,
+	Button
 } from '@chakra-ui/react';
 
 export default function CallToAction() {
@@ -15,7 +16,6 @@ export default function CallToAction() {
 			overflow='hidden'
 			color={useColorModeValue('white', 'black')}
 			py='10'
-			// mt='16'
 		>
 			<Flex width='100%'>
 				<Stack
@@ -29,7 +29,7 @@ export default function CallToAction() {
 							fontSize='70px'
 							fontWeight='700'
 							mb='10'
-							mt='60px'
+							mt='85px'
 						>
 							Get Started
 						</chakra.h1>
@@ -38,12 +38,34 @@ export default function CallToAction() {
 							elit. Condimentum diam orci pretium a pharetra,
 							feugiat cursus.
 						</Text>
+						<Button
+							width={{
+								sm: '100%',
+								md: '100%',
+								lg: 'auto',
+								xl: 'auto',
+								base: '100%'
+							}}
+							mx='auto'
+							mt='10'
+							border='5px solid black'
+							boxSizing='border-box'
+							borderRadius='10px'
+							background='white'
+							fontSize='20px'
+							p='5'
+							fontWeight='bold'
+							color='black'
+							variant='ghost'
+						>
+							Sign Up Now!
+						</Button>
 					</Box>
 					<Box
 						width='500px'
 						height='500px'
-						bg='#5465FF'
-						borderRadius='250px'
+						// bg='#5465FF'
+						// borderRadius='250px'
 					>
 						<IPhoneOne />
 						<IPhoneTwo />
@@ -56,7 +78,7 @@ export default function CallToAction() {
 
 export const IPhoneOne = () => {
 	return (
-		<Box position='absolute' top='-24' right='375px'>
+		<Box position='absolute' top='-24' right='350px'>
 			<svg
 				width='292'
 				height='524'
@@ -442,7 +464,7 @@ export const IPhoneOne = () => {
 };
 export const IPhoneTwo = () => {
 	return (
-		<Box position='absolute' bottom='-24' right='150px'>
+		<Box position='absolute' bottom='-24' right='100px'>
 			<svg
 				width='232'
 				height='464'
