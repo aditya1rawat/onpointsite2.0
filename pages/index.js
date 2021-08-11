@@ -9,6 +9,7 @@ import Writers from '../components/Landing/Features/CategoriesWriters/Writers';
 // import Stats from '../components/Landing/Features/Stats/Stats';
 import CallToAction from '../components/Landing/CallToAction';
 import Support from '../components/Landing/Support/Support';
+import Footer from '../components/Landing/Footer';
 
 export default function Home() {
 	return (
@@ -31,6 +32,7 @@ export default function Home() {
 				<Support />
 				{/* <Stats /> */}
 				<CallToAction />
+				<Footer />
 			</Box>
 		</div>
 	);
