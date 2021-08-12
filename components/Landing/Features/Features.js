@@ -167,20 +167,8 @@ export default function Features() {
 								}}
 								fontWeight='600'
 							>
-								Relevant. Concise. Accurate.
-							</Text>
-							<Text
-								fontSize={{
-									sm: '25px',
-									md: '30px',
-									lg: '25px',
-									xl: '19px',
-									base: '20px'
-								}}
-								fontWeight='500'
-								fontWeight='600'
-							>
-								Crafted for precision.
+								Relevant. Concise. Accurate. Crafted for
+								precision.
 							</Text>
 							<CalendarIcon />
 						</Box>

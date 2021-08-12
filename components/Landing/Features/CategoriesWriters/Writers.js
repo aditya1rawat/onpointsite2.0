@@ -16,7 +16,13 @@ export default function Categories() {
 		<Box bg='#09E85E' color={useColorModeValue('white', 'black')}>
 			<Flex width='100%' py='16'>
 				<Stack
-					direction='row'
+					direction={{
+						sm: 'column',
+						md: 'column',
+						lg: 'column',
+						xl: 'row',
+						base: 'column'
+					}}
 					spacing='52'
 					justifyContent='center'
 					mx='auto'

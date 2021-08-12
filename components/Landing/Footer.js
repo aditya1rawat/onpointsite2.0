@@ -8,7 +8,7 @@ import {
 	VisuallyHidden,
 	useColorModeValue
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaGithub, FaYoutube, FaEnvelope } from 'react-icons/fa';
 
 const Logo = () => {
 	return (
@@ -327,6 +327,7 @@ const SocialButton = ({ children, label, href }) => {
 			cursor={'pointer'}
 			as={'a'}
 			href={href}
+			target='_blank'
 			display={'inline-flex'}
 			alignItems={'center'}
 			justifyContent={'center'}
@@ -338,6 +339,50 @@ const SocialButton = ({ children, label, href }) => {
 			<VisuallyHidden>{label}</VisuallyHidden>
 			{children}
 		</chakra.button>
+	);
+};
+
+const FooterHead = () => {
+	return (
+		<Box>
+			<Box>
+				<Flex>
+					<Logo />
+					<Box ml='25px' mt='-5px'>
+						<chakra.h1 fontSize='35px' fontWeight='700'>
+							OnPoint
+						</chakra.h1>
+						<Text>A 501(c)(3) Organization</Text>
+					</Box>
+				</Flex>
+				<Box mt='5'>
+					<Text fontSize={'sm'}>
+						&copy; {new Date().getUTCFullYear()} OnPoint. All rights
+						reserved.
+					</Text>
+				</Box>
+			</Box>
+			<Stack direction={'row'} spacing={6} mt='5'>
+				<SocialButton
+					label={'Instagram'}
+					href={'https://www.instagram.com/onpoint_irvine/'}
+				>
+					<FaInstagram />
+				</SocialButton>
+				<SocialButton
+					label={'Github'}
+					href={'https://github.com/OnPointOrg'}
+				>
+					<FaGithub />
+				</SocialButton>
+				<SocialButton
+					label={'Email'}
+					href={'mailto:help@onpointnews.org'}
+				>
+					<FaEnvelope />
+				</SocialButton>
+			</Stack>
+		</Box>
 	);
 };
 
@@ -353,43 +398,50 @@ export default function Footer() {
 	return (
 		<Box bg={useColorModeValue('white', 'black')}>
 			<Box py={10} px='10'>
-				<Flex width='100%' mx='auto' justifyContent='center'>
-					<Stack spacing={6}>
-						<Flex>
-							<Logo />
-							<Box ml='25px' mt='-5px'>
-								<chakra.h1 fontSize='35px' fontWeight='700'>
-									OnPoint
-								</chakra.h1>
-								<Text>A 501(c)(3) Organization</Text>
-							</Box>
-						</Flex>
-						<Text fontSize={'sm'}>
-							&copy; {new Date().getUTCFullYear()} OnPoint. All
-							rights reserved.
-						</Text>
-						<Stack direction={'row'} spacing={6}>
-							<SocialButton label={'Twitter'} href={'#'}>
-								<FaTwitter />
-							</SocialButton>
-							<SocialButton label={'YouTube'} href={'#'}>
-								<FaYoutube />
-							</SocialButton>
-							<SocialButton label={'Instagram'} href={'#'}>
-								<FaInstagram />
-							</SocialButton>
-						</Stack>
-					</Stack>
+				<Stack
+					mx='auto'
+					justifyContent='center'
+					direction={{
+						sm: 'column',
+						md: 'column',
+						lg: 'column',
+						xl: 'row',
+						base: 'column'
+					}}
+				>
+					<Box
+						mr={{
+							sm: '',
+							md: '',
+							lg: '',
+							xl: '24',
+							base: ''
+						}}
+					>
+						<FooterHead />
+					</Box>
 					<Stack
-						direction='row'
+						direction={{
+							sm: 'column',
+							md: 'column',
+							lg: 'column',
+							xl: 'row',
+							base: 'column'
+						}}
 						ml='10'
 						spacing='24'
-						justifyContent='left'
+						justifyContent={{
+							sm: 'center',
+							md: 'center',
+							lg: 'left',
+							xl: 'left',
+							base: 'center'
+						}}
 						mx='auto'
 					>
 						<Stack align={'flex-start'}>
 							<ListHeader>
-								<chakra.h1 fontSize='20px' fontWeight='700'>
+								<chakra.h1 fontSize='25px' fontWeight='700'>
 									Company
 								</chakra.h1>
 							</ListHeader>
@@ -399,7 +451,7 @@ export default function Footer() {
 						</Stack>
 						<Stack align={'flex-start'}>
 							<ListHeader>
-								<chakra.h1 fontSize='20px' fontWeight='700'>
+								<chakra.h1 fontSize='25px' fontWeight='700'>
 									Products
 								</chakra.h1>
 							</ListHeader>
@@ -409,7 +461,7 @@ export default function Footer() {
 						</Stack>
 						<Stack align={'flex-start'}>
 							<ListHeader>
-								<chakra.h1 fontSize='20px' fontWeight='700'>
+								<chakra.h1 fontSize='25px' fontWeight='700'>
 									Privacy
 								</chakra.h1>
 							</ListHeader>
@@ -418,7 +470,7 @@ export default function Footer() {
 							<Link href={'#'}>Contact</Link>
 						</Stack>
 					</Stack>
-				</Flex>
+				</Stack>
 			</Box>
 		</Box>
 	);

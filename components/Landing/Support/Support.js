@@ -1,4 +1,11 @@
-import { chakra, Text, Box, Stack, useColorModeValue } from '@chakra-ui/react';
+import {
+	chakra,
+	Text,
+	Box,
+	Stack,
+	useColorModeValue,
+	SimpleGrid
+} from '@chakra-ui/react';
 import DonateService from './DonateService';
 
 export default function Support() {
@@ -22,34 +29,54 @@ export default function Support() {
 			</Box>
 			<Stack
 				spacing='25px'
-				direction='row'
+				direction={{
+					sm: 'column',
+					md: 'column',
+					lg: 'column',
+					xl: 'row',
+					base: 'column'
+				}}
 				justifyContent='center'
 				mx='auto'
 				pb='22'
 			>
-				<DonateService
-					icon={<HackClubLogo />}
-					name={'Hack Club Bank'}
-					nameLink={'https://hackclub.com/bank'}
-					donateLink={
-						'https://bank.hackclub.com/donations/start/onpoint'
-					}
-					donateButtonText={'Donate'}
-				/>
-				<DonateService
-					icon={<PayPalLogo />}
-					name={'Pay Pal'}
-					nameLink={'https://paypal.com'}
-					donateLink={
-						'https://www.paypal.com/paypalme/adityarawat69420'
-					}
-					donateButtonText={'Donate'}
-				/>
-				<DonateService
-					icon={<VenmoStripeLogos />}
-					name={'+ Other Options'}
-					donateButtonText={'Learn More'}
-				/>
+				<SimpleGrid
+					columns={{
+						sm: '1',
+						md: '2',
+						lg: '3',
+						xl: '3',
+						base: '1'
+					}}
+					justifyContent='center'
+					mx='auto'
+					spacingX='25px'
+					spacingY='25px'
+				>
+					<DonateService
+						icon={<HackClubLogo />}
+						name={'Hack Club Bank'}
+						nameLink={'https://hackclub.com/bank'}
+						donateLink={
+							'https://bank.hackclub.com/donations/start/onpoint'
+						}
+						donateButtonText={'Donate'}
+					/>
+					<DonateService
+						icon={<PayPalLogo />}
+						name={'Pay Pal'}
+						nameLink={'https://paypal.com'}
+						donateLink={
+							'https://www.paypal.com/paypalme/adityarawat69420'
+						}
+						donateButtonText={'Donate'}
+					/>
+					<DonateService
+						icon={<VenmoStripeLogos />}
+						name={'+ Other Options'}
+						donateButtonText={'Learn More'}
+					/>
+				</SimpleGrid>
 			</Stack>
 		</Box>
 	);

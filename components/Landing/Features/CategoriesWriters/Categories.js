@@ -26,7 +26,13 @@ export default function Categories() {
 			</Box>
 			<Flex width='100%'>
 				<Stack
-					direction='row'
+					direction={{
+						sm: 'column',
+						md: 'column',
+						lg: 'column',
+						xl: 'row',
+						base: 'column'
+					}}
 					spacing='52'
 					justifyContent='center'
 					mx='auto'
