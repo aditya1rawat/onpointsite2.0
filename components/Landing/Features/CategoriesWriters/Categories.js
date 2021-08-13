@@ -5,7 +5,9 @@ import {
 	Stack,
 	Text,
 	Flex,
-	Tooltip
+	Tooltip,
+	SimpleGrid,
+	Grid
 } from '@chakra-ui/react';
 
 export default function Categories() {
@@ -37,7 +39,22 @@ export default function Categories() {
 					justifyContent='center'
 					mx='auto'
 				>
-					<Box width='500px' height='500px'>
+					<Box
+						width={{
+							sm: '300px',
+							md: '450px',
+							lg: '500px',
+							xl: '500px',
+							base: '300px'
+						}}
+						textAlign={{
+							sm: 'center',
+							md: 'unset',
+							lg: 'unset',
+							xl: 'unset',
+							base: 'center'
+						}}
+					>
 						<chakra.h1
 							fontSize='50px'
 							fontWeight='700'
@@ -53,16 +70,55 @@ export default function Categories() {
 							cras adipiscing vulputate. Nisi, risus in suscipit
 							non. Non commodo volutpat, pharetra, vel.
 						</Text>
-						<Stack direction='row' mt='10' spacing='25px'>
-							<ArtIcon />
-							<BusinessIcon />
-							<CurrentEventsIcon />
-							<EntertainmentIcon />
+						<Stack
+							direction={{
+								sm: 'column',
+								md: 'row',
+								lg: 'row',
+								xl: 'row',
+								base: 'column'
+							}}
+							mt='10'
+						>
+							<Grid
+								justifyContent={{
+									sm: 'center',
+									md: 'center',
+									lg: 'unset',
+									xl: 'unset',
+									base: 'center'
+								}}
+								templateColumns={{
+									sm: 'repeat(2, 1fr)',
+									md: 'repeat(2, 1fr)',
+									lg: 'repeat(3, 1fr)',
+									xl: 'repeat(4, 1fr)',
+									base: 'repeat(2, 0.35fr)'
+								}}
+								gap='25px'
+							>
+								<ArtIcon />
+								<BusinessIcon />
+								<CurrentEventsIcon />
+								<EntertainmentIcon />
+							</Grid>
 						</Stack>
 					</Box>
 					<Box
-						width='500px'
-						height='500px'
+						width={{
+							sm: '300px',
+							md: '450px',
+							lg: '500px',
+							xl: '500px',
+							base: '300px'
+						}}
+						height={{
+							sm: '300px',
+							md: '450px',
+							lg: '500px',
+							xl: '500px',
+							base: '300px'
+						}}
 						bg='#5465FF'
 						borderRadius='250px'
 					>
@@ -87,22 +143,22 @@ export default function Categories() {
 								>
 									Politics
 								</chakra.h1>
-								<Box mx='12' mt='3'>
-									<svg
-										width='100'
-										height='90'
-										viewBox='0 0 65 59'
-										fill='none'
-										xmlns='http://www.w3.org/2000/svg'
-									>
-										<path
-											fill-rule='evenodd'
-											clip-rule='evenodd'
-											d='M6.5 48.75V6.5H45.5V48.75C45.5 49.8896 45.6955 50.9835 46.0548 52H9.75C7.95507 52 6.5 50.5449 6.5 48.75ZM55.25 58.5H9.75C4.36522 58.5 0 54.1348 0 48.75V0H45.5H48.75H52V16.25H65V19.5V22.75V48.75C65 54.1348 60.6348 58.5 55.25 58.5ZM52 22.75H58.5V48.75C58.5 50.5449 57.0449 52 55.25 52C53.4551 52 52 50.5449 52 48.75V22.75ZM26 13V26H13V13H26ZM39 22.75V16.25H29.25V22.75H39ZM39 29.25V35.75H13V29.25H39ZM39 45.5V39H13V45.5H39Z'
-											fill='black'
-										/>
-									</svg>
-								</Box>
+
+								<svg
+									width='100'
+									height='90'
+									viewBox='0 0 65 59'
+									fill='none'
+									xmlns='http://www.w3.org/2000/svg'
+									style={{ margin: 'auto' }}
+								>
+									<path
+										fill-rule='evenodd'
+										clip-rule='evenodd'
+										d='M6.5 48.75V6.5H45.5V48.75C45.5 49.8896 45.6955 50.9835 46.0548 52H9.75C7.95507 52 6.5 50.5449 6.5 48.75ZM55.25 58.5H9.75C4.36522 58.5 0 54.1348 0 48.75V0H45.5H48.75H52V16.25H65V19.5V22.75V48.75C65 54.1348 60.6348 58.5 55.25 58.5ZM52 22.75H58.5V48.75C58.5 50.5449 57.0449 52 55.25 52C53.4551 52 52 50.5449 52 48.75V22.75ZM26 13V26H13V13H26ZM39 22.75V16.25H29.25V22.75H39ZM39 29.25V35.75H13V29.25H39ZM39 45.5V39H13V45.5H39Z'
+										fill='black'
+									/>
+								</svg>
 							</Box>
 							<Box
 								mt='10'
@@ -124,13 +180,14 @@ export default function Categories() {
 								>
 									Sports
 								</chakra.h1>
-								<Box mx='12' mt='3'>
+								<Box mt='3'>
 									<svg
 										width='100'
 										height='90'
 										viewBox='0 0 100 90'
 										fill='none'
 										xmlns='http://www.w3.org/2000/svg'
+										style={{ margin: 'auto' }}
 									>
 										<path
 											fill-rule='evenodd'
@@ -163,13 +220,14 @@ export default function Categories() {
 								>
 									Science
 								</chakra.h1>
-								<Box mx='12'>
+								<Box>
 									<svg
 										width='100'
 										height='100'
 										viewBox='0 0 100 100'
 										fill='none'
 										xmlns='http://www.w3.org/2000/svg'
+										style={{ margin: 'auto' }}
 									>
 										<path
 											fill-rule='evenodd'
@@ -200,13 +258,14 @@ export default function Categories() {
 								>
 									Tech
 								</chakra.h1>
-								<Box mx='16' mt='3'>
+								<Box mt='3'>
 									<svg
 										width='74'
 										height='90'
 										viewBox='0 0 74 90'
 										fill='none'
 										xmlns='http://www.w3.org/2000/svg'
+										style={{ margin: 'auto' }}
 									>
 										<path
 											fill-rule='evenodd'
@@ -254,6 +313,7 @@ export const ArtIcon = () => {
 		</Tooltip>
 	);
 };
+
 export const BusinessIcon = () => {
 	return (
 		<Tooltip label='Business' placement='top'>
@@ -313,6 +373,7 @@ export const CurrentEventsIcon = () => {
 		</Tooltip>
 	);
 };
+
 export const EntertainmentIcon = () => {
 	return (
 		<Tooltip label='Entertainment' placement='top'>

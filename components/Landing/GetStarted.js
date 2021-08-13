@@ -12,7 +12,22 @@ export default function GetStarted() {
 		<Box bg={useColorModeValue('white', 'black')}>
 			<Box>
 				<Flex fontSize={['30px', '40px']} fontWeight='700' my='10'>
-					<chakra.h1 textAlign='left' ml='16'>
+					<chakra.h1
+						textAlign={{
+							sm: 'center',
+							md: 'center',
+							lg: 'left',
+							xl: 'left',
+							base: 'center'
+						}}
+						ml={{
+							sm: 'unset',
+							md: 'unset',
+							lg: '16',
+							xl: '16',
+							base: 'unset'
+						}}
+					>
 						Get Started In 3 Easy Steps
 					</chakra.h1>
 				</Flex>
@@ -32,7 +47,7 @@ export default function GetStarted() {
 						xl: 'row',
 						base: 'column'
 					}}
-					width='100%'
+					// width='100%'
 					justifyContent='center'
 					mx='auto'
 					// columns={{ sm: '1', md: '1', lg: '2', xl: '3', base: '1' }}
@@ -101,10 +116,24 @@ const Thingy = () => {
 export const GetStartedThing = ({ number, icon, step }) => {
 	return (
 		<Box
+			mx='auto'
+			justifyContent='center'
 			borderRadius='500px'
 			bgGradient='linear(to-r, #FC466B,#5465FF)'
-			width='350px'
-			height='350px'
+			width={{
+				sm: '300px',
+				md: '350px',
+				lg: '350px',
+				xl: '325px',
+				base: '300px'
+			}}
+			height={{
+				sm: '300px',
+				md: '350px',
+				lg: '350px',
+				xl: '325px',
+				base: '300px'
+			}}
 			transition='all 0.2s ease-in-out'
 			_hover={{
 				transform: 'scale(1.02)'

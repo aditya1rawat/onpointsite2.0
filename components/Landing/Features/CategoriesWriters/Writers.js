@@ -27,10 +27,34 @@ export default function Categories() {
 					justifyContent='center'
 					mx='auto'
 				>
-					<Box width='500px' height='500px' borderRadius='50px'>
+					<Box
+						width={{
+							sm: '300px',
+							md: '450px',
+							lg: '500px',
+							xl: '500px',
+							base: '300px'
+						}}
+						height={{
+							sm: '300px',
+							md: '450px',
+							lg: '500px',
+							xl: '500px',
+							base: '300px'
+						}}
+						borderRadius='50px'
+					>
 						<Image src={PhoneMockup} width='500px' height='500px' />
 					</Box>
-					<Box width='500px' height='500px'>
+					<Box
+						width={{
+							sm: '300px',
+							md: '450px',
+							lg: '500px',
+							xl: '500px',
+							base: '300px'
+						}}
+					>
 						<chakra.h1
 							fontSize='50px'
 							fontWeight='700'
