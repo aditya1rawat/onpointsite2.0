@@ -1,11 +1,4 @@
-import {
-	Box,
-	chakra,
-	useColorModeValue,
-	Flex,
-	SimpleGrid,
-	Stack
-} from '@chakra-ui/react';
+import { Box, chakra, useColorModeValue, Flex, Stack } from '@chakra-ui/react';
 
 export default function GetStarted() {
 	return (
@@ -24,7 +17,7 @@ export default function GetStarted() {
 							sm: 'unset',
 							md: 'unset',
 							lg: '16',
-							xl: '16',
+							xl: '20',
 							base: 'unset'
 						}}
 					>
@@ -32,26 +25,25 @@ export default function GetStarted() {
 					</chakra.h1>
 				</Flex>
 			</Box>
-			<Box
-				pos='relative'
-				width='100%'
-				display='block'
-				justifyContent='center'
-				mx='auto'
-			>
+			<Box pos='relative' width='100%' display='block'>
 				<Stack
 					direction={{
 						sm: 'column',
 						md: 'column',
-						lg: 'column',
+						lg: 'row',
 						xl: 'row',
 						base: 'column'
 					}}
 					// width='100%'
 					justifyContent='center'
 					mx='auto'
-					// columns={{ sm: '1', md: '1', lg: '2', xl: '3', base: '1' }}
-					spacing='10px'
+					spacing={{
+						sm: '50px',
+						md: '75px',
+						lg: '75px',
+						xl: '100px',
+						base: '50px'
+					}}
 					my='5'
 				>
 					<GetStartedThing
@@ -59,13 +51,13 @@ export default function GetStarted() {
 						icon={<SmileIcon />}
 						step={'Sign Up'}
 					/>
-					<Thingy />
+
 					<GetStartedThing
 						number={2}
 						icon={<EditIcon />}
 						step={'Write'}
 					/>
-					<Thingy />
+
 					<GetStartedThing
 						number={3}
 						icon={<ClockIcon />}
@@ -116,21 +108,19 @@ const Thingy = () => {
 export const GetStartedThing = ({ number, icon, step }) => {
 	return (
 		<Box
-			mx='auto'
-			justifyContent='center'
 			borderRadius='500px'
 			bgGradient='linear(to-r, #FC466B,#5465FF)'
 			width={{
 				sm: '300px',
-				md: '350px',
-				lg: '350px',
+				md: '300px',
+				lg: '275px',
 				xl: '325px',
 				base: '300px'
 			}}
 			height={{
 				sm: '300px',
-				md: '350px',
-				lg: '350px',
+				md: '300px',
+				lg: '275px',
 				xl: '325px',
 				base: '300px'
 			}}

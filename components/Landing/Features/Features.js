@@ -102,16 +102,7 @@ export default function Features() {
 						<Image src={WowMan} width='400px' height='400px' />
 					</Box>
 				</Box>
-				<VStack
-					// direction={{
-					// 	sm: 'column',
-					// 	md: 'column',
-					// 	lg: 'row',
-					// 	xl: 'column',
-					// 	base: 'column'
-					// }}
-					spacing='25px'
-				>
+				<VStack spacing='25px'>
 					<Stack
 						direction={{
 							sm: 'column',

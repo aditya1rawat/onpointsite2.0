@@ -78,7 +78,7 @@ export default function Hero() {
 				</Box>
 				<Box
 					pt={['6', '20']}
-					pr={['-1', '16']}
+					// pr={['-1', '16']}
 					display={{
 						sm: 'none',
 						md: 'none',
@@ -117,6 +117,7 @@ const GetStartedArrowIcon = () => {
 export const OnPointLogo = () => {
 	return (
 		<svg
+			style={{ margin: 'auto', justifyContent: 'center' }}
 			width='400'
 			height='400'
 			viewBox='0 0 400 400'

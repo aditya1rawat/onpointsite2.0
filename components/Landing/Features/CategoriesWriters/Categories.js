@@ -31,11 +31,17 @@ export default function Categories() {
 					direction={{
 						sm: 'column',
 						md: 'column',
-						lg: 'column',
+						lg: 'row',
 						xl: 'row',
 						base: 'column'
 					}}
-					spacing='52'
+					spacing={{
+						sm: 'column',
+						md: 'column',
+						lg: '32',
+						xl: '52',
+						base: 'column'
+					}}
 					justifyContent='center'
 					mx='auto'
 				>
@@ -43,7 +49,7 @@ export default function Categories() {
 						width={{
 							sm: '300px',
 							md: '450px',
-							lg: '500px',
+							lg: '400px',
 							xl: '500px',
 							base: '300px'
 						}}
@@ -56,10 +62,22 @@ export default function Categories() {
 						}}
 					>
 						<chakra.h1
-							fontSize='50px'
+							fontSize={{
+								sm: 'center',
+								md: 'unset',
+								lg: '40px',
+								xl: '50px',
+								base: 'center'
+							}}
 							fontWeight='700'
 							mb='10'
-							mt='60px'
+							// mt={{
+							// 	sm: 'center',
+							// 	md: 'unset',
+							// 	lg: '0',
+							// 	xl: '60px',
+							// 	base: 'center'
+							// }}
 						>
 							Diverse Categories
 						</chakra.h1>
@@ -91,7 +109,7 @@ export default function Categories() {
 								templateColumns={{
 									sm: 'repeat(2, 1fr)',
 									md: 'repeat(2, 1fr)',
-									lg: 'repeat(3, 1fr)',
+									lg: 'repeat(4, 1fr)',
 									xl: 'repeat(4, 1fr)',
 									base: 'repeat(2, 0.35fr)'
 								}}
@@ -108,14 +126,14 @@ export default function Categories() {
 						width={{
 							sm: '300px',
 							md: '450px',
-							lg: '500px',
+							lg: '375px',
 							xl: '500px',
 							base: '300px'
 						}}
 						height={{
 							sm: '300px',
 							md: '450px',
-							lg: '500px',
+							lg: '375px',
 							xl: '500px',
 							base: '300px'
 						}}
