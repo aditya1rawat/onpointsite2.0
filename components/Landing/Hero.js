@@ -64,7 +64,7 @@ export default function Hero() {
 							sm: '75px',
 							md: '75px',
 							lg: '70px',
-							xl: '75px',
+							xl: '90px',
 							base: '25px'
 						}}
 						fontWeight='bold'
