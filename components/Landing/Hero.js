@@ -4,9 +4,11 @@ import {
 	chakra,
 	HStack,
 	Stack,
+	Img,
 	useColorModeValue
 } from '@chakra-ui/react';
 import Logo from '../../public/Logo.png';
+import HeroRocket from '../../public/HeroRocket.png';
 import Image from 'next/image';
 
 export default function Hero() {
@@ -22,14 +24,33 @@ export default function Hero() {
 				'10px solid white'
 			)}
 		>
-			<Stack direction={['column', 'column', 'row']}>
+			<Stack
+				direction={{
+					sm: 'column-reverse',
+					md: 'column',
+					lg: 'row',
+					xl: 'row',
+					base: 'column-reverse'
+				}}
+				alignItems='center'
+			>
 				<Box
-					pt={['16', '36']}
-					pl={['0', '5']}
-					alignItems='center'
+					pt={{
+						sm: '6',
+						md: '32',
+						lg: '20',
+						xl: '12',
+						base: '0'
+					}}
+					pl={{
+						sm: 'unset',
+						md: 'unset',
+						lg: '5',
+						xl: '8',
+						base: 'unset'
+					}}
 					display='block'
-					mx='auto'
-					width='80%'
+					width='70%'
 				>
 					<Box
 						textAlign={{
@@ -39,13 +60,12 @@ export default function Hero() {
 							xl: 'left',
 							base: 'center'
 						}}
-						fontSize={['55px', '65px', '75px']}
-						fontsize={{
-							sm: '55px',
-							md: '65px',
-							lg: '75px',
+						fontSize={{
+							sm: '75px',
+							md: '75px',
+							lg: '70px',
 							xl: '75px',
-							base: '55px'
+							base: '25px'
 						}}
 						fontWeight='bold'
 						color='white'
@@ -62,6 +82,7 @@ export default function Hero() {
 							base: '100%'
 						}}
 						mx='auto'
+						justifyContent='center'
 						mt='10'
 						border='5px solid black'
 						boxSizing='border-box'
@@ -77,18 +98,23 @@ export default function Hero() {
 					</Button>
 				</Box>
 				<Box
-					pt={['6', '20']}
+					pt={{
+						sm: '6',
+						md: '6',
+						lg: '20',
+						xl: '14',
+						base: '6'
+					}}
 					// pr={['-1', '16']}
 					display={{
-						sm: 'none',
-						md: 'none',
+						sm: 'unset',
+						md: 'unset',
 						lg: 'unset',
 						xl: 'unset',
-						base: 'none'
+						base: 'unset'
 					}}
 				>
-					<OnPointLogo />
-					{/* <Image src={Logo} width='500px' height='500px' /> */}
+					<Image src={HeroRocket} width='750px' height='750px' />
 				</Box>
 			</Stack>
 		</Box>

@@ -1,161 +1,57 @@
 import { Box, chakra, useColorModeValue, Flex, Stack } from '@chakra-ui/react';
+import GetStartedItem from './GetStartedItem';
 
 export default function GetStarted() {
 	return (
 		<Box bg={useColorModeValue('white', 'black')}>
 			<Box>
-				<Flex fontSize={['30px', '40px']} fontWeight='700' my='10'>
-					<chakra.h1
-						textAlign={{
-							sm: 'center',
-							md: 'center',
-							lg: 'left',
-							xl: 'left',
-							base: 'center'
-						}}
-						ml={{
-							sm: 'unset',
-							md: 'unset',
-							lg: '16',
-							xl: '20',
-							base: 'unset'
-						}}
-					>
-						Get Started In 3 Easy Steps
-					</chakra.h1>
-				</Flex>
-			</Box>
-			<Box pos='relative' width='100%' display='block'>
-				<Stack
-					direction={{
-						sm: 'column',
-						md: 'column',
-						lg: 'row',
-						xl: 'row',
-						base: 'column'
-					}}
-					// width='100%'
-					justifyContent='center'
-					mx='auto'
-					spacing={{
-						sm: '50px',
-						md: '75px',
-						lg: '75px',
-						xl: '100px',
-						base: '50px'
-					}}
-					my='5'
+				<chakra.h1
+					textAlign='center'
+					fontSize={['30px', '40px']}
+					fontWeight='700'
+					my='10'
 				>
-					<GetStartedThing
-						number={1}
-						icon={<SmileIcon />}
-						step={'Sign Up'}
-					/>
-
-					<GetStartedThing
-						number={2}
-						icon={<EditIcon />}
-						step={'Write'}
-					/>
-
-					<GetStartedThing
-						number={3}
-						icon={<ClockIcon />}
-						step={'Earn'}
-					/>
-				</Stack>
+					Get Started In 3 Easy Steps
+				</chakra.h1>
 			</Box>
+
+			<Stack
+				direction={{
+					sm: 'column',
+					md: 'row',
+					lg: 'row',
+					xl: 'row',
+					base: 'column'
+				}}
+				spacing={{
+					sm: '50px',
+					md: '25px',
+					lg: '75px',
+					xl: '100px',
+					base: '50px'
+				}}
+				width='100%'
+				mx='auto'
+				justifyContent='center'
+				alignItems='center'
+			>
+				<GetStartedItem
+					number={1}
+					icon={<SmileIcon />}
+					step={'Sign Up'}
+				/>
+
+				<GetStartedItem number={2} icon={<EditIcon />} step={'Write'} />
+
+				<GetStartedItem number={3} icon={<ClockIcon />} step={'Earn'} />
+			</Stack>
 		</Box>
 	);
 }
 
-const Thingy = () => {
-	return (
-		<Box
-			pt={{ xl: '150px', base: '50px' }}
-			transform={{ xl: 'none', base: 'rotate(90deg)' }}
-		>
-			<svg
-				width='150'
-				height='31'
-				viewBox='0 0 263 31'
-				fill='none'
-				xmlns='http://www.w3.org/2000/svg'
-			>
-				<path
-					fill-rule='evenodd'
-					clip-rule='evenodd'
-					d='M0 16C0 14.3431 0.447715 13 1 13H117C117.552 13 118 14.3431 118 16C118 17.6569 117.552 19 117 19H1C0.447715 19 0 17.6569 0 16Z'
-					fill='#09E85E'
-				/>
-				<path
-					fill-rule='evenodd'
-					clip-rule='evenodd'
-					d='M123.622 0.648549C122.793 1.51328 122.793 2.91529 123.622 3.78002L134.87 15.5L123.622 27.22C122.793 28.0847 122.793 29.4867 123.622 30.3515C124.452 31.2162 125.798 31.2162 126.628 30.3515L139.378 17.0657C140.207 16.201 140.207 14.799 139.378 13.9343L126.628 0.648549C125.798 -0.216183 124.452 -0.216183 123.622 0.648549Z'
-					fill='#09E85E'
-				/>
-				<path
-					fill-rule='evenodd'
-					clip-rule='evenodd'
-					d='M145 16C145 14.3431 145.448 13 146 13H262C262.552 13 263 14.3431 263 16C263 17.6569 262.552 19 262 19H146C145.448 19 145 17.6569 145 16Z'
-					fill='#09E85E'
-				/>
-			</svg>
-		</Box>
-	);
-};
-
-export const GetStartedThing = ({ number, icon, step }) => {
-	return (
-		<Box
-			borderRadius='500px'
-			bgGradient='linear(to-r, #FC466B,#5465FF)'
-			width={{
-				sm: '300px',
-				md: '300px',
-				lg: '275px',
-				xl: '325px',
-				base: '300px'
-			}}
-			height={{
-				sm: '300px',
-				md: '300px',
-				lg: '275px',
-				xl: '325px',
-				base: '300px'
-			}}
-			transition='all 0.2s ease-in-out'
-			_hover={{
-				transform: 'scale(1.02)'
-			}}
-			zIndex='2'
-			color='white'
-		>
-			<chakra.h1
-				my='4'
-				py='3'
-				fontSize='50px'
-				textAlign='center'
-				fontWeight='extrabold'
-			>
-				{number}
-			</chakra.h1>
-			<Box>{icon}</Box>
-			<chakra.h1
-				mt='5'
-				fontSize='40px'
-				textAlign='center'
-				fontWeight='extrabold'
-			>
-				{step}
-			</chakra.h1>
-		</Box>
-	);
-};
-
 const SmileIcon = () => {
 	return (
-		<Box width='100%' display='flex' mx='auto' justifyContent='center'>
+		<Box mx='auto' justifyContent='center'>
 			<svg
 				width='90'
 				height='90'
@@ -175,7 +71,7 @@ const SmileIcon = () => {
 };
 const EditIcon = () => {
 	return (
-		<Box width='100%' display='flex' mx='auto' justifyContent='center'>
+		<Box mx='auto' justifyContent='center'>
 			<svg
 				width='90'
 				height='100'
@@ -193,7 +89,7 @@ const EditIcon = () => {
 };
 const ClockIcon = () => {
 	return (
-		<Box width='100%' display='flex' mx='auto' justifyContent='center'>
+		<Box mx='auto' justifyContent='center'>
 			<svg
 				width='90'
 				height='90'
