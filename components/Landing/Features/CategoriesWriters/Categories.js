@@ -25,7 +25,16 @@ export default function Categories() {
       mt="16"
     >
       <Box mb="16" textAlign="center">
-        <chakra.h1 fontSize="48px" fontWeight="700">
+        <chakra.h1
+          fontSize={{
+            sm: "40px",
+            md: "40px",
+            lg: "40px",
+            xl: "50px",
+            base: "40px",
+          }}
+          fontWeight="700"
+        >
           But Wait... There's More!
         </chakra.h1>
         <Text fontSize="20px">
@@ -78,11 +87,11 @@ export default function Categories() {
               fontWeight="700"
               mb="10"
               mt={{
-                sm: "center",
+                sm: "unset",
                 md: "unset",
                 lg: "25px",
                 xl: "60px",
-                base: "center",
+                base: "unset",
               }}
             >
               Diverse Categories
