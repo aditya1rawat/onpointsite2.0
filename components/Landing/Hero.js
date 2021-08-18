@@ -7,7 +7,6 @@ import {
 	Img,
 	useColorModeValue
 } from '@chakra-ui/react';
-import Logo from '../../public/Logo.png';
 import HeroRocket from '../../public/HeroRocket.png';
 import Image from 'next/image';
 
@@ -23,11 +22,12 @@ export default function Hero() {
 				'10px solid black',
 				'10px solid white'
 			)}
+			height='100%'
 		>
 			<Stack
 				direction={{
 					sm: 'column-reverse',
-					md: 'column',
+					md: 'column-reverse',
 					lg: 'row',
 					xl: 'row',
 					base: 'column-reverse'
@@ -37,7 +37,7 @@ export default function Hero() {
 				<Box
 					pt={{
 						sm: '6',
-						md: '32',
+						md: '24',
 						lg: '20',
 						xl: '12',
 						base: '0'
@@ -62,7 +62,7 @@ export default function Hero() {
 						}}
 						fontSize={{
 							sm: '75px',
-							md: '75px',
+							md: '50px',
 							lg: '70px',
 							xl: '90px',
 							base: '25px'
@@ -99,13 +99,13 @@ export default function Hero() {
 				</Box>
 				<Box
 					pt={{
-						sm: '6',
-						md: '6',
+						sm: '16',
+						md: '24',
 						lg: '20',
 						xl: '14',
-						base: '6'
+						base: '16'
 					}}
-					// pr={['-1', '16']}
+					
 					display={{
 						sm: 'unset',
 						md: 'unset',
@@ -114,7 +114,7 @@ export default function Hero() {
 						base: 'unset'
 					}}
 				>
-					<Image src={HeroRocket} width='750px' height='750px' />
+					<Image src={HeroRocket} width='500px' height='500px' />
 				</Box>
 			</Stack>
 		</Box>
