@@ -17,14 +17,14 @@ export default function CallToAction() {
 				sm: `10px ${useColorModeValue('black', 'white')} solid`,
 				md: 'unset',
 				lg: 'unset',
-				xl: `10px ${useColorModeValue('black', 'white')} solid`,
+				xl: `unset`,
 				base: `10px ${useColorModeValue('black', 'white')} solid`
 			}}
 			py={{
 				sm: 'unset',
 				md: '5',
 				lg: '10',
-				xl: 'unset',
+				xl: '10',
 				base: 'unset'
 			}}
 		>
@@ -34,14 +34,14 @@ export default function CallToAction() {
 					sm: 'unset',
 					md: '5',
 					lg: '10',
-					xl: 'unset',
+					xl: '24',
 					base: 'unset'
 				}}
 				borderRadius={{
 					sm: 'unset',
 					md: '25px',
 					lg: '25px',
-					xl: 'unset',
+					xl: '25px',
 					base: 'unset'
 				}}
 			>
@@ -55,12 +55,44 @@ export default function CallToAction() {
 						base: 'column'
 					}}
 					p='10'
+					// alignItems={{
+					// 	sm: 'center',
+					// 	md: 'center',
+					// 	lg: 'center',
+					// 	xl: 'center',
+					// 	base: 'center'
+					// }}
 				>
-					<Box>
-						<chakra.h1 fontSize='40px' fontWeight='700'>
+					<Box
+						textAlign={{
+							sm: 'center',
+							md: 'unset',
+							lg: 'unset',
+							xl: 'unset',
+							base: 'center'
+						}}
+					>
+						<chakra.h1
+							fontSize={{
+								sm: '35px',
+								md: '35px',
+								lg: '40px',
+								xl: '40px',
+								base: '35px'
+							}}
+							fontWeight='700'
+						>
 							Get Started Now!
 						</chakra.h1>
-						<Text>
+						<Text
+							fontSize={{
+								sm: '20px',
+								md: '15px',
+								lg: '16px',
+								xl: '20px',
+								base: '20px'
+							}}
+						>
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit. Condimentum diam orci pretium a pharetra,
 							feugiat cursus.
@@ -69,7 +101,13 @@ export default function CallToAction() {
 					<Box>
 						<Button
 							mx='10'
-							my='6'
+							mt={{
+								sm: '10',
+								md: '7',
+								lg: '7',
+								xl: '6',
+								base: '10'
+							}}
 							border={useColorModeValue(
 								'5px solid black',
 								'5px solid white'
