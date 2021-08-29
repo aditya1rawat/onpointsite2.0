@@ -83,7 +83,7 @@ export default function Hero() {
 						}}
 						mx='auto'
 						justifyContent='center'
-						mt='10'
+						mt='5'
 						border='5px solid black'
 						boxSizing='border-box'
 						borderRadius='10px'
@@ -105,7 +105,6 @@ export default function Hero() {
 						xl: '14',
 						base: '16'
 					}}
-					
 					display={{
 						sm: 'unset',
 						md: 'unset',

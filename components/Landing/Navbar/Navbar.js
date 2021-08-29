@@ -65,15 +65,21 @@ export default function Navbar() {
 							>
 								<Image src={Logo} width='50px' height='50px' />
 								<chakra.h1
-									fontSize='35px'
+									fontSize={{
+										sm: '30px',
+										md: '30px',
+										lg: '35px',
+										xl: '35px',
+										base: '30px'
+									}}
 									fontWeight='700'
 									ml='2'
 									display={{
-										sm: 'none',
+										sm: 'unset',
 										md: 'none',
 										lg: 'unset',
 										xl: 'unset',
-										base: 'none'
+										base: 'unset'
 									}}
 								>
 									OnPoint

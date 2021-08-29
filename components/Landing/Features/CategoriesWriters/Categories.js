@@ -22,7 +22,13 @@ export default function Categories() {
 				xl: '16',
 				base: '10'
 			}}
-			mt='16'
+			mt={{
+				sm: '0',
+				md: '16',
+				lg: '16',
+				xl: '16',
+				base: '0'
+			}}
 		>
 			<Box mb='16' textAlign='center'>
 				<chakra.h1
