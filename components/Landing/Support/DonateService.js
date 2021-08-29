@@ -19,10 +19,10 @@ export default function DonateService({
 		>
 			<Link href={nameLink} isExternal>
 				<Box py='5'>{icon}</Box>
-				<chakra.h1 fontSize='30px' fontWeight='700' textAlign='center'>
-					{name}
-				</chakra.h1>
 			</Link>
+			<chakra.h1 fontSize='30px' fontWeight='700' textAlign='center'>
+				{name}
+			</chakra.h1>
 			<a href={donateLink} target='_blank'>
 				<Button
 					width='100%'
@@ -30,12 +30,10 @@ export default function DonateService({
 					mt='5'
 					boxSizing='border-box'
 					borderRadius='10px'
-					bg={useColorModeValue('white', 'black')}
-					color={useColorModeValue('black', 'white')}
 					fontSize='25px'
 					px='5'
 					py='6'
-					colorScheme='white'
+					colorScheme='green'
 					fontWeight='bold'
 					variant='solid'
 				>

@@ -100,7 +100,13 @@ export default function CallToAction() {
 					</Box>
 					<Box>
 						<Button
-							mx='10'
+							mx={{
+								sm: 'auto',
+								md: '7',
+								lg: '7',
+								xl: '6',
+								base: 'auto'
+							}}
 							mt={{
 								sm: '10',
 								md: '7',
