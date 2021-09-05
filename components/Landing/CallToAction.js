@@ -8,6 +8,8 @@ import {
 	Button
 } from '@chakra-ui/react';
 
+import Link from 'next/link';
+
 export default function CallToAction() {
 	return (
 		<Box
@@ -99,37 +101,33 @@ export default function CallToAction() {
 						</Text>
 					</Box>
 					<Box>
-						<Button
-							mx={{
-								sm: 'auto',
-								md: '7',
-								lg: '7',
-								xl: '6',
-								base: 'auto'
-							}}
-							mt={{
-								sm: '10',
-								md: '7',
-								lg: '7',
-								xl: '6',
-								base: '10'
-							}}
-							border={useColorModeValue(
-								'5px solid black',
-								'5px solid white'
-							)}
-							boxSizing='border-box'
-							borderRadius='10px'
-							background={useColorModeValue('white', 'black')}
-							fontSize='20px'
-							px='5'
-							py='6'
-							fontWeight='bold'
-							color={useColorModeValue('black', 'white')}
-							variant='solid'
-						>
-							Log In / Sign Up <GetStartedArrowIcon />
-						</Button>
+						<Link href='/signup' passHref>
+							<Button
+								mx='auto'
+								mt={{
+									sm: '10',
+									md: '7',
+									lg: '7',
+									xl: '8',
+									base: '10'
+								}}
+								border={useColorModeValue(
+									'5px solid black',
+									'5px solid white'
+								)}
+								boxSizing='border-box'
+								borderRadius='10px'
+								background={useColorModeValue('white', 'black')}
+								fontSize='20px'
+								px='5'
+								py='6'
+								fontWeight='bold'
+								color={useColorModeValue('black', 'white')}
+								variant='solid'
+							>
+								Log In / Sign Up <GetStartedArrowIcon />
+							</Button>
+						</Link>
 					</Box>
 				</Stack>
 			</Box>

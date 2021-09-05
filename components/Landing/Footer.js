@@ -346,7 +346,16 @@ const FooterHead = () => {
 	return (
 		<Box>
 			<Box>
-				<Flex>
+				<Stack
+					direction={{
+						sm: 'column',
+						md: 'row',
+						lg: 'row',
+						xl: 'row',
+						base: 'column'
+					}}
+					spacing='25px'
+				>
 					<Logo />
 					<Box ml='25px' mt='-5px'>
 						<chakra.h1 fontSize='35px' fontWeight='700'>
@@ -354,7 +363,7 @@ const FooterHead = () => {
 						</chakra.h1>
 						<Text>A 501(c)(3) Organization</Text>
 					</Box>
-				</Flex>
+				</Stack>
 				<Box mt='5'>
 					<Text fontSize={'sm'}>
 						&copy; {new Date().getUTCFullYear()} OnPoint. All rights
@@ -396,7 +405,7 @@ const ListHeader = ({ children }) => {
 
 export default function Footer() {
 	return (
-		<Box bg={useColorModeValue('white', 'black')}>
+		<Box bg={useColorModeValue('white', 'black')} zIndex='3'>
 			<Box py={10} px='10'>
 				<Stack
 					mx='auto'

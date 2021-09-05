@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import PhoneMockup from '../../../../public/phonemockup.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Categories() {
 	return (
@@ -110,25 +111,27 @@ export default function Categories() {
 							cras adipiscing vulputate. Nisi, risus in suscipit
 							non. Non commodo volutpat, pharetra, vel.
 						</Text>
-						<Button
-							mx='auto'
-							mt='10'
-							border={useColorModeValue(
-								'5px solid black',
-								'5px solid white'
-							)}
-							boxSizing='border-box'
-							borderRadius='10px'
-							background={useColorModeValue('white', 'black')}
-							fontSize='20px'
-							px='5'
-							py='6'
-							fontWeight='bold'
-							color={useColorModeValue('black', 'white')}
-							variant='solid'
-						>
-							Start Writing Now <GetStartedArrowIcon />
-						</Button>
+						<Link href='/signup' passHref>
+							<Button
+								mx='auto'
+								mt='10'
+								border={useColorModeValue(
+									'5px solid black',
+									'5px solid white'
+								)}
+								boxSizing='border-box'
+								borderRadius='10px'
+								background={useColorModeValue('white', 'black')}
+								fontSize='20px'
+								px='5'
+								py='6'
+								fontWeight='bold'
+								color={useColorModeValue('black', 'white')}
+								variant='solid'
+							>
+								Start Writing Now <GetStartedArrowIcon />
+							</Button>
+						</Link>
 					</Box>
 				</Stack>
 			</Flex>
