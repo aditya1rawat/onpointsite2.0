@@ -19,12 +19,22 @@ const ThemeButton = () => {
 				aria-label={`Switch to ${
 					colorMode === 'light' ? 'dark' : 'light'
 				} mode`}
-				variant='outline'
+				variant='ghost'
 				borderWidth='3px'
 				borderColor={useColorModeValue('black', 'white')}
+				bg={useColorModeValue('white', 'black')}
 				fontSize='25px'
 				onClick={toggleColorMode}
-				icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+				_hover={{
+					backgroundColor: `${useColorModeValue('white', 'black')}`
+				}}
+				icon={
+					colorMode === 'light' ? (
+						<MoonIcon color='black' />
+					) : (
+						<SunIcon color='white' />
+					)
+				}
 				_focus={{
 					outline: 'none'
 				}}

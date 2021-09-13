@@ -69,6 +69,9 @@ export default function Features() {
 					px='7'
 					py='5'
 					overflow='hidden'
+					_hover={{
+						boxShadow: 'rgba(100, 100, 111, 0.5) 0px 0px 25px 0px'
+					}}
 				>
 					<chakra.h1
 						fontSize={{
@@ -554,6 +557,7 @@ const PlaylistIcon = () => {
 		</Box>
 	);
 };
+
 const VideoIcon = () => {
 	return (
 		<Box

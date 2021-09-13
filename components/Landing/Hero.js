@@ -112,6 +112,7 @@ export default function Hero() {
 						xl: 'unset',
 						base: 'unset'
 					}}
+					// bg={<Gradient />}
 				>
 					<Image src={HeroRocket} width='500px' height='500px' />
 				</Box>
@@ -431,3 +432,120 @@ export const OnPointLogo = () => {
 		</svg>
 	);
 };
+
+// export const Gradient = () => {
+// 	return (
+// 		<svg
+// 			width='1520'
+// 			height='1520'
+// 			viewBox='0 0 1520 1520'
+// 			fill='none'
+// 			xmlns='http://www.w3.org/2000/svg'
+// 			xmlns:xlink='http://www.w3.org/1999/xlink'
+// 		>
+// 			<g filter='url(#filter0_f)'>
+// 				<circle
+// 					r='500'
+// 					transform='matrix(-1 0 0 1 760 760)'
+// 					fill='url(#paint0_angular)'
+// 				/>
+// 			</g>
+// 			<mask
+// 				id='mask0'
+// 				style='mask-type:alpha'
+// 				maskUnits='userSpaceOnUse'
+// 				x='260'
+// 				y='260'
+// 				width='1000'
+// 				height='1000'
+// 			>
+// 				<circle
+// 					r='500'
+// 					transform='matrix(-1 0 0 1 760 760)'
+// 					fill='url(#paint1_angular)'
+// 				/>
+// 			</mask>
+// 			<g mask='url(#mask0)'>
+// 				<g style='mix-blend-mode:soft-light'>
+// 					<rect
+// 						width='2467.47'
+// 						height='2467.47'
+// 						transform='matrix(-1 0 0 1 1993.73 -473.735)'
+// 						fill='url(#pattern0)'
+// 					/>
+// 				</g>
+// 				<g style='mix-blend-mode:soft-light' opacity='0.5'>
+// 					<rect
+// 						width='2467.47'
+// 						height='2467.47'
+// 						transform='matrix(-1 0 0 1 1993.73 -473.735)'
+// 						fill='url(#pattern1)'
+// 					/>
+// 				</g>
+// 			</g>
+// 			<defs>
+// 				<filter
+// 					id='filter0_f'
+// 					x='0'
+// 					y='0'
+// 					width='1520'
+// 					height='1520'
+// 					filterUnits='userSpaceOnUse'
+// 					color-interpolation-filters='sRGB'
+// 				>
+// 					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+// 					<feBlend
+// 						mode='normal'
+// 						in='SourceGraphic'
+// 						in2='BackgroundImageFix'
+// 						result='shape'
+// 					/>
+// 					<feGaussianBlur
+// 						stdDeviation='130'
+// 						result='effect1_foregroundBlur'
+// 					/>
+// 				</filter>
+// 				<pattern
+// 					id='pattern0'
+// 					patternContentUnits='objectBoundingBox'
+// 					width='0.83'
+// 					height='0.83'
+// 				>
+// 					<use xlink:href='#image0' transform='scale(0.000405273)' />
+// 				</pattern>
+// 				<pattern
+// 					id='pattern1'
+// 					patternContentUnits='objectBoundingBox'
+// 					width='0.83'
+// 					height='0.83'
+// 				>
+// 					<use xlink:href='#image0' transform='scale(0.000405273)' />
+// 				</pattern>
+// 				<radialGradient
+// 					id='paint0_angular'
+// 					cx='0'
+// 					cy='0'
+// 					r='1'
+// 					gradientUnits='userSpaceOnUse'
+// 					gradientTransform='translate(500 500) rotate(62.6703) scale(524.849)'
+// 				>
+// 					<stop offset='0.266716' stop-color='#FFECB8' />
+// 					<stop offset='0.731444' stop-color='#6DB1E2' />
+// 					<stop offset='1' stop-color='#FFA376' />
+// 				</radialGradient>
+// 				<radialGradient
+// 					id='paint1_angular'
+// 					cx='0'
+// 					cy='0'
+// 					r='1'
+// 					gradientUnits='userSpaceOnUse'
+// 					gradientTransform='translate(500 500) rotate(47.333) scale(504.161)'
+// 				>
+// 					<stop offset='0.266716' stop-color='#FFCA3C' />
+// 					<stop offset='0.699498' stop-color='#C36BF8' />
+// 					<stop offset='1' stop-color='#FD7E41' />
+// 				</radialGradient>
+// 			</defs>
+// 		</svg>
+// 	);
+// };

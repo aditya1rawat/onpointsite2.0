@@ -3,18 +3,18 @@ import GetStartedItem from './GetStartedItem';
 
 export default function GetStarted() {
 	return (
-		<Box bg={useColorModeValue('white', 'black')}>
+		<Box bg={useColorModeValue('white', 'black')} my='10'>
 			<Box>
 				<chakra.h1
 					textAlign='center'
 					fontSize={['30px', '40px']}
 					fontWeight='700'
-					my='10'
+					mt='12'
+					mb='14'
 				>
 					Get Started In 3 Easy Steps
 				</chakra.h1>
 			</Box>
-
 			<Stack
 				direction={{
 					sm: 'column',
