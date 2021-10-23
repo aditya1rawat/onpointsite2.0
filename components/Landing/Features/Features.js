@@ -14,6 +14,7 @@ import BigThree from './BigThree';
 export default function Features() {
 	return (
 		<VStack
+			overflowX='hidden'
 			spacing={{
 				sm: '0',
 				md: '25px',

@@ -14,11 +14,11 @@ import {
 	Icon,
 	useColorModeValue
 } from '@chakra-ui/react';
+import Footer from '../components/Landing/Footer';
 import Navbar from '../components/Landing/Navbar/Navbar';
 
 export default function SignUp() {
 	return (
-		// <Box background='black'>
 		<Box
 			position={'relative'}
 			overflow='hidden'
@@ -142,8 +142,10 @@ export default function SignUp() {
 				style={{ filter: 'blur(70px)' }}
 				zIndex='0'
 			/>
+			<Box zIndex='2'>
+				<Footer />
+			</Box>
 		</Box>
-		// </Box>
 	);
 }
 

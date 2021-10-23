@@ -405,7 +405,7 @@ const ListHeader = ({ children }) => {
 
 export default function Footer() {
 	return (
-		<Box bg={useColorModeValue('white', 'black')} zIndex='3'>
+		<Box bg={useColorModeValue('white', 'black')}>
 			<Box py={10} px='10'>
 				<Stack
 					mx='auto'
