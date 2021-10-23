@@ -10,6 +10,7 @@ import {
 import WowMan from '../../../public/wowman.png';
 import Image from 'next/image';
 import BigThree from './BigThree';
+import { motion } from 'framer-motion';
 
 export default function Features() {
 	return (
@@ -41,93 +42,108 @@ export default function Features() {
 				}}
 				mt='10'
 			>
-				<Box
-					mx='auto'
-					color={useColorModeValue('white', 'black')}
-					bg='#09E85E'
-					width={{
-						sm: '100%',
-						md: '725px',
-						lg: '975px',
-						xl: '725px',
-						base: '100%'
-					}}
-					height={{
-						sm: '750px',
-						md: '450px',
-						lg: '425px',
-						xl: '450px',
-						base: '550px'
-					}}
-					borderRadius={{
-						sm: '0',
-						md: '25px',
-						lg: '25px',
-						xl: '25px',
-						base: '0'
-					}}
-					position='relative'
-					px='7'
-					py='5'
-					overflow='hidden'
-					_hover={{
-						boxShadow: 'rgba(100, 100, 111, 0.5) 0px 0px 25px 0px'
-					}}
+				<motion.div
+					// animate={{ x: 0 }}
+					transition={{ duration: 0.35 }}
+					whileHover={{ scale: 1.03 }}
 				>
-					<chakra.h1
-						fontSize={{
-							sm: '40px',
-							md: '70px',
-							lg: '70px',
-							xl: '70px',
-							base: '40px'
+					<Box
+						mx='auto'
+						color={useColorModeValue('white', 'black')}
+						bg='#09E85E'
+						boxShadow='rgba(100, 100, 111, 0.5) 0px 0px 25px 0px'
+						width={{
+							sm: '100%',
+							md: '725px',
+							lg: '975px',
+							xl: '725px',
+							base: '100%'
 						}}
-						fontWeight='800'
-					>
-						What Makes Us Different?
-					</chakra.h1>
-					<Text
-						fontSize={{
-							sm: '20px',
+						height={{
+							sm: '750px',
+							md: '450px',
+							lg: '425px',
+							xl: '450px',
+							base: '550px'
+						}}
+						borderRadius={{
+							sm: '0',
 							md: '25px',
 							lg: '25px',
 							xl: '25px',
-							base: '20px'
+							base: '0'
 						}}
-						fontWeight='500'
-						width={{
-							sm: 'full',
-							md: '300px',
-							lg: '500px',
-							xl: '350px',
-							base: 'full'
-						}}
-						mt='3'
-						color={useColorModeValue('black', 'white')}
+						position='relative'
+						px='7'
+						py='5'
+						overflow='hidden'
 					>
-						We have a whole assortment of features that make us
-						stand out from the rest
-					</Text>
-					<Box
-						position='absolute'
-						bottom='-10'
-						right={{
-							sm: '5',
-							md: '-6',
-							lg: '-1',
-							xl: '-10',
-							base: '3'
-						}}
-						transform={{
-							sm: '',
-							md: 'rotate(15deg)',
-							lg: 'rotate(0deg)',
-							xl: 'rotate(15deg)'
-						}}
-					>
-						<Image src={WowMan} width='400px' height='400px' />
+						<chakra.h1
+							fontSize={{
+								sm: '40px',
+								md: '70px',
+								lg: '70px',
+								xl: '70px',
+								base: '40px'
+							}}
+							fontWeight='800'
+						>
+							What Makes Us Different?
+						</chakra.h1>
+						<Text
+							fontSize={{
+								sm: '20px',
+								md: '25px',
+								lg: '25px',
+								xl: '25px',
+								base: '20px'
+							}}
+							fontWeight='500'
+							width={{
+								sm: 'full',
+								md: '300px',
+								lg: '500px',
+								xl: '350px',
+								base: 'full'
+							}}
+							mt='3'
+							color={useColorModeValue('black', 'white')}
+						>
+							We have a whole assortment of features that make us
+							stand out from the rest
+						</Text>
+
+						<Box
+							position='absolute'
+							bottom='-10'
+							right={{
+								sm: '5',
+								md: '-6',
+								lg: '-1',
+								xl: '-10',
+								base: '3'
+							}}
+							transform={{
+								sm: '',
+								md: 'rotate(15deg)',
+								lg: 'rotate(0deg)',
+								xl: 'rotate(15deg)'
+							}}
+						>
+							<motion.div
+								whileHover={{ rotate: -35, scale: 1.1 }}
+								transition={{ duration: 0.35 }}
+							>
+								<Image
+									src={WowMan}
+									width='400px'
+									height='400px'
+								/>
+							</motion.div>
+						</Box>
 					</Box>
-				</Box>
+				</motion.div>
+
 				<VStack
 					spacing={{
 						sm: '0',
@@ -153,112 +169,126 @@ export default function Features() {
 							base: '0'
 						}}
 					>
-						<Box
-							bg='#5465FF'
-							width={{
-								sm: '100%',
-								md: '725px',
-								lg: '475px',
-								xl: '315px',
-								base: '100%'
-							}}
-							height={{
-								sm: '200px',
-								md: '200px',
-								lg: '200px',
-								xl: '200px',
-								base: '250px'
-							}}
-							borderRadius={{
-								sm: '0',
-								md: '25px',
-								lg: '25px',
-								xl: '25px',
-								base: '0'
-							}}
-							position='relative'
-							px='5'
-							py='4'
-							overflow='hidden'
+						<motion.div
+							// animate={{ x: 0 }}
+							transition={{ duration: 0.35 }}
+							whileHover={{ scale: 1.03 }}
 						>
-							<chakra.h1
-								fontSize={{
-									sm: '35px',
-									md: '40px',
-									lg: '30px',
-									xl: '30px',
-									base: '35px'
+							<Box
+								bg='#5465FF'
+								boxShadow='rgba(100, 100, 111, 0.5) 0px 0px 25px 0px'
+								width={{
+									sm: '100%',
+									md: '725px',
+									lg: '475px',
+									xl: '315px',
+									base: '100%'
 								}}
-								fontWeight='800'
-								color={useColorModeValue('white', 'black')}
-							>
-								Daily Articles
-							</chakra.h1>
-							<Text
-								fontSize={{
-									sm: '25px',
+								height={{
+									sm: '200px',
+									md: '200px',
+									lg: '200px',
+									xl: '200px',
+									base: '250px'
+								}}
+								borderRadius={{
+									sm: '0',
 									md: '25px',
 									lg: '25px',
-									xl: '20px',
-									base: '20px'
+									xl: '25px',
+									base: '0'
 								}}
-								fontWeight='600'
+								position='relative'
+								px='5'
+								py='4'
+								overflow='hidden'
 							>
-								Relevant. Concise. Accurate. Crafted for
-								precision.
-							</Text>
-							<CalendarIcon />
-						</Box>
-						<Box
-							bg='#669bbc'
-							width={{
-								sm: '100%',
-								md: '725px',
-								lg: '475px',
-								xl: '315px',
-								base: '100%'
-							}}
-							height={{
-								sm: '275px',
-								md: '200px',
-								lg: '200px',
-								xl: '200px',
-								base: '275px'
-							}}
-							borderRadius={{
-								sm: '0',
-								md: '25px',
-								lg: '25px',
-								xl: '25px',
-								base: '0'
-							}}
-							position='relative'
-							px='5'
-							py='4'
-							overflow='hidden'
+								<chakra.h1
+									fontSize={{
+										sm: '35px',
+										md: '40px',
+										lg: '30px',
+										xl: '30px',
+										base: '35px'
+									}}
+									fontWeight='800'
+									color={useColorModeValue('white', 'black')}
+								>
+									Daily Articles
+								</chakra.h1>
+								<Text
+									fontSize={{
+										sm: '25px',
+										md: '25px',
+										lg: '25px',
+										xl: '20px',
+										base: '20px'
+									}}
+									fontWeight='600'
+								>
+									Relevant. Concise. Accurate. Crafted for
+									precision.
+								</Text>
+								<CalendarIcon />
+							</Box>
+						</motion.div>
+						<motion.div
+							// animate={{ x: 0 }}
+							transition={{ duration: 0.35 }}
+							whileHover={{ scale: 1.03 }}
 						>
-							<chakra.h1
-								fontSize='30px'
-								fontWeight='800'
-								color={useColorModeValue('white', 'black')}
-							>
-								Analytic Articles
-							</chakra.h1>
-							<Text
-								fontSize={{
-									sm: '25px',
+							<Box
+								boxShadow='rgba(100, 100, 111, 0.5) 0px 0px 25px 0px'
+								bg='#669bbc'
+								width={{
+									sm: '100%',
+									md: '725px',
+									lg: '475px',
+									xl: '315px',
+									base: '100%'
+								}}
+								height={{
+									sm: '275px',
+									md: '200px',
+									lg: '200px',
+									xl: '200px',
+									base: '275px'
+								}}
+								borderRadius={{
+									sm: '0',
 									md: '25px',
 									lg: '25px',
-									xl: '18px',
-									base: '20px'
+									xl: '25px',
+									base: '0'
 								}}
-								fontWeight='600'
+								position='relative'
+								px='5'
+								py='4'
+								overflow='hidden'
 							>
-								Longer Articles. Deeper Analysis.
-							</Text>
-							<ChartIcon />
-							<MagGlassIcon />
-						</Box>
+								<chakra.h1
+									fontSize='30px'
+									fontWeight='800'
+									color={useColorModeValue('white', 'black')}
+								>
+									Analytic Articles
+								</chakra.h1>
+								<Text
+									fontSize={{
+										sm: '25px',
+										md: '25px',
+										lg: '25px',
+										xl: '18px',
+										base: '20px'
+									}}
+									fontWeight='600'
+								>
+									Longer Articles. Deeper Analysis.
+								</Text>
+								<ChartIcon />
+								<MagGlassIcon />
+							</Box>
+						</motion.div>
 					</Stack>
 					<Box
 						bg='#e07a5f'
