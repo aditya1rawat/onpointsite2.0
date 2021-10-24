@@ -9,11 +9,12 @@ import {
 	SimpleGrid,
 	Grid
 } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 
 export default function Categories() {
 	return (
 		<Box
-			bg='#09E85E'
+			bg='#38A169'
 			color={useColorModeValue('white', 'black')}
 			py={{
 				sm: '10',
@@ -143,10 +144,30 @@ export default function Categories() {
 									base: '14'
 								}}
 							>
-								<ArtIcon />
-								<BusinessIcon />
-								<CurrentEventsIcon />
-								<EntertainmentIcon />
+								<motion.div
+									whileHover={{ y: -10 }}
+									transition={{ duration: 0.2 }}
+								>
+									<ArtIcon />
+								</motion.div>
+								<motion.div
+									whileHover={{ y: -10 }}
+									transition={{ duration: 0.2 }}
+								>
+									<BusinessIcon />
+								</motion.div>
+								<motion.div
+									whileHover={{ y: -10 }}
+									transition={{ duration: 0.2 }}
+								>
+									<CurrentEventsIcon />
+								</motion.div>
+								<motion.div
+									whileHover={{ y: -10 }}
+									transition={{ duration: 0.2 }}
+								>
+									<EntertainmentIcon />
+								</motion.div>
 							</Grid>
 						</Stack>
 					</Box>
@@ -166,9 +187,14 @@ export default function Categories() {
 							base: '300px'
 						}}
 						bg='#5465FF'
+						boxShadow='rgba(0, 0, 0, 0.5) 0px 0px 25px 0px'
 						borderRadius='250px'
 					>
 						<Flex mx='auto' justifyContent='center'>
+						<motion.div
+									whileHover={{ scale: 1.04 }}
+									transition={{ duration: 0.2 }}
+								>
 							<Box
 								width='200px'
 								height='200px'
@@ -177,6 +203,8 @@ export default function Categories() {
 									'2px black solid'
 								)}
 								bg={useColorModeValue('white', 'black')}
+								boxShadow='rgba(0, 0, 0, 0.75) 0px 0px 25px 0px'
+								cursor='pointer'
 								borderRadius='10px'
 								mr={{
 									sm: '15px',
@@ -188,7 +216,7 @@ export default function Categories() {
 							>
 								<chakra.h1
 									textAlign='center'
-									py='3'
+									py='4'
 									fontSize='30px'
 									fontWeight='800'
 									color={useColorModeValue('black', 'white')}
@@ -215,6 +243,11 @@ export default function Categories() {
 									/>
 								</svg>
 							</Box>
+						</motion.div>
+						<motion.div
+									whileHover={{ scale: 1.04 }}
+									transition={{ duration: 0.2 }}
+								>
 							<Box
 								mt={{
 									sm: '15px',
@@ -223,6 +256,8 @@ export default function Categories() {
 									xl: '10',
 									base: '15px'
 								}}
+								boxShadow='rgba(0, 0, 0, 0.75) 0px 0px 25px 0px'
+								cursor='pointer'
 								width='200px'
 								height='200px'
 								border={useColorModeValue(
@@ -262,8 +297,13 @@ export default function Categories() {
 									</svg>
 								</Box>
 							</Box>
+							</motion.div>
 						</Flex>
 						<Flex mx='auto' justifyContent='center'>
+						<motion.div
+									whileHover={{ scale: 1.04 }}
+									transition={{ duration: 0.2 }}
+								>
 							<Box
 								width='200px'
 								height='200px'
@@ -271,6 +311,8 @@ export default function Categories() {
 									'',
 									'2px black solid'
 								)}
+								boxShadow='rgba(0, 0, 0, 0.75) 0px 0px 25px 0px'
+								cursor='pointer'
 								bg={useColorModeValue('white', 'black')}
 								borderRadius='10px'
 								mr={{
@@ -311,6 +353,11 @@ export default function Categories() {
 									</svg>
 								</Box>
 							</Box>
+							</motion.div>
+							<motion.div
+									whileHover={{ scale: 1.04 }}
+									transition={{ duration: 0.2 }}
+								>
 							<Box
 								mt={{
 									sm: '15px',
@@ -319,6 +366,8 @@ export default function Categories() {
 									xl: '10',
 									base: '15px'
 								}}
+								cursor='pointer'
+								boxShadow='rgba(0, 0, 0, 0.75) 0px 0px 25px 0px'
 								width='200px'
 								height='200px'
 								border={useColorModeValue(
@@ -358,6 +407,7 @@ export default function Categories() {
 									</svg>
 								</Box>
 							</Box>
+							</motion.div>
 						</Flex>
 					</Box>
 				</Stack>
@@ -368,7 +418,7 @@ export default function Categories() {
 
 export const ArtIcon = () => {
 	return (
-		<Tooltip label='Art' placement='top'>
+		<Tooltip label='Art' placement='bottom'>
 			<Box
 				width='100px'
 				height='100px'
@@ -376,6 +426,7 @@ export const ArtIcon = () => {
 				px='6'
 				py='4'
 				borderRadius='10px'
+				cursor='pointer'
 			>
 				<svg
 					width='50'
@@ -398,7 +449,7 @@ export const ArtIcon = () => {
 
 export const BusinessIcon = () => {
 	return (
-		<Tooltip label='Business' placement='top'>
+		<Tooltip label='Business' placement='bottom'>
 			<Box
 				width='100px'
 				height='100px'
@@ -406,6 +457,7 @@ export const BusinessIcon = () => {
 				px='17px'
 				py='17px'
 				borderRadius='10px'
+				cursor='pointer'
 			>
 				<svg
 					width='65'
@@ -428,7 +480,7 @@ export const BusinessIcon = () => {
 
 export const CurrentEventsIcon = () => {
 	return (
-		<Tooltip label='Current Events' placement='top'>
+		<Tooltip label='Current Events' placement='bottom'>
 			<Box
 				width='100px'
 				height='100px'
@@ -436,6 +488,7 @@ export const CurrentEventsIcon = () => {
 				borderRadius='10px'
 				px='3'
 				py='3'
+				cursor='pointer'
 			>
 				<svg
 					width='75'
@@ -458,7 +511,7 @@ export const CurrentEventsIcon = () => {
 
 export const EntertainmentIcon = () => {
 	return (
-		<Tooltip label='Entertainment' placement='top'>
+		<Tooltip label='Entertainment' placement='bottom'>
 			<Box
 				width='100px'
 				height='100px'
@@ -466,6 +519,7 @@ export const EntertainmentIcon = () => {
 				borderRadius='10px'
 				px='15px'
 				py='5'
+				cursor='pointer'
 			>
 				<svg
 					width='70'

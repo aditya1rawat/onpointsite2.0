@@ -14,7 +14,7 @@ import Link from 'next/link';
 
 export default function Categories() {
 	return (
-		<Box bg='#09E85E' color={useColorModeValue('white', 'black')}>
+		<Box bg='#38A169' color={useColorModeValue('white', 'black')}>
 			<Flex
 				width='100%'
 				py={{
