@@ -1,4 +1,5 @@
 import { Stack, Box, Text, chakra, useColorModeValue } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 
 export default function BigThree() {
 	return (
@@ -25,202 +26,233 @@ export default function BigThree() {
 				base: '0'
 			}}
 		>
-			<Box
-				bg='#02c39a'
-				width={{
-					sm: '100%',
-					md: '725px',
-					lg: '310px',
-					xl: '450px',
-					base: '100%'
-				}}
-				height={{
-					sm: '400px',
-					md: '400px',
-					lg: '435px',
-					xl: '450px',
-					base: '450px'
-				}}
-				borderRadius={{
-					sm: '0',
-					md: '25px',
-					lg: '25px',
-					xl: '25px',
-					base: '0'
-				}}
-				position='relative'
-				overflow='hidden'
+			<motion.div
+				// animate={{ x: 0 }}
+				transition={{ duration: 0.25 }}
+				whileHover={{ scale: 1.03 }}
 			>
-				<Box py='4' px='6'>
-					<chakra.h1
-						fontSize={{
-							sm: '44px',
-							md: '44px',
-							lg: '42px',
-							xl: '40px',
-							base: '40px'
-						}}
-						fontWeight='800'
-						color={useColorModeValue('white', 'black')}
-					>
-						Newsletter
-					</chakra.h1>
-					<Text
-						fontSize={{
-							sm: '25px',
-							md: '25px',
-							lg: '20px',
-							xl: '22px',
-							base: '20px'
-						}}
-						fontWeight='600'
-						width={{
-							sm: '300px',
-							md: '100px',
-							lg: '250px',
-							xl: '375px',
-							base: '250px'
-						}}
-						display={{
-							sm: 'unset',
-							md: 'unset',
-							lg: 'unset',
-							xl: 'unset',
-							base: 'unset'
-						}}
-					>
-						Important articles are sent out every week to users. It
-						is customizable to the user’s preference.
-					</Text>
+				<Box
+					bg='#02c39a'
+					width={{
+						sm: '100%',
+						md: '725px',
+						lg: '310px',
+						xl: '450px',
+						base: '100%'
+					}}
+					height={{
+						sm: '400px',
+						md: '400px',
+						lg: '435px',
+						xl: '450px',
+						base: '450px'
+					}}
+					borderRadius={{
+						sm: '0',
+						md: '25px',
+						lg: '25px',
+						xl: '25px',
+						base: '0'
+					}}
+					boxShadow={`${useColorModeValue(
+						'rgba(100, 100, 111, 0.5)',
+						'rgba(255, 255, 255, 0.5)'
+					)} 0px 0px 25px 0px`}
+					position='relative'
+					overflow='hidden'
+				>
+					<Box py='4' px='6'>
+						<chakra.h1
+							fontSize={{
+								sm: '44px',
+								md: '44px',
+								lg: '42px',
+								xl: '40px',
+								base: '40px'
+							}}
+							fontWeight='800'
+							color={useColorModeValue('white', 'black')}
+						>
+							Newsletter
+						</chakra.h1>
+						<Text
+							fontSize={{
+								sm: '25px',
+								md: '25px',
+								lg: '20px',
+								xl: '22px',
+								base: '20px'
+							}}
+							fontWeight='600'
+							width={{
+								sm: '300px',
+								md: '100px',
+								lg: '250px',
+								xl: '375px',
+								base: '250px'
+							}}
+							display={{
+								sm: 'unset',
+								md: 'unset',
+								lg: 'unset',
+								xl: 'unset',
+								base: 'unset'
+							}}
+						>
+							Important articles are sent out every week to users.
+							It is customizable to the user’s preference.
+						</Text>
+					</Box>
+					<MailBoxIllustration />
 				</Box>
-				<MailBoxIllustration />
-			</Box>
-			<Box
-				bg='#6a6b83'
-				width={{
-					sm: '100%',
-					md: '725px',
-					lg: '310px',
-					xl: '450px',
-					base: '100%'
-				}}
-				height={{
-					sm: '425px',
-					md: '350px',
-					lg: '435px',
-					xl: '450px',
-					base: '450px'
-				}}
-				borderRadius={{
-					sm: '0',
-					md: '25px',
-					lg: '25px',
-					xl: '25px',
-					base: '0'
-				}}
-				position='relative'
-				overflow='hidden'
+			</motion.div>
+			<motion.div
+				// animate={{ x: 0 }}
+				transition={{ duration: 0.25 }}
+				whileHover={{ scale: 1.03 }}
 			>
-				<Box py='4' px='6'>
-					<chakra.h1
-						fontSize={{
-							sm: '44px',
-							md: '44px',
-							lg: '30px',
-							xl: '40px',
-							base: '30px'
-						}}
-						fontWeight='800'
-						color={useColorModeValue('white', 'black')}
-					>
-						Guest Speakers / Interviews
-					</chakra.h1>
-					<Text
-						fontSize={{
-							sm: '25px',
-							md: '25px',
-							lg: '20px',
-							xl: '22px',
-							base: '20px'
-						}}
-						fontWeight='600'
-						width={{
-							sm: '100%',
-							md: '100%',
-							lg: '250px',
-							xl: '375px',
-							base: '100%'
-						}}
-					>
-						We will conduct interviews and hold speaker events to
-						further educate the public about specific topics.
-					</Text>
+				<Box
+					boxShadow={`${useColorModeValue(
+						'rgba(100, 100, 111, 0.5)',
+						'rgba(255, 255, 255, 0.5)'
+					)} 0px 0px 25px 0px`}
+					bg='#6a6b83'
+					width={{
+						sm: '100%',
+						md: '725px',
+						lg: '310px',
+						xl: '450px',
+						base: '100%'
+					}}
+					height={{
+						sm: '425px',
+						md: '350px',
+						lg: '435px',
+						xl: '450px',
+						base: '450px'
+					}}
+					borderRadius={{
+						sm: '0',
+						md: '25px',
+						lg: '25px',
+						xl: '25px',
+						base: '0'
+					}}
+					position='relative'
+					overflow='hidden'
+				>
+					<Box py='4' px='6'>
+						<chakra.h1
+							fontSize={{
+								sm: '44px',
+								md: '44px',
+								lg: '30px',
+								xl: '40px',
+								base: '30px'
+							}}
+							fontWeight='800'
+							color={useColorModeValue('white', 'black')}
+						>
+							Guest Speakers / Interviews
+						</chakra.h1>
+						<Text
+							fontSize={{
+								sm: '25px',
+								md: '25px',
+								lg: '20px',
+								xl: '22px',
+								base: '20px'
+							}}
+							fontWeight='600'
+							width={{
+								sm: '100%',
+								md: '100%',
+								lg: '250px',
+								xl: '375px',
+								base: '100%'
+							}}
+						>
+							We will conduct interviews and hold speaker events
+							to further educate the public about specific topics.
+						</Text>
+					</Box>
+					<Speaker />
 				</Box>
-				<Speaker />
-			</Box>
-			<Box
-				bg='#3a86ff'
-				width={{
-					sm: '100%',
-					md: '725px',
-					lg: '310px',
-					xl: '450px',
-					base: '100%'
-				}}
-				height={{
-					sm: '525px',
-					md: '400px',
-					lg: '435px',
-					xl: '450px',
-					base: '525px'
-				}}
-				borderRadius={{
-					sm: '0',
-					md: '25px',
-					lg: '25px',
-					xl: '25px',
-					base: '0'
-				}}
-				position='relative'
-				overflow='hidden'
+			</motion.div>
+			<motion.div
+				// animate={{ x: 0 }}
+				transition={{ duration: 0.25 }}
+				whileHover={{ scale: 1.03 }}
 			>
-				<Box py='4' px='6'>
-					<chakra.h1
-						fontSize={{
-							sm: '44px',
-							md: '44px',
-							lg: '30px',
-							xl: '40px',
-							base: '40px'
-						}}
-						fontWeight='800'
-						color={useColorModeValue('white', 'black')}
-					>
-						Active Community
-					</chakra.h1>
-					<Text
-						fontSize={{
-							sm: '25px',
-							md: '25px',
-							lg: '20px',
-							xl: '22px',
-							base: '20px'
-						}}
-						fontWeight='600'
-						width={{
-							sm: '100%',
-							md: '100%',
-							lg: '250px',
-							xl: '375px',
-							base: '100%'
-						}}
-					>
-						We want to use our platform to allow others to provide
-						opportunities that will benefit our community.
-					</Text>
+				<Box
+					boxShadow={`${useColorModeValue(
+						'rgba(100, 100, 111, 0.5)',
+						'rgba(255, 255, 255, 0.5)'
+					)} 0px 0px 25px 0px`}
+					bg='#3a86ff'
+					width={{
+						sm: '100%',
+						md: '725px',
+						lg: '310px',
+						xl: '450px',
+						base: '100%'
+					}}
+					height={{
+						sm: '525px',
+						md: '400px',
+						lg: '435px',
+						xl: '450px',
+						base: '525px'
+					}}
+					borderRadius={{
+						sm: '0',
+						md: '25px',
+						lg: '25px',
+						xl: '25px',
+						base: '0'
+					}}
+					position='relative'
+					overflow='hidden'
+				>
+					<Box py='4' px='6'>
+						<chakra.h1
+							fontSize={{
+								sm: '44px',
+								md: '44px',
+								lg: '30px',
+								xl: '40px',
+								base: '40px'
+							}}
+							fontWeight='800'
+							color={useColorModeValue('white', 'black')}
+						>
+							Active Community
+						</chakra.h1>
+						<Text
+							fontSize={{
+								sm: '25px',
+								md: '25px',
+								lg: '20px',
+								xl: '22px',
+								base: '20px'
+							}}
+							fontWeight='600'
+							width={{
+								sm: '100%',
+								md: '100%',
+								lg: '250px',
+								xl: '375px',
+								base: '100%'
+							}}
+						>
+							We want to use our platform to allow others to
+							provide opportunities that will benefit our
+							community.
+						</Text>
+					</Box>
+					<Group />
 				</Box>
-				<Group />
-			</Box>
+			</motion.div>
 		</Stack>
 	);
 }

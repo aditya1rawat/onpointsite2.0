@@ -15,6 +15,7 @@ import { motion } from 'framer-motion';
 export default function Features() {
 	return (
 		<VStack
+			py='10'
 			overflowX='hidden'
 			spacing={{
 				sm: '0',
@@ -40,18 +41,21 @@ export default function Features() {
 					xl: '25px',
 					base: '0'
 				}}
-				mt='10'
+				// mt='10'
 			>
 				<motion.div
 					// animate={{ x: 0 }}
-					transition={{ duration: 0.35 }}
+					transition={{ duration: 0.25 }}
 					whileHover={{ scale: 1.03 }}
 				>
 					<Box
 						mx='auto'
 						color={useColorModeValue('white', 'black')}
 						bg='#09E85E'
-						boxShadow='rgba(100, 100, 111, 0.5) 0px 0px 25px 0px'
+						boxShadow={`${useColorModeValue(
+							'rgba(100, 100, 111, 0.5)',
+							'rgba(255, 255, 255, 0.5)'
+						)} 0px 0px 25px 0px`}
 						width={{
 							sm: '100%',
 							md: '725px',
@@ -130,16 +134,7 @@ export default function Features() {
 								xl: 'rotate(15deg)'
 							}}
 						>
-							<motion.div
-								whileHover={{ rotate: -35, scale: 1.1 }}
-								transition={{ duration: 0.35 }}
-							>
-								<Image
-									src={WowMan}
-									width='400px'
-									height='400px'
-								/>
-							</motion.div>
+							<Image src={WowMan} width='400px' height='400px' />
 						</Box>
 					</Box>
 				</motion.div>
@@ -171,12 +166,15 @@ export default function Features() {
 					>
 						<motion.div
 							// animate={{ x: 0 }}
-							transition={{ duration: 0.35 }}
+							transition={{ duration: 0.25 }}
 							whileHover={{ scale: 1.03 }}
 						>
 							<Box
 								bg='#5465FF'
-								boxShadow='rgba(100, 100, 111, 0.5) 0px 0px 25px 0px'
+								boxShadow={`${useColorModeValue(
+									'rgba(100, 100, 111, 0.5)',
+									'rgba(255, 255, 255, 0.5)'
+								)} 0px 0px 25px 0px`}
 								width={{
 									sm: '100%',
 									md: '725px',
@@ -234,11 +232,14 @@ export default function Features() {
 						</motion.div>
 						<motion.div
 							// animate={{ x: 0 }}
-							transition={{ duration: 0.35 }}
+							transition={{ duration: 0.25 }}
 							whileHover={{ scale: 1.03 }}
 						>
 							<Box
-								boxShadow='rgba(100, 100, 111, 0.5) 0px 0px 25px 0px'
+								boxShadow={`${useColorModeValue(
+									'rgba(100, 100, 111, 0.5)',
+									'rgba(255, 255, 255, 0.5)'
+								)} 0px 0px 25px 0px`}
 								bg='#669bbc'
 								width={{
 									sm: '100%',
@@ -290,88 +291,102 @@ export default function Features() {
 							</Box>
 						</motion.div>
 					</Stack>
-					<Box
-						bg='#e07a5f'
-						width={{
-							sm: '100%',
-							md: '725px',
-							lg: '975px',
-							xl: '657px',
-							base: '100%'
-						}}
-						height={{
-							sm: '400px',
-							md: '200px',
-							lg: '200px',
-							xl: '225px',
-							base: '400px'
-						}}
-						borderRadius={{
-							sm: '0',
-							md: '25px',
-							lg: '25px',
-							xl: '25px',
-							base: '0'
-						}}
-						position='relative'
-						px='5'
-						py='4'
-						overflow='hidden'
+					<motion.div
+						// animate={{ x: 0 }}
+						transition={{ duration: 0.25 }}
+						whileHover={{ scale: 1.03 }}
 					>
-						<HStack spacing='3'>
-							<Box>
-								<chakra.h1
-									fontSize='30px'
-									fontWeight='800'
-									color={useColorModeValue('white', 'black')}
-								>
-									Weekly Videos
-								</chakra.h1>
-								<Text
-									fontSize={{
-										sm: '25px',
-										md: '20px',
-										lg: '25px',
-										xl: '20px',
-										base: '20px'
+						<Box
+							bg='#e07a5f'
+							boxShadow={`${useColorModeValue(
+								'rgba(100, 100, 111, 0.5)',
+								'rgba(255, 255, 255, 0.5)'
+							)} 0px 0px 25px 0px`}
+							width={{
+								sm: '100%',
+								md: '725px',
+								lg: '975px',
+								xl: '657px',
+								base: '100%'
+							}}
+							height={{
+								sm: '400px',
+								md: '200px',
+								lg: '200px',
+								xl: '225px',
+								base: '400px'
+							}}
+							borderRadius={{
+								sm: '0',
+								md: '25px',
+								lg: '25px',
+								xl: '25px',
+								base: '0'
+							}}
+							position='relative'
+							px='5'
+							py='4'
+							overflow='hidden'
+						>
+							<HStack spacing='3'>
+								<Box>
+									<chakra.h1
+										fontSize='30px'
+										fontWeight='800'
+										color={useColorModeValue(
+											'white',
+											'black'
+										)}
+									>
+										Weekly Videos
+									</chakra.h1>
+									<Text
+										fontSize={{
+											sm: '25px',
+											md: '20px',
+											lg: '25px',
+											xl: '20px',
+											base: '20px'
+										}}
+										fontWeight='600'
+										width={{
+											sm: '100%',
+											md: '400px',
+											lg: '475px',
+											xl: '350px',
+											base: '100%'
+										}}
+									>
+										Weekly videos provide a brief
+										description of the events we covered
+										during the week.
+									</Text>
+								</Box>
+								<Box
+									display={{
+										sm: 'none',
+										md: 'unset',
+										lg: 'unset',
+										xl: 'unset',
+										base: 'unset'
 									}}
-									fontWeight='600'
-									width={{
-										sm: '100%',
-										md: '400px',
-										lg: '475px',
-										xl: '350px',
-										base: '100%'
+								>
+									<VideoIcon />
+								</Box>
+								<Box
+									display={{
+										sm: 'none',
+										md: 'none',
+										lg: 'unset',
+										xl: 'none',
+										base: 'none'
 									}}
 								>
-									Weekly videos provide a brief description of
-									the events we covered during the week.
-								</Text>
-							</Box>
-							<Box
-								display={{
-									sm: 'none',
-									md: 'unset',
-									lg: 'unset',
-									xl: 'unset',
-									base: 'unset'
-								}}
-							>
-								<VideoIcon />
-							</Box>
-							<Box
-								display={{
-									sm: 'none',
-									md: 'none',
-									lg: 'unset',
-									xl: 'none',
-									base: 'none'
-								}}
-							>
-								<PlaylistIcon />
-							</Box>
-						</HStack>
-					</Box>
+									<PlaylistIcon />
+								</Box>
+							</HStack>
+						</Box>
+					</motion.div>
 				</VStack>
 			</Stack>
 			<BigThree />
