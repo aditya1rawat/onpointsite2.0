@@ -21,6 +21,7 @@ const ThemeButton = () => {
 				} mode`}
 				variant='ghost'
 				borderWidth='3px'
+				border
 				borderColor={useColorModeValue('black', 'white')}
 				bg={useColorModeValue('white', 'black')}
 				fontSize='25px'
