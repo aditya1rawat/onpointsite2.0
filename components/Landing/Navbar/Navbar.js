@@ -79,6 +79,11 @@ export default function Navbar() {
 										xl: 'unset',
 										base: 'unset'
 									}}
+									color={
+										scrollY > 75
+											? useColorModeValue('black', 'white')
+											: useColorModeValue('white', 'white')
+									}
 								>
 									OnPoint
 								</chakra.h1>
