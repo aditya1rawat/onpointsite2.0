@@ -9,9 +9,11 @@ export default function DonateService({
 }) {
 	return (
 		<Box
-			bg={useColorModeValue('black', 'white')}
-			color={useColorModeValue('white', 'black')}
+			bg={useColorModeValue('white', 'black')}
+			color={useColorModeValue('black', 'white')}
 			borderRadius='25px'
+			borderWidth='4px'
+			borderColor={useColorModeValue('black', 'white')}
 			width='300px'
 			height='325px'
 			py='5'
