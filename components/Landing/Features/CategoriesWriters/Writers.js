@@ -120,14 +120,30 @@ export default function Categories() {
 									'5px solid white'
 								)}
 								boxSizing='border-box'
-								borderRadius='10px'
-								background={useColorModeValue('white', 'black')}
 								fontSize='20px'
 								px='5'
 								py='6'
 								fontWeight='bold'
-								color={useColorModeValue('black', 'white')}
 								variant='solid'
+								borderRadius='7px'
+								className='signUpButton'
+								bg={useColorModeValue('white', 'black')}
+								color={useColorModeValue('black', 'white')}
+								position='relative'
+								sx={{
+									'.signUpButton:before': {
+										transition: 'transform 0.6s'
+									}
+								}}
+								_hover={{
+									transformOrigin: '0 0',
+									transform: 'scaleX(1)',
+									background: useColorModeValue(
+										'black',
+										'white'
+									),
+									color: useColorModeValue('white', 'black')
+								}}
 							>
 								Start Writing Now <GetStartedArrowIcon />
 							</Button>

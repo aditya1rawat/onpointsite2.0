@@ -58,16 +58,13 @@ export default function CallToAction() {
 					fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
 					lineHeight={'110%'}
 					wordBreak='keep-all'
+					fontWeight='bold'
+					color={'white'}
 				>
 					What Are You Waiting For? <br />
-					<Text color={'#5465FF'}>Sign Up Now!</Text>
+					<Text color={'white'}>Sign Up Now!</Text>
 				</Text>
-				<Text color={'gray.500'}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</Text>
+
 				<Stack
 					direction={'column'}
 					spacing={3}
@@ -75,7 +72,7 @@ export default function CallToAction() {
 					alignSelf={'center'}
 					position={'relative'}
 				>
-					<Button
+					{/* <Button
 						colorScheme={'green'}
 						bg={'green.400'}
 						rounded={'full'}
@@ -85,7 +82,32 @@ export default function CallToAction() {
 						}}
 					>
 						Get Started
-					</Button>
+					</Button> */}
+					<Link href='/signup'>
+						<Button
+							borderRadius='7px'
+							className='signUpButton'
+							bg={useColorModeValue('white', 'black')}
+							color={useColorModeValue('black', 'white')}
+							position='relative'
+							display='inline-block'
+							sx={{
+								'.signUpButton:before': {
+									transition: 'transform 0.6s'
+								}
+							}}
+							_hover={{
+								transformOrigin: '0 0',
+								transform: 'scaleX(1)',
+								background: useColorModeValue('black', 'white'),
+								color: useColorModeValue('white', 'black')
+							}}
+						>
+							<span transition='color 0.6s'>
+								Log In / Sign Up
+							</span>
+						</Button>
+					</Link>
 
 					<Box>
 						<Icon
