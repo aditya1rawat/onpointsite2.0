@@ -72,17 +72,6 @@ export default function CallToAction() {
 					alignSelf={'center'}
 					position={'relative'}
 				>
-					{/* <Button
-						colorScheme={'green'}
-						bg={'green.400'}
-						rounded={'full'}
-						px={6}
-						_hover={{
-							bg: 'green.500'
-						}}
-					>
-						Get Started
-					</Button> */}
 					<Link href='/signup'>
 						<Button
 							borderRadius='7px'
@@ -112,7 +101,7 @@ export default function CallToAction() {
 					<Box>
 						<Icon
 							as={Arrow}
-							color={useColorModeValue('gray.800', 'gray.300')}
+							color={useColorModeValue('white', 'black')}
 							w={71}
 							position={'absolute'}
 							right={-71}
