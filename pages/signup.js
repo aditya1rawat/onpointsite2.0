@@ -137,14 +137,14 @@ export default function SignUp() {
 			/>
 			<Blur
 				position={'absolute'}
-				right={-10}
+				right={-100}
 				bottom={-200}
 				style={{ filter: 'blur(70px)' }}
-				zIndex='0'
+				zIndex='1'
 			/>
-			<Box zIndex='2'>
-				<Footer />
-			</Box>
+			{/* <Box zIndex='0' position='relative'> */}
+			<Footer />
+			{/* </Box> */}
 		</Box>
 	);
 }

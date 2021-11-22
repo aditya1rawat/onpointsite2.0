@@ -10,6 +10,7 @@ import {
 	Grid
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
+import FourSection from './FourSection';
 
 export default function Categories() {
 	return (
@@ -124,10 +125,11 @@ export default function Categories() {
 								justifyContent={{
 									sm: 'center',
 									md: 'center',
-									lg: 'unset',
-									xl: 'unset',
+									lg: 'center',
+									xl: 'flex-start',
 									base: 'center'
 								}}
+								alignContent={'center'}
 								templateColumns={{
 									sm: 'repeat(2, 1fr)',
 									md: 'repeat(4, 1fr)',
@@ -191,92 +193,32 @@ export default function Categories() {
 						borderRadius='250px'
 					>
 						<Flex mx='auto' justifyContent='center'>
-						<motion.div
-									whileHover={{ scale: 1.04 }}
-									transition={{ duration: 0.2 }}
-								>
-							<Box
-								width='200px'
-								height='200px'
-								border={useColorModeValue(
-									'',
-									'2px black solid'
-								)}
-								bg={useColorModeValue('white', 'black')}
-								boxShadow='rgba(0, 0, 0, 0.75) 0px 0px 25px 0px'
-								cursor='pointer'
-								borderRadius='10px'
-								mr={{
-									sm: '15px',
-									md: '20px',
-									lg: '5',
-									xl: '10',
-									base: '15px'
-								}}
-							>
-								<chakra.h1
-									textAlign='center'
-									py='4'
-									fontSize='30px'
-									fontWeight='800'
-									color={useColorModeValue('black', 'white')}
-								>
-									Politics
-								</chakra.h1>
-
-								<svg
-									width='100'
-									height='90'
-									viewBox='0 0 65 59'
-									fill='none'
-									xmlns='http://www.w3.org/2000/svg'
-									style={{ margin: 'auto' }}
-								>
-									<path
-										fill-rule='evenodd'
-										clip-rule='evenodd'
-										d='M6.5 48.75V6.5H45.5V48.75C45.5 49.8896 45.6955 50.9835 46.0548 52H9.75C7.95507 52 6.5 50.5449 6.5 48.75ZM55.25 58.5H9.75C4.36522 58.5 0 54.1348 0 48.75V0H45.5H48.75H52V16.25H65V19.5V22.75V48.75C65 54.1348 60.6348 58.5 55.25 58.5ZM52 22.75H58.5V48.75C58.5 50.5449 57.0449 52 55.25 52C53.4551 52 52 50.5449 52 48.75V22.75ZM26 13V26H13V13H26ZM39 22.75V16.25H29.25V22.75H39ZM39 29.25V35.75H13V29.25H39ZM39 45.5V39H13V45.5H39Z'
-										fill={useColorModeValue(
-											'black',
-											'white'
-										)}
-									/>
-								</svg>
-							</Box>
-						</motion.div>
-						<motion.div
-									whileHover={{ scale: 1.04 }}
-									transition={{ duration: 0.2 }}
-								>
-							<Box
-								mt={{
-									sm: '15px',
-									md: '20px',
-									lg: '5',
-									xl: '10',
-									base: '15px'
-								}}
-								boxShadow='rgba(0, 0, 0, 0.75) 0px 0px 25px 0px'
-								cursor='pointer'
-								width='200px'
-								height='200px'
-								border={useColorModeValue(
-									'',
-									'2px black solid'
-								)}
-								bg={useColorModeValue('white', 'black')}
-								borderRadius='10px'
-							>
-								<chakra.h1
-									textAlign='center'
-									py='3'
-									fontSize='30px'
-									fontWeight='800'
-									color={useColorModeValue('black', 'white')}
-								>
-									Sports
-								</chakra.h1>
-								<Box mt='3'>
+							<FourSection
+								category='Politics'
+								categoryIcon={
+									<svg
+										width='100'
+										height='90'
+										viewBox='0 0 65 59'
+										fill='none'
+										xmlns='http://www.w3.org/2000/svg'
+										style={{ margin: 'auto' }}
+									>
+										<path
+											fill-rule='evenodd'
+											clip-rule='evenodd'
+											d='M6.5 48.75V6.5H45.5V48.75C45.5 49.8896 45.6955 50.9835 46.0548 52H9.75C7.95507 52 6.5 50.5449 6.5 48.75ZM55.25 58.5H9.75C4.36522 58.5 0 54.1348 0 48.75V0H45.5H48.75H52V16.25H65V19.5V22.75V48.75C65 54.1348 60.6348 58.5 55.25 58.5ZM52 22.75H58.5V48.75C58.5 50.5449 57.0449 52 55.25 52C53.4551 52 52 50.5449 52 48.75V22.75ZM26 13V26H13V13H26ZM39 22.75V16.25H29.25V22.75H39ZM39 29.25V35.75H13V29.25H39ZM39 45.5V39H13V45.5H39Z'
+											fill={useColorModeValue(
+												'black',
+												'white'
+											)}
+										/>
+									</svg>
+								}
+							/>
+							<FourSection
+								category='Sports'
+								categoryIcon={
 									<svg
 										width='100'
 										height='90'
@@ -295,44 +237,14 @@ export default function Categories() {
 											)}
 										/>
 									</svg>
-								</Box>
-							</Box>
-							</motion.div>
+								}
+								mt='true'
+							/>
 						</Flex>
 						<Flex mx='auto' justifyContent='center'>
-						<motion.div
-									whileHover={{ scale: 1.04 }}
-									transition={{ duration: 0.2 }}
-								>
-							<Box
-								width='200px'
-								height='200px'
-								border={useColorModeValue(
-									'',
-									'2px black solid'
-								)}
-								boxShadow='rgba(0, 0, 0, 0.75) 0px 0px 25px 0px'
-								cursor='pointer'
-								bg={useColorModeValue('white', 'black')}
-								borderRadius='10px'
-								mr={{
-									sm: '15px',
-									md: '20px',
-									lg: '5',
-									xl: '10',
-									base: '15px'
-								}}
-							>
-								<chakra.h1
-									textAlign='center'
-									py='3'
-									fontSize='30px'
-									fontWeight='800'
-									color={useColorModeValue('black', 'white')}
-								>
-									Science
-								</chakra.h1>
-								<Box>
+							<FourSection
+								category='Science'
+								categoryIcon={
 									<svg
 										width='100'
 										height='100'
@@ -351,42 +263,11 @@ export default function Categories() {
 											)}
 										/>
 									</svg>
-								</Box>
-							</Box>
-							</motion.div>
-							<motion.div
-									whileHover={{ scale: 1.04 }}
-									transition={{ duration: 0.2 }}
-								>
-							<Box
-								mt={{
-									sm: '15px',
-									md: '20px',
-									lg: '5',
-									xl: '10',
-									base: '15px'
-								}}
-								cursor='pointer'
-								boxShadow='rgba(0, 0, 0, 0.75) 0px 0px 25px 0px'
-								width='200px'
-								height='200px'
-								border={useColorModeValue(
-									'',
-									'2px black solid'
-								)}
-								bg={useColorModeValue('white', 'black')}
-								borderRadius='10px'
-							>
-								<chakra.h1
-									textAlign='center'
-									py='3'
-									fontSize='30px'
-									fontWeight='800'
-									color={useColorModeValue('black', 'white')}
-								>
-									Tech
-								</chakra.h1>
-								<Box mt='3'>
+								}
+							/>
+							<FourSection
+								category='Tech'
+								categoryIcon={
 									<svg
 										width='74'
 										height='90'
@@ -405,9 +286,9 @@ export default function Categories() {
 											)}
 										/>
 									</svg>
-								</Box>
-							</Box>
-							</motion.div>
+								}
+								mt='true'
+							/>
 						</Flex>
 					</Box>
 				</Stack>

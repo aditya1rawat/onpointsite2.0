@@ -4,8 +4,8 @@ import Features from '../components/Landing/Features/Features';
 import Hero from '../components/Landing/Hero';
 import Navbar from '../components/Landing/Navbar/Navbar';
 import GetStarted from '../components/Landing/GetStarted/GetStarted';
-import Categories from '../components/Landing/Features/CategoriesWriters/Categories';
-import Writers from '../components/Landing/Features/CategoriesWriters/Writers';
+import Categories from '../components/Landing/Features/Categories/Categories';
+import Writers from '../components/Landing/Features/Writers/Writers';
 // import Stats from '../components/Landing/Features/Stats/Stats';
 import CallToAction from '../components/Landing/CallToAction';
 import Support from '../components/Landing/Support/Support';
@@ -22,7 +22,7 @@ export default function Home() {
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Box bg={useColorModeValue('white', 'black')}>
+			<Box bg={useColorModeValue('white', 'black')} overflow='hidden'>
 				<Navbar />
 				<Hero />
 				<GetStarted />

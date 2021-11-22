@@ -134,7 +134,21 @@ export default function Features() {
 								xl: 'rotate(15deg)'
 							}}
 						>
-							<Image src={WowMan} width='400px' height='400px' />
+							<motion.div
+								animate={{ rotate: 7 }}
+								transition={{
+									delay: 1,
+									duration: 3,
+									repeat: Infinity,
+									repeatType: 'reverse'
+								}}
+							>
+								<Image
+									src={WowMan}
+									width='400px'
+									height='400px'
+								/>
+							</motion.div>
 						</Box>
 					</Box>
 				</motion.div>

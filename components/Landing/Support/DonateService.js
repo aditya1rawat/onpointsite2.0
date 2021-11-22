@@ -15,7 +15,7 @@ export default function DonateService({
 			borderWidth='4px'
 			borderColor={useColorModeValue('black', 'white')}
 			width='300px'
-			height='325px'
+			height='auto'
 			py='5'
 			px='5'
 		>
@@ -29,7 +29,7 @@ export default function DonateService({
 				<Button
 					width='100%'
 					mx='auto'
-					mt='5'
+					mt='6'
 					boxSizing='border-box'
 					borderRadius='10px'
 					fontSize='25px'

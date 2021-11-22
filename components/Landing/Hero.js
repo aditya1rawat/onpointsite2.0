@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react';
 import HeroRocket from '../../public/HeroRocket.png';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
 	return (
@@ -97,6 +98,7 @@ export default function Hero() {
 						Get Started <GetStartedArrowIcon />
 					</Button>
 				</Box>
+
 				<Box
 					pt={{
 						sm: '16',
@@ -114,7 +116,17 @@ export default function Hero() {
 					}}
 					// bg={<Gradient />}
 				>
-					<Image src={HeroRocket} width='500px' height='500px' />
+					<motion.div
+						animate={{ rotate: 15 }}
+						transition={{
+							delay: 1,
+							duration: 3,
+							repeat: Infinity,
+							repeatType: 'reverse'
+						}}
+					>
+						<Image src={HeroRocket} width='500px' height='500px' />
+					</motion.div>
 				</Box>
 			</Stack>
 		</Box>
