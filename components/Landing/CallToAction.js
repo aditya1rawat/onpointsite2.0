@@ -6,10 +6,12 @@ import {
 	Text,
 	Flex,
 	Button,
-	Heading,
+	SimpleGrid,
 	Icon,
 	createIcon
 } from '@chakra-ui/react';
+
+import calltoactionbackground from '../../public/calltoactionbackground.png';
 
 import Link from 'next/link';
 
@@ -28,161 +30,240 @@ const Arrow = createIcon({
 
 export default function CallToAction() {
 	return (
-		<Box
-			bg={useColorModeValue('white', 'black')}
-			color={useColorModeValue('black', 'white')}
-			borderBottom={{
-				sm: `10px ${useColorModeValue('black', 'white')} solid`,
-				md: 'unset',
-				lg: 'unset',
-				xl: `unset`,
-				base: `10px ${useColorModeValue('black', 'white')} solid`
-			}}
-			py={{
-				sm: 'unset',
-				md: '5',
-				lg: '10',
-				xl: '10',
-				base: 'unset'
-			}}
-		>
-			<Stack
-				maxW='3xl'
-				m='auto'
-				textAlign={'center'}
-				spacing={{ base: 8, md: 14 }}
-				py={{ base: 20, md: 36 }}
+		<>
+			<Box
+				style={{ backgroundImage: `url(${calltoactionbackground})` }}
+				color={useColorModeValue('black', 'white')}
+				borderBottom={{
+					sm: `10px ${useColorModeValue('black', 'white')} solid`,
+					md: 'unset',
+					lg: 'unset',
+					xl: `unset`,
+					base: `10px ${useColorModeValue('black', 'white')} solid`
+				}}
+				py={{
+					sm: 'unset',
+					md: '5',
+					lg: '10',
+					xl: '10',
+					base: 'unset'
+				}}
 			>
-				<Text
-					fontWeight={600}
-					fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-					lineHeight={'110%'}
-					wordBreak='keep-all'
-					fontWeight='bold'
-					color={useColorModeValue('black', 'white')}
-				>
-					What Are You Waiting For? <br />
-					<Text color={'white'}>Sign Up Now!</Text>
-				</Text>
-
 				<Stack
-					direction={'column'}
-					spacing={3}
-					align={'center'}
-					alignSelf={'center'}
-					position={'relative'}
+					maxW='3xl'
+					m='auto'
+					textAlign={'center'}
+					spacing={{ base: 8, md: 14 }}
+					py={{ base: 20, md: 36 }}
 				>
-					<Link href='/signup'>
-						<Button
-							borderRadius='7px'
-							className='signUpButton'
-							bg={useColorModeValue('black', 'white')}
-							color={useColorModeValue('white', 'black')}
-							position='relative'
-							display='inline-block'
-							sx={{
-								'.signUpButton:before': {
-									transition: 'transform 0.6s'
-								}
-							}}
-							_hover={{
-								transformOrigin: '0 0',
-								transform: 'scaleX(1)',
-								background: ,
-								color: useColorModeValue('black', 'white')
-							}}
-						>
-							<span transition='color 0.6s'>
-								Log In / Sign Up
-							</span>
-						</Button>
-					</Link>
+					<Text
+						fontWeight={600}
+						fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+						lineHeight={'110%'}
+						wordBreak='keep-all'
+						fontWeight='bold'
+						color={useColorModeValue('black', 'white')}
+					>
+						What Are You Waiting For? <br />
+						<Text color={'white'}>Sign Up Now!</Text>
+					</Text>
 
-					<Box>
-						<Icon
-							as={Arrow}
-							color={useColorModeValue('black', 'white')}
-							w={71}
-							position={'absolute'}
-							right={-71}
-							top={'10px'}
-						/>
-						<Text
-							fontSize={'lg'}
-							position={'absolute'}
-							right={'-125px'}
-							top={'-15px'}
-							transform={'rotate(10deg)'}
-						>
-							Free Account!
-						</Text>
-					</Box>
+					<Stack
+						direction={'column'}
+						spacing={3}
+						align={'center'}
+						alignSelf={'center'}
+						position={'relative'}
+					>
+						<Link href='/signup'>
+							<Button
+								borderRadius='7px'
+								className='signUpButton'
+								bg={useColorModeValue('black', 'white')}
+								color={useColorModeValue('white', 'black')}
+								position='relative'
+								display='inline-block'
+								sx={{
+									'.signUpButton:before': {
+										transition: 'transform 0.6s'
+									}
+								}}
+								_hover={{
+									transformOrigin: '0 0',
+									transform: 'scaleX(1)',
+									background: useColorModeValue(
+										'white',
+										'black'
+									),
+									color: useColorModeValue('black', 'white')
+								}}
+							>
+								<span transition='color 0.6s'>
+									Log In / Sign Up
+								</span>
+							</Button>
+						</Link>
+
+						<Box>
+							<Icon
+								as={Arrow}
+								color={useColorModeValue('black', 'white')}
+								w={71}
+								position={'absolute'}
+								right={-71}
+								top={'10px'}
+							/>
+							<Text
+								fontSize={'lg'}
+								position={'absolute'}
+								right={'-125px'}
+								top={'-15px'}
+								transform={'rotate(10deg)'}
+							>
+								Free Account!
+							</Text>
+						</Box>
+					</Stack>
 				</Stack>
-			</Stack>
-			<Box>
-				<BackgroundGrad />
 			</Box>
-		</Box>
+		</>
 	);
 }
 
 export function BackgroundGrad() {
 	return (
-		<svg
-			width='1400'
-			height='1401'
-			// fill='none'
-			xmlns='http://www.w3.org/2000/svg'
-		>
-			<g filter='url(#a)'>
-				<circle cx='700' cy='700.142' r='450' fill='url(#b)' />
-			</g>
-			<defs>
-				<linearGradient
-					id='b'
-					x1='936.459'
-					y1='361.108'
-					x2='414.532'
-					y2='1045.21'
-					gradientUnits='userSpaceOnUse'
-				>
-					<stop stop-color='#5465FF' />
-					<stop offset='1' stop-color='#09E85E' />
-				</linearGradient>
-				<filter
-					id='a'
-					x='0'
-					y='.142'
-					width='1400'
-					height='1400'
-					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
-				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
-					<feColorMatrix
-						in='SourceAlpha'
-						values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
-						result='hardAlpha'
+		<Box justifyContent='center' mx='auto'>
+			<svg
+				width='1850'
+				height='1401'
+				viewBox='0 0 1850 1401'
+				fill='none'
+				xmlns='http://www.w3.org/2000/svg'
+			>
+				<g filter='url(#filter0_df_1514_4)'>
+					<circle
+						cx='1150'
+						cy='700.142'
+						r='450'
+						fill='url(#paint0_linear_1514_4)'
 					/>
-					<feOffset dy='4' />
-					<feGaussianBlur stdDeviation='2' />
-					<feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0' />
-					<feBlend
-						in2='BackgroundImageFix'
-						result='effect1_dropShadow_1505_2'
+				</g>
+				<g filter='url(#filter1_df_1514_4)'>
+					<circle
+						cx='700'
+						cy='700'
+						r='450'
+						fill='url(#paint1_linear_1514_4)'
 					/>
-					<feBlend
-						in='SourceGraphic'
-						in2='effect1_dropShadow_1505_2'
-						result='shape'
-					/>
-					<feGaussianBlur
-						stdDeviation='125'
-						result='effect2_foregroundBlur_1505_2'
-					/>
-				</filter>
-			</defs>
-		</svg>
+				</g>
+				<defs>
+					<filter
+						id='filter0_df_1514_4'
+						x='450'
+						y='0.14209'
+						width='1400'
+						height='1400'
+						filterUnits='userSpaceOnUse'
+						color-interpolation-filters='sRGB'
+					>
+						<feFlood
+							flood-opacity='0'
+							result='BackgroundImageFix'
+						/>
+						<feColorMatrix
+							in='SourceAlpha'
+							type='matrix'
+							values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+							result='hardAlpha'
+						/>
+						<feOffset dy='4' />
+						<feGaussianBlur stdDeviation='2' />
+						<feColorMatrix
+							type='matrix'
+							values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'
+						/>
+						<feBlend
+							mode='normal'
+							in2='BackgroundImageFix'
+							result='effect1_dropShadow_1514_4'
+						/>
+						<feBlend
+							mode='normal'
+							in='SourceGraphic'
+							in2='effect1_dropShadow_1514_4'
+							result='shape'
+						/>
+						<feGaussianBlur
+							stdDeviation='125'
+							result='effect2_foregroundBlur_1514_4'
+						/>
+					</filter>
+					<filter
+						id='filter1_df_1514_4'
+						x='0'
+						y='0'
+						width='1400'
+						height='1400'
+						filterUnits='userSpaceOnUse'
+						color-interpolation-filters='sRGB'
+					>
+						<feFlood
+							flood-opacity='0'
+							result='BackgroundImageFix'
+						/>
+						<feColorMatrix
+							in='SourceAlpha'
+							type='matrix'
+							values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+							result='hardAlpha'
+						/>
+						<feOffset dy='4' />
+						<feGaussianBlur stdDeviation='2' />
+						<feColorMatrix
+							type='matrix'
+							values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'
+						/>
+						<feBlend
+							mode='normal'
+							in2='BackgroundImageFix'
+							result='effect1_dropShadow_1514_4'
+						/>
+						<feBlend
+							mode='normal'
+							in='SourceGraphic'
+							in2='effect1_dropShadow_1514_4'
+							result='shape'
+						/>
+						<feGaussianBlur
+							stdDeviation='125'
+							result='effect2_foregroundBlur_1514_4'
+						/>
+					</filter>
+					<linearGradient
+						id='paint0_linear_1514_4'
+						x1='1386.46'
+						y1='361.108'
+						x2='864.532'
+						y2='1045.21'
+						gradientUnits='userSpaceOnUse'
+					>
+						<stop stop-color='#5465FF' />
+						<stop offset='1' stop-color='#09E85E' />
+					</linearGradient>
+					<linearGradient
+						id='paint1_linear_1514_4'
+						x1='281.282'
+						y1='1241.12'
+						x2='1048.03'
+						y2='67.7585'
+						gradientUnits='userSpaceOnUse'
+					>
+						<stop stop-color='#5465FF' />
+						<stop offset='1' stop-color='#09E85E' />
+					</linearGradient>
+				</defs>
+			</svg>
+		</Box>
 	);
 }
 
