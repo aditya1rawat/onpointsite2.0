@@ -30,8 +30,8 @@ export default function FourSection({ category, categoryIcon, mt }) {
 						  }
 						: 'unset'
 				}
-				border={useColorModeValue('', '2px black solid')}
-				bg={useColorModeValue('white', 'black')}
+				// border={useColorModeValue('', '2px black solid')}
+				bg={'white'}
 				boxShadow='rgba(0, 0, 0, 0.75) 0px 0px 25px 0px'
 				cursor='pointer'
 				borderRadius='10px'
@@ -48,7 +48,7 @@ export default function FourSection({ category, categoryIcon, mt }) {
 					py='4'
 					fontSize='30px'
 					fontWeight='800'
-					color={useColorModeValue('black', 'white')}
+					color={'black'}
 				>
 					{category}
 				</chakra.h1>

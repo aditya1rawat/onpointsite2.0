@@ -8,13 +8,13 @@ import {
 	Button,
 	useColorModeValue
 } from '@chakra-ui/react';
-import PhoneMockup from '../../../../public/phonemockup.png';
+import PhoneMockup from '../../../../../public/phonemockup.png';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Categories() {
 	return (
-		<Box bg='#38A169' color={useColorModeValue('white', 'black')}>
+		<Box color={'white'}>
 			<Flex
 				width='100%'
 				py={{
@@ -115,10 +115,7 @@ export default function Categories() {
 							<Button
 								mx='auto'
 								mt='10'
-								border={useColorModeValue(
-									'5px solid black',
-									'5px solid white'
-								)}
+								border={'5px solid black'}
 								boxSizing='border-box'
 								fontSize='20px'
 								px='5'
@@ -127,8 +124,8 @@ export default function Categories() {
 								variant='solid'
 								borderRadius='7px'
 								className='signUpButton'
-								bg={useColorModeValue('white', 'black')}
-								color={useColorModeValue('black', 'white')}
+								bg={'white'}
+								color={'black'}
 								position='relative'
 								sx={{
 									'.signUpButton:before': {
@@ -138,11 +135,8 @@ export default function Categories() {
 								_hover={{
 									transformOrigin: '0 0',
 									transform: 'scaleX(1)',
-									background: useColorModeValue(
-										'black',
-										'white'
-									),
-									color: useColorModeValue('white', 'black')
+									background: 'black',
+									color: 'white'
 								}}
 							>
 								Start Writing Now <GetStartedArrowIcon />
@@ -167,7 +161,7 @@ const GetStartedArrowIcon = () => {
 			>
 				<path
 					d='M13.4886 0L11.8683 1.80873L15.6238 5.96201L0 5.97948L0.00231143 8.53145L15.5833 8.51402L11.8911 12.6357L13.5189 14.436L20 7.20114L13.4886 0Z'
-					fill={useColorModeValue('black', 'white')}
+					fill={'black'}
 				/>
 			</svg>
 		</Box>
