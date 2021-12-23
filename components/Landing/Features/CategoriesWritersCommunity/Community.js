@@ -164,7 +164,22 @@ export default function Community() {
 							</Button>
 						</Link>
 					</Box>
-					<Box>
+					<Box
+						width={{
+							sm: '300px',
+							md: '450px',
+							lg: '400px',
+							xl: '500px',
+							base: '300px'
+						}}
+						height={{
+							sm: '300px',
+							md: '450px',
+							lg: '400px',
+							xl: '500px',
+							base: '300px'
+						}}
+					>
 						<Flex mx='auto' justifyContent='center'>
 							{/* <Image
 								src={community}
