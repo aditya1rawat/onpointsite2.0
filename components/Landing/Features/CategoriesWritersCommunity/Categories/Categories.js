@@ -81,26 +81,62 @@ export default function Categories() {
 							base: 'center'
 						}}
 					>
-						<chakra.h1
-							fontSize={{
-								sm: '40px',
-								md: '40px',
-								lg: '40px',
-								xl: '50px',
-								base: '40px'
-							}}
-							fontWeight='700'
-							mb='10'
+						<Stack
+							direction={'row'}
+							whiteSpace={'nowrap'}
 							mt={{
-								sm: 'unset',
-								md: 'unset',
-								lg: '25px',
-								xl: '60px',
-								base: 'unset'
+								sm: '25px',
+								md: '20px',
+								lg: '15px',
+								xl: '75px',
+								base: '32'
+							}}
+							mb={{
+								sm: '15px',
+								md: '20px',
+								lg: '50px',
+								xl: '10',
+								base: '15px'
 							}}
 						>
-							Diverse Categories
-						</chakra.h1>
+							<Box
+								bg={'#253237'}
+								px='15px'
+								mr='25px'
+								borderRadius={'10px'}
+							>
+								<chakra.h1
+									fontSize={{
+										sm: '40px',
+										md: '40px',
+										lg: '40px',
+										xl: '50px',
+										base: '40px'
+									}}
+								>
+									🔡
+								</chakra.h1>
+							</Box>
+							<chakra.h1
+								fontSize={{
+									sm: '40px',
+									md: '40px',
+									lg: '45px',
+									xl: '50px',
+									base: '40px'
+								}}
+								fontWeight='700'
+								mb={{
+									sm: '15px',
+									md: '20px',
+									lg: '50px',
+									xl: '10',
+									base: '15px'
+								}}
+							>
+								Diverse Categories
+							</chakra.h1>
+						</Stack>
 						<Text>
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit. Condimentum diam orci pretium a pharetra,
