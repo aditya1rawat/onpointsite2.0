@@ -96,7 +96,7 @@ export default function Community() {
 										sm: '40px',
 										md: '40px',
 										lg: '40px',
-										xl: '50px',
+										xl: '45px',
 										base: '40px'
 									}}
 								>
@@ -108,7 +108,7 @@ export default function Community() {
 									sm: '40px',
 									md: '40px',
 									lg: '40px',
-									xl: '50px',
+									xl: '45px',
 									base: '40px'
 								}}
 								fontWeight='700'
@@ -160,7 +160,7 @@ export default function Community() {
 									color: 'white'
 								}}
 							>
-								Start Writing Now
+								Join Our Community Now
 							</Button>
 						</Link>
 					</Box>

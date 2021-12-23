@@ -99,7 +99,7 @@ export default function Categories() {
 							<Box
 								bg={'#253237'}
 								px='15px'
-								mr='25px'
+								mr='15px'
 								borderRadius={'10px'}
 							>
 								<chakra.h1
@@ -119,7 +119,7 @@ export default function Categories() {
 									sm: '40px',
 									md: '40px',
 									lg: '45px',
-									xl: '50px',
+									xl: '45px',
 									base: '40px'
 								}}
 								fontWeight='700'

@@ -60,9 +60,9 @@ export default function Support() {
 				}}
 				justifyContent='center'
 				mx='auto'
-				pb='22'
+				pb='16'
 			>
-				<SimpleGrid
+				{/* <SimpleGrid
 					columns={{
 						sm: '1',
 						md: '2',
@@ -74,55 +74,55 @@ export default function Support() {
 					mx='auto'
 					spacingX='25px'
 					spacingY='25px'
-				>
-					<DonateService
-						icon={
-							<Box textAlign='center'>
-								<Image
-									src={HackClubLogo}
-									width='125px'
-									height='125px'
-								/>
-							</Box>
-						}
-						name={'Hack Club Bank'}
-						nameLink={'https://hackclub.com/bank'}
-						donateLink={
-							'https://bank.hackclub.com/donations/start/onpoint'
-						}
-						donateButtonText={'Donate'}
-					/>
-					<DonateService
-						icon={
-							<Box textAlign='center'>
-								<Image
-									src={PayPalLogo}
-									width='125px'
-									height='125px'
-								/>
-							</Box>
-						}
-						name={'Pay Pal'}
-						nameLink={'https://paypal.com'}
-						donateLink={
-							'https://www.paypal.com/paypalme/adityarawat69420'
-						}
-						donateButtonText={'Donate'}
-					/>
-					<DonateService
-						icon={
-							<Box textAlign='center'>
-								<Image
-									src={VenmoStripeLogos}
-									height='125px'
-									width='260px'
-								/>
-							</Box>
-						}
-						name={'+ Other Options'}
-						donateButtonText={'Learn More'}
-					/>
-				</SimpleGrid>
+				> */}
+				<DonateService
+					icon={
+						<Box textAlign='center'>
+							<Image
+								src={HackClubLogo}
+								width='125px'
+								height='125px'
+							/>
+						</Box>
+					}
+					name={'Hack Club Bank'}
+					nameLink={'https://hackclub.com/bank'}
+					donateLink={
+						'https://bank.hackclub.com/donations/start/onpoint'
+					}
+					donateButtonText={'Donate'}
+				/>
+				<DonateService
+					icon={
+						<Box textAlign='center'>
+							<Image
+								src={PayPalLogo}
+								width='125px'
+								height='125px'
+							/>
+						</Box>
+					}
+					name={'Pay Pal'}
+					nameLink={'https://paypal.com'}
+					donateLink={
+						'https://www.paypal.com/paypalme/adityarawat69420'
+					}
+					donateButtonText={'Donate'}
+				/>
+				<DonateService
+					icon={
+						<Box textAlign='center'>
+							<Image
+								src={VenmoStripeLogos}
+								height='125px'
+								width='260px'
+							/>
+						</Box>
+					}
+					name={'+ Other Options'}
+					donateButtonText={'Learn More'}
+				/>
+				{/* </SimpleGrid> */}
 			</Stack>
 		</Box>
 	);

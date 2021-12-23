@@ -33,6 +33,10 @@ export default function Hero() {
 					xl: 'row',
 					base: 'column-reverse'
 				}}
+				mt='16'
+				justifyContent={'center'}
+				mx='auto'
+				width={'80%'}
 				alignItems='center'
 			>
 				<Box
@@ -40,7 +44,7 @@ export default function Hero() {
 						sm: '6',
 						md: '24',
 						lg: '20',
-						xl: '12',
+						xl: '0',
 						base: '0'
 					}}
 					pl={{
@@ -125,7 +129,7 @@ export default function Hero() {
 							repeatType: 'reverse'
 						}}
 					>
-						<Image src={HeroRocket} width='500px' height='500px' />
+						<Image src={HeroRocket} width='475px' height='475px' />
 					</motion.div>
 				</Box>
 			</Stack>

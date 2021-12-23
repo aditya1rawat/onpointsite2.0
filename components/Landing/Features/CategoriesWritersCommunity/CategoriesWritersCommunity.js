@@ -10,9 +10,11 @@ export default function CategoriesWriters() {
 				'linear-gradient(90deg, rgba(131,58,180,.8) 0%, rgba(253,29,29,.8) 50%, rgba(255,136,9,.8) 100%)'
 			}
 		>
-			<Categories />
-			<Writers />
-			<Community />
+			<Box justifyContent={'center'} mx='auto' width={'80%'}>
+				<Categories />
+				<Writers />
+				<Community />
+			</Box>
 		</Box>
 	);
 }

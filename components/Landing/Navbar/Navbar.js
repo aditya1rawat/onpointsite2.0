@@ -52,7 +52,7 @@ export default function Navbar() {
 				px={{ base: 2, sm: 4 }}
 				py={4}
 			>
-				<Flex>
+				<Flex justifyContent={'center'} mx='auto' width={'80%'}>
 					<Flex>
 						<Link href='/' passHref>
 							<chakra.a
@@ -81,8 +81,14 @@ export default function Navbar() {
 									}}
 									color={
 										scrollY > 75
-											? useColorModeValue('black', 'white')
-											: useColorModeValue('white', 'white')
+											? useColorModeValue(
+													'black',
+													'white'
+											  )
+											: useColorModeValue(
+													'white',
+													'white'
+											  )
 									}
 								>
 									OnPoint
