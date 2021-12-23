@@ -56,7 +56,7 @@ export default function BigThree() {
 					}}
 					boxShadow={`${useColorModeValue(
 						'rgba(100, 100, 111, 0.5)',
-						'rgba(255, 255, 255, 0.5)'
+						'rgba(255, 255, 255, 0.35)'
 					)} 0px 0px 25px 0px`}
 					position='relative'
 					overflow='hidden'
@@ -71,7 +71,7 @@ export default function BigThree() {
 								base: '40px'
 							}}
 							fontWeight='800'
-							color={useColorModeValue('white', 'black')}
+							color={'white'}
 						>
 							Newsletter
 						</chakra.h1>
@@ -114,7 +114,7 @@ export default function BigThree() {
 				<Box
 					boxShadow={`${useColorModeValue(
 						'rgba(100, 100, 111, 0.5)',
-						'rgba(255, 255, 255, 0.5)'
+						'rgba(255, 255, 255, 0.35)'
 					)} 0px 0px 25px 0px`}
 					bg='#6a6b83'
 					width={{
@@ -151,7 +151,7 @@ export default function BigThree() {
 								base: '30px'
 							}}
 							fontWeight='800'
-							color={useColorModeValue('white', 'black')}
+							color={'white'}
 						>
 							Guest Speakers / Interviews
 						</chakra.h1>
@@ -187,7 +187,7 @@ export default function BigThree() {
 				<Box
 					boxShadow={`${useColorModeValue(
 						'rgba(100, 100, 111, 0.5)',
-						'rgba(255, 255, 255, 0.5)'
+						'rgba(255, 255, 255, 0.35)'
 					)} 0px 0px 25px 0px`}
 					bg='#3a86ff'
 					width={{
@@ -224,7 +224,7 @@ export default function BigThree() {
 								base: '40px'
 							}}
 							fontWeight='800'
-							color={useColorModeValue('white', 'black')}
+							color={'white'}
 						>
 							Active Community
 						</chakra.h1>

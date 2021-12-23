@@ -1,6 +1,5 @@
 import {
 	chakra,
-	useColorModeValue,
 	Box,
 	Stack,
 	Text,

@@ -15,10 +15,10 @@ import VenmoStripeLogos from '../../../public/vslogos.png';
 export default function Support() {
 	return (
 		<Box
-			bg={useColorModeValue(
-				'linear-gradient(180deg, #FFFFFF 0%, #2EC5CE 100%)',
-				'linear-gradient(180deg, #000000 0%, #2EC5CE 100%)'
-			)}
+		// bg={useColorModeValue(
+		// 	'linear-gradient(180deg, #FFFFFF 0%, #2EC5CE 100%)',
+		// 	'linear-gradient(180deg, #000000 0%, #2EC5CE 100%)'
+		// )}
 		>
 			<Box my='16' textAlign='center'>
 				<Text

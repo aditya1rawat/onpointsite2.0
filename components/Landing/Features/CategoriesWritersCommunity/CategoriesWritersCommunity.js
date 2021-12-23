@@ -1,5 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import Categories from './Categories/Categories';
+import Community from './Community';
 import Writers from './Writers/Writers';
 
 export default function CategoriesWriters() {
@@ -11,6 +12,7 @@ export default function CategoriesWriters() {
 		>
 			<Categories />
 			<Writers />
+			<Community />
 		</Box>
 	);
 }

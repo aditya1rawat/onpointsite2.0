@@ -6,12 +6,9 @@ import {
 	Text,
 	Flex,
 	Button,
-	SimpleGrid,
 	Icon,
 	createIcon
 } from '@chakra-ui/react';
-
-import calltoactionbackground from '../../public/calltoactionbackground.png';
 
 import Link from 'next/link';
 
@@ -32,7 +29,10 @@ export default function CallToAction() {
 	return (
 		<>
 			<Box
-				style={{ backgroundImage: `url(${calltoactionbackground})` }}
+				style={{
+					background:
+						'center no-repeat url(/calltoactionbackground.png)'
+				}}
 				color={useColorModeValue('black', 'white')}
 				borderBottom={{
 					sm: `10px ${useColorModeValue('black', 'white')} solid`,
@@ -62,10 +62,10 @@ export default function CallToAction() {
 						lineHeight={'110%'}
 						wordBreak='keep-all'
 						fontWeight='bold'
-						color={useColorModeValue('black', 'white')}
+						color={'black'}
 					>
 						What Are You Waiting For? <br />
-						<Text color={'white'}>Sign Up Now!</Text>
+						<Text color={'black'}>Sign Up Now!</Text>
 					</Text>
 
 					<Stack
@@ -79,8 +79,8 @@ export default function CallToAction() {
 							<Button
 								borderRadius='7px'
 								className='signUpButton'
-								bg={useColorModeValue('black', 'white')}
-								color={useColorModeValue('white', 'black')}
+								bg={'black'}
+								color={'white'}
 								position='relative'
 								display='inline-block'
 								sx={{
@@ -107,13 +107,14 @@ export default function CallToAction() {
 						<Box>
 							<Icon
 								as={Arrow}
-								color={useColorModeValue('black', 'white')}
+								color={'black'}
 								w={71}
 								position={'absolute'}
 								right={-71}
 								top={'10px'}
 							/>
 							<Text
+								color={'black'}
 								fontSize={'lg'}
 								position={'absolute'}
 								right={'-125px'}

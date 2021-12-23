@@ -50,11 +50,11 @@ export default function Features() {
 				>
 					<Box
 						mx='auto'
-						color={useColorModeValue('white', 'black')}
+						color={'white'}
 						bg='#09E85E'
 						boxShadow={`${useColorModeValue(
 							'rgba(100, 100, 111, 0.5)',
-							'rgba(255, 255, 255, 0.5)'
+							'rgba(255, 255, 255, 0.35)'
 						)} 0px 0px 25px 0px`}
 						width={{
 							sm: '100%',
@@ -111,7 +111,7 @@ export default function Features() {
 								base: 'full'
 							}}
 							mt='3'
-							color={useColorModeValue('black', 'white')}
+							color={'black'}
 						>
 							We have a whole assortment of features that make us
 							stand out from the rest
@@ -187,7 +187,7 @@ export default function Features() {
 								bg='#5465FF'
 								boxShadow={`${useColorModeValue(
 									'rgba(100, 100, 111, 0.5)',
-									'rgba(255, 255, 255, 0.5)'
+									'rgba(255, 255, 255, 0.35)'
 								)} 0px 0px 25px 0px`}
 								width={{
 									sm: '100%',
@@ -224,7 +224,7 @@ export default function Features() {
 										base: '35px'
 									}}
 									fontWeight='800'
-									color={useColorModeValue('white', 'black')}
+									color={'white'}
 								>
 									Daily Articles
 								</chakra.h1>
@@ -252,7 +252,7 @@ export default function Features() {
 							<Box
 								boxShadow={`${useColorModeValue(
 									'rgba(100, 100, 111, 0.5)',
-									'rgba(255, 255, 255, 0.5)'
+									'rgba(255, 255, 255, 0.35)'
 								)} 0px 0px 25px 0px`}
 								bg='#669bbc'
 								width={{
@@ -284,7 +284,7 @@ export default function Features() {
 								<chakra.h1
 									fontSize='30px'
 									fontWeight='800'
-									color={useColorModeValue('white', 'black')}
+									color={'white'}
 								>
 									Analytic Articles
 								</chakra.h1>
@@ -314,7 +314,7 @@ export default function Features() {
 							bg='#e07a5f'
 							boxShadow={`${useColorModeValue(
 								'rgba(100, 100, 111, 0.5)',
-								'rgba(255, 255, 255, 0.5)'
+								'rgba(255, 255, 255, 0.35)'
 							)} 0px 0px 25px 0px`}
 							width={{
 								sm: '100%',
@@ -347,10 +347,7 @@ export default function Features() {
 									<chakra.h1
 										fontSize='30px'
 										fontWeight='800'
-										color={useColorModeValue(
-											'white',
-											'black'
-										)}
+										color={'white'}
 									>
 										Weekly Videos
 									</chakra.h1>

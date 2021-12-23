@@ -10,7 +10,7 @@ import GetStarted from '../components/Landing/GetStarted/GetStarted';
 import CallToAction from '../components/Landing/CallToAction';
 import Support from '../components/Landing/Support/Support';
 import Footer from '../components/Landing/Footer';
-import CategoriesWriters from '../components/Landing/Features/CategoriesWriters/CategoriesWriters';
+import CategoriesWritersCommunity from '../components/Landing/Features/CategoriesWritersCommunity/CategoriesWritersCommunity';
 
 export default function Home() {
 	return (
@@ -30,7 +30,7 @@ export default function Home() {
 				<Features />
 				{/* <Categories />
 				<Writers /> */}
-				<CategoriesWriters />
+				<CategoriesWritersCommunity />
 				<Support />
 				{/* <Stats /> */}
 				<CallToAction />
