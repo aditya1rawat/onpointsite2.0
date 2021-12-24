@@ -16,7 +16,7 @@ export default function Hero() {
 		<Box
 			sx={{
 				background:
-					'linear-gradient(102.92deg, #00F260 0%, #00F260 0.01%, #0575E6 49.89%, #00F260 100%)'
+					'linear-gradient(180deg, #00F260 0%, #1a2a6c 0.01%, #b21f1f 49.89%, #09E85E 100%)'
 			}}
 			p='7'
 			borderBottom={useColorModeValue(
