@@ -91,11 +91,8 @@ export default function CallToAction() {
 								_hover={{
 									transformOrigin: '0 0',
 									transform: 'scaleX(1)',
-									background: useColorModeValue(
-										'white',
-										'black'
-									),
-									color: useColorModeValue('black', 'white')
+									background: 'white',
+									color: 'black'
 								}}
 							>
 								<span transition='color 0.6s'>

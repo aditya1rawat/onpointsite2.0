@@ -2,9 +2,8 @@ import {
 	Box,
 	Button,
 	chakra,
-	HStack,
 	Stack,
-	Img,
+	Text,
 	useColorModeValue
 } from '@chakra-ui/react';
 import HeroRocket from '../../public/HeroRocket.png';
@@ -14,10 +13,7 @@ import { motion } from 'framer-motion';
 export default function Hero() {
 	return (
 		<Box
-			sx={{
-				background:
-					'linear-gradient(180deg, #00F260 0%, #1a2a6c 0.01%, #b21f1f 49.89%, #09E85E 100%)'
-			}}
+			bgGradient={'linear(-180deg, #FC466B , #5465FF, #09E85E)'}
 			p='7'
 			borderBottom={useColorModeValue(
 				'10px solid black',
@@ -79,27 +75,52 @@ export default function Hero() {
 						<chakra.h1>It's That Simple.</chakra.h1>
 					</Box>
 					<Button
-						width={{
-							sm: '100%',
-							md: '100%',
-							lg: 'auto',
-							xl: 'auto',
-							base: '100%'
+						mt='4'
+						rightIcon={<GetStartedArrowIcon />}
+						transition='all .3s cubic-bezier(.645,.045,.355,1)'
+						background='#FFFFFF'
+						color='linear-gradient(135deg, #00F260 0%, #1a2a6c 0.01%, #b21f1f 49.89%, #09E85E 100%)'
+						fontSize='14px'
+						px='24px'
+						height='50px'
+						sx={{
+							p: {
+								backgroundImage:
+									'linear-gradient(135deg, #00F260 0%, #1a2a6c 0.01%, #b21f1f 49.89%, #09E85E 100%)'
+							},
+							span: {
+								color: '#9121C2'
+							},
+							':hover': {
+								backgroundColor: '#FFF'
+							},
+							':hover p': {
+								backgroundImage:
+									'linear-gradient(270deg, #9121C2 -119.03%, #FF5E5E 8.24%, #9121C2 50.97%, #FF5E5E 91.41%)',
+								transition: 'all .3s ease-in-out'
+							},
+							':not(:hover) p': {
+								transition: 'all .3s ease-in-out'
+							},
+							':not(:hover) span': {
+								transition: 'all .3s ease-in-out'
+							},
+							':hover span': {
+								transform: 'translateX(3px)',
+								transition: 'all .3s ease-in-out'
+							}
 						}}
-						mx='auto'
-						justifyContent='center'
-						mt='5'
-						border='5px solid black'
-						boxSizing='border-box'
-						borderRadius='10px'
-						background='white'
-						fontSize='20px'
-						p='5'
-						fontWeight='bold'
-						color='black'
-						variant='ghost'
 					>
-						Get Started <GetStartedArrowIcon />
+						<Text
+							fontSize={'20px'}
+							sx={{
+								WebkitBackgroundClip: 'text',
+								WebkitTextFillColor: 'transparent'
+							}}
+							transition='all .3s ease-in-out'
+						>
+							Get Started
+						</Text>
 					</Button>
 				</Box>
 

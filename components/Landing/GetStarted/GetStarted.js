@@ -27,10 +27,9 @@ export default function GetStarted() {
 					sm: '50px',
 					md: '25px',
 					lg: '75px',
-					xl: '100px',
+					xl: '150px',
 					base: '50px'
 				}}
-				width='100%'
 				mx='auto'
 				justifyContent='center'
 				alignItems='center'

@@ -14,12 +14,7 @@ import VenmoStripeLogos from '../../../public/vslogos.png';
 
 export default function Support() {
 	return (
-		<Box
-		// bg={useColorModeValue(
-		// 	'linear-gradient(180deg, #FFFFFF 0%, #2EC5CE 100%)',
-		// 	'linear-gradient(180deg, #000000 0%, #2EC5CE 100%)'
-		// )}
-		>
+		<Box>
 			<Box my='16' textAlign='center'>
 				<Text
 					fontSize='20px'
@@ -62,19 +57,6 @@ export default function Support() {
 				mx='auto'
 				pb='16'
 			>
-				{/* <SimpleGrid
-					columns={{
-						sm: '1',
-						md: '2',
-						lg: '3',
-						xl: '3',
-						base: '1'
-					}}
-					justifyContent='center'
-					mx='auto'
-					spacingX='25px'
-					spacingY='25px'
-				> */}
 				<DonateService
 					icon={
 						<Box textAlign='center'>
@@ -122,7 +104,6 @@ export default function Support() {
 					name={'+ Other Options'}
 					donateButtonText={'Learn More'}
 				/>
-				{/* </SimpleGrid> */}
 			</Stack>
 		</Box>
 	);
