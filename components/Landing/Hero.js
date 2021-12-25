@@ -78,15 +78,14 @@ export default function Hero() {
 						mt='4'
 						rightIcon={<GetStartedArrowIcon />}
 						transition='all .3s cubic-bezier(.645,.045,.355,1)'
-						background='#FFFFFF'
-						color='linear-gradient(135deg, #00F260 0%, #1a2a6c 0.01%, #b21f1f 49.89%, #09E85E 100%)'
+						background='#FFF'
 						fontSize='14px'
 						px='24px'
 						height='50px'
 						sx={{
 							p: {
 								backgroundImage:
-									'linear-gradient(135deg, #00F260 0%, #1a2a6c 0.01%, #b21f1f 49.89%, #09E85E 100%)'
+									'linear-gradient(270deg, #FC466B , #5465FF, #09E85E)'
 							},
 							span: {
 								color: '#9121C2'

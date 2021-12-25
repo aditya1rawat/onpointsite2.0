@@ -7,7 +7,7 @@ export default function CategoriesWriters() {
 	return (
 		<Box
 			background={
-				'linear-gradient(90deg, rgba(131,58,180,.8) 0%, rgba(253,29,29,.8) 50%, rgba(255,136,9,.8) 100%)'
+				'linear-gradient(135deg, rgb(131,58,180), rgb(253,29,29), rgb(255,136,9))'
 			}
 		>
 			<Box justifyContent={'center'} mx='auto' width={'80%'}>
