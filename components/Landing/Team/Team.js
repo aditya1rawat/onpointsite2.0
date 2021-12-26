@@ -35,12 +35,36 @@ export default function Team() {
 				align={'center'}
 				alignItems={'center'}
 			>
-				<TeamMember />
-				<TeamMember />
-				<TeamMember />
-				<TeamMember />
-				<TeamMember />
-				<TeamMember />
+				<TeamMember
+					image={'adityaverma.png'}
+					name={'Aditya Verma'}
+					role={'Founder'}
+				/>
+				<TeamMember
+					image={'adityarawat.jpeg'}
+					name={'Aditya Rawat'}
+					role={'Founder / Developer'}
+				/>
+				<TeamMember
+					image={'adityaguntupalli.png'}
+					name={'Aditya Guntupalli'}
+					role={'Founder / Chief Editor'}
+				/>
+				<TeamMember
+					image={'adityahari.jpeg'}
+					name={'Aditya Hari'}
+					role={'Founder / Sports'}
+				/>
+				<TeamMember
+					image={'yashkhot.jpeg'}
+					name={'Yash Khot'}
+					role={'Entertainment'}
+				/>
+				<TeamMember
+					image={'sujith.jpeg'}
+					name={'Sujith Sanniboyina'}
+					role={'Founder / Secretary'}
+				/>
 			</Stack>
 			{/* <SimpleGrid
 				columns={3}
