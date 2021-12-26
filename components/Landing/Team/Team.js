@@ -19,8 +19,7 @@ export default function Team() {
 				</chakra.h1>
 				<Text fontSize='20px'>Meet The Board</Text>
 			</Box>
-			{/* <Stack
-				spacing='25px'
+			<Stack
 				direction={{
 					sm: 'column',
 					md: 'column',
@@ -30,7 +29,10 @@ export default function Team() {
 				}}
 				justifyContent='center'
 				mx='auto'
+				flexWrap={'wrap'}
 				pb='16'
+				spacing={'0'}
+				align={'center'}
 				alignItems={'center'}
 			>
 				<TeamMember />
@@ -38,8 +40,9 @@ export default function Team() {
 				<TeamMember />
 				<TeamMember />
 				<TeamMember />
-			</Stack> */}
-			<SimpleGrid
+				<TeamMember />
+			</Stack>
+			{/* <SimpleGrid
 				columns={3}
 				columns={{
 					sm: '1',
@@ -60,7 +63,7 @@ export default function Team() {
 				<TeamMember />
 				<TeamMember />
 				<TeamMember />
-			</SimpleGrid>
+			</SimpleGrid> */}
 		</Box>
 	);
 }

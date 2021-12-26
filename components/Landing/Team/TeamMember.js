@@ -4,10 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function TeamMember() {
 	return (
-		<motion.div
-			whileHover={{ scale: 1.01 }}
-			transition={{ duration: 0.35 }}
-		>
+		<motion.div whileHover={{ scale: 1.01 }} transition={{ duration: 0.2 }}>
 			<Box
 				style={{
 					background:
@@ -31,8 +28,8 @@ export default function TeamMember() {
 					xl: '350px',
 					base: '250px'
 				}}
-				py='5'
-				px='5'
+				m='15px'
+				p='5'
 			/>
 		</motion.div>
 	);
