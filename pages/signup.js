@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import {
 	Box,
 	Stack,
 	Heading,
 	Text,
 	Container,
+	InputGroup,
+	InputRightElement,
 	Input,
 	Button,
 	SimpleGrid,
@@ -11,10 +14,14 @@ import {
 	Icon,
 	useColorModeValue
 } from '@chakra-ui/react';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
+
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar/Navbar';
 
 export default function SignUp() {
+	const [show, setShow] = useState(false);
+	const handleClick = () => setShow(!show);
 	return (
 		<Box
 			position={'relative'}
@@ -98,15 +105,30 @@ export default function SignUp() {
 									color: 'gray.500'
 								}}
 							/>
-							<Input
-								placeholder='Password'
-								bg={'gray.100'}
-								border={0}
-								color={'black'}
-								_placeholder={{
-									color: 'gray.500'
-								}}
-							/>
+							<InputGroup size='md'>
+								<Input
+									pr='4.5rem'
+									type={show ? 'text' : 'password'}
+									placeholder='Password'
+									bg={'gray.100'}
+									border={0}
+									color={'black'}
+									_placeholder={{
+										color: 'gray.500'
+									}}
+								/>
+								<InputRightElement width='4.5rem'>
+									<Button
+										h='1.75rem'
+										size='sm'
+										type='ghost'
+										onClick={handleClick}
+										color='black'
+									>
+										{show ? <FaEyeSlash /> : <FaEye />}
+									</Button>
+								</InputRightElement>
+							</InputGroup>
 						</Stack>
 						<Button
 							fontFamily={'heading'}
@@ -139,9 +161,7 @@ export default function SignUp() {
 				style={{ filter: 'blur(70px)' }}
 				zIndex='0'
 			/>
-			{/* <Box zIndex='0' position='relative'> */}
 			<Footer />
-			{/* </Box> */}
 		</Box>
 	);
 }

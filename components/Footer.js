@@ -8,7 +8,7 @@ import {
 	VisuallyHidden,
 	useColorModeValue
 } from '@chakra-ui/react';
-import { FaInstagram, FaGithub, FaYoutube, FaEnvelope } from 'react-icons/fa';
+import { FaInstagram, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 const Logo = () => {
 	return (
