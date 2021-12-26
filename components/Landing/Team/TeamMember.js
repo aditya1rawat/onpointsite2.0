@@ -48,7 +48,10 @@ export default function TeamMember({ image, name, role }) {
 					pt='125px'
 					verticalAlign={'middle'}
 					opacity={'0'}
-					background={'rgba(0,0,0,0.5)'}
+					background={useColorModeValue(
+						'rgba(255,255,255,0.5)',
+						'rgba(0,0,0,0.5)'
+					)}
 					width={{
 						sm: '250px',
 						md: '275px',
