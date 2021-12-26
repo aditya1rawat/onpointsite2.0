@@ -2,15 +2,16 @@ import { Box, useColorModeValue } from '@chakra-ui/react';
 import Head from 'next/head';
 import Features from '../components/Landing/Features/Features';
 import Hero from '../components/Landing/Hero';
-import Navbar from '../components/Landing/Navbar/Navbar';
+import Navbar from '../components/Navbar/Navbar';
 import GetStarted from '../components/Landing/GetStarted/GetStarted';
 // import Categories from '../components/Landing/Features/CategoriesWriters/Categories/Categories';
 // import Writers from '../components/Landing/Features/CategoriesWriters/Writers/Writers';
 // import Stats from '../components/Landing/Features/Stats/Stats';
 import CallToAction from '../components/Landing/CallToAction';
 import Support from '../components/Landing/Support/Support';
-import Footer from '../components/Landing/Footer';
+import Footer from '../components/Footer';
 import CategoriesWritersCommunity from '../components/Landing/Features/CategoriesWritersCommunity/CategoriesWritersCommunity';
+import Team from '../components/Landing/Team/Team';
 
 export default function Home() {
 	return (
@@ -31,6 +32,7 @@ export default function Home() {
 				{/* <Categories />
 				<Writers /> */}
 				<CategoriesWritersCommunity />
+				<Team />
 				<Support />
 				{/* <Stats /> */}
 				<CallToAction />

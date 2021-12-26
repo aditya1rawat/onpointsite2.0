@@ -1,6 +1,5 @@
 import {
 	Box,
-	Flex,
 	Stack,
 	Heading,
 	Text,
@@ -8,14 +7,12 @@ import {
 	Input,
 	Button,
 	SimpleGrid,
-	Avatar,
-	AvatarGroup,
 	useBreakpointValue,
 	Icon,
 	useColorModeValue
 } from '@chakra-ui/react';
-import Footer from '../components/Landing/Footer';
-import Navbar from '../components/Landing/Navbar/Navbar';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar/Navbar';
 
 export default function SignUp() {
 	return (
@@ -138,9 +135,9 @@ export default function SignUp() {
 			<Blur
 				position={'absolute'}
 				right={-100}
-				bottom={-200}
+				top={-20}
 				style={{ filter: 'blur(70px)' }}
-				zIndex='1'
+				zIndex='0'
 			/>
 			{/* <Box zIndex='0' position='relative'> */}
 			<Footer />

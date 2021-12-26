@@ -29,7 +29,7 @@ export default function Categories() {
 				base: '0'
 			}}
 		>
-			<Box mb='16' textAlign='center'>
+			{/* <Box mb='16' textAlign='center'>
 				<chakra.h1
 					fontSize={{
 						sm: '40px',
@@ -45,7 +45,7 @@ export default function Categories() {
 				<Text fontSize='20px'>
 					Just when you thought it couldn't get better
 				</Text>
-			</Box>
+			</Box> */}
 			<Flex width='100%'>
 				<Stack
 					direction={{

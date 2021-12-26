@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '../../../public/Logo.png';
+import Logo from '../../public/Logo.png';
 import { BsTextRight } from 'react-icons/bs';
 import ThemeButton from './ThemeButton';
 import NavLink from './NavLink';
@@ -86,7 +86,7 @@ export default function Navbar() {
 													'white'
 											  )
 											: useColorModeValue(
-													'white',
+													'black',
 													'white'
 											  )
 									}

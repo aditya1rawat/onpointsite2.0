@@ -56,6 +56,7 @@ export default function Support() {
 				justifyContent='center'
 				mx='auto'
 				pb='16'
+				alignItems={'center'}
 			>
 				<DonateService
 					icon={
