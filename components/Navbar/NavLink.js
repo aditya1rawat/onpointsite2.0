@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { Button, useColorModeValue } from '@chakra-ui/react';
 
-export default function NavLink({ name }) {
+export default function NavLink({ name, link }) {
 	const [scrollY, setScrollY] = useState(0);
 
 	useEffect(() => {
@@ -17,18 +18,20 @@ export default function NavLink({ name }) {
 		};
 	}, []);
 	return (
-		<Button
-			// color={useColorModeValue('black', 'white')}
-			color={useColorModeValue('black', 'white')}
-			colorScheme={useColorModeValue('white', 'black')}
-			_hover={{
-				color: useColorModeValue(
-					'rgba(0,0,0,0.5)',
-					'rgba(255,255,255,0.5)'
-				)
-			}}
-		>
-			{name}
-		</Button>
+		<Link href={`/${link}`} passHref>
+			<Button
+				// color={useColorModeValue('black', 'white')}
+				color={useColorModeValue('black', 'white')}
+				colorScheme={useColorModeValue('white', 'black')}
+				_hover={{
+					color: useColorModeValue(
+						'rgba(0,0,0,0.5)',
+						'rgba(255,255,255,0.5)'
+					)
+				}}
+			>
+				{name}
+			</Button>
+		</Link>
 	);
 }

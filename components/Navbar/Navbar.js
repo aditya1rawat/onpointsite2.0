@@ -110,9 +110,9 @@ export default function Navbar() {
 							display={{ base: 'none', md: 'inline-flex' }}
 							fontWeight='600'
 						>
-							<NavLink name='About Us' />
-							<NavLink name='Blog' />
-							<NavLink name='Support' />
+							<NavLink name='About Us' link='about' />
+							<NavLink name='Blog' link='blog' />
+							<NavLink name='Support' link='support' />
 						</HStack>
 
 						<Box
