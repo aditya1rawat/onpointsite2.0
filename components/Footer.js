@@ -8,6 +8,7 @@ import {
 	VisuallyHidden,
 	useColorModeValue
 } from '@chakra-ui/react';
+import NextLink from 'next/link';
 import { FaInstagram, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 const Logo = () => {
@@ -458,9 +459,15 @@ export default function Footer() {
 									Company
 								</chakra.h1>
 							</ListHeader>
-							<Link href={'#'}>About</Link>
-							<Link href={'#'}>Blog</Link>
-							<Link href={'#'}>Support</Link>
+							<NextLink href={'/about'} passHref>
+								<Link>About</Link>
+							</NextLink>
+							<NextLink href={'/blog'} passHref>
+								<Link>Blog</Link>
+							</NextLink>
+							<NextLink href={'/support'} passHref>
+								<Link>Support</Link>
+							</NextLink>
 						</Stack>
 						<Stack align={'flex-start'}>
 							<ListHeader>
@@ -468,9 +475,15 @@ export default function Footer() {
 									Products
 								</chakra.h1>
 							</ListHeader>
-							<Link href={'#'}>Articles</Link>
-							<Link href={'#'}>Write A Story</Link>
-							<Link href={'#'}>Get Started</Link>
+							<NextLink href={'/signup'} passHref>
+								<Link>Get Started</Link>
+							</NextLink>
+							<NextLink href={'/articles'} passHref>
+								<Link>Articles</Link>
+							</NextLink>
+							<NextLink href={'/new'} passHref>
+								<Link>Write A Story</Link>
+							</NextLink>
 						</Stack>
 						<Stack align={'flex-start'}>
 							<ListHeader>
