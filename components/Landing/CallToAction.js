@@ -61,7 +61,7 @@ export default function CallToAction() {
 						fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
 						lineHeight={'110%'}
 						wordBreak='keep-all'
-						fontWeight='bold'
+						// fontWeight='bold'
 						color={'black'}
 					>
 						What Are You Waiting For? <br />
